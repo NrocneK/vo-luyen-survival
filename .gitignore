@@ -1,0 +1,26 @@
+# Công cụ portable và kết quả trung gian không thuộc bộ runtime.
+art/v2/tools/
+art/v2/renders/
+art/v2/*.log
+art/v2/models/*.blend1
+art/v3/renders/
+art/v3/*.log
+art/v3/models/*.blend1
+__pycache__/
+node_modules/
+dist/
+.sites-runtime/
+*.tsbuildinfo
+.vite/
+qa/screenshots/
+*.log
+public/game/
+
+# Bản đóng gói trùng asset, cấu hình riêng và file lưu thử không cần đưa lên GitHub.
+art/*.zip
+.env
+.env.*
+!.env.example
+qa/fixture-progress.json
+*.blend1
+qa/github-*.ps1

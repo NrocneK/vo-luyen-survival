@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8765/art/v2/ASSET_PREVIEW.html",
+  "actors": 12,
+  "stateSelections": 48,
+  "directionsPerState": 8,
+  "allStatesRendered": true,
+  "slowPlayback": true,
+  "frameStep": {
+    "before": "4/12",
+    "after": "5/12"
+  },
+  "zoomChecks": [
+    1,
+    3
+  ],
+  "sceneLayersLoaded": 10,
+  "iconsLoaded": 48,
+  "uiLoaded": 16,
+  "effectCanvases": 12,
+  "consoleErrors": [],
+  "pauseStateAcrossViews": "passed"
+}

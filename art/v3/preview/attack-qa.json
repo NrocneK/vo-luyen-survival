@@ -1,0 +1,970 @@
+{
+  "status": "passed",
+  "actors": [
+    {
+      "id": "doc-thiem",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "duong-khai",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      },
+      "alternatingHands": {
+        "attack-1": {
+          "primaryHand": "L",
+          "maxTravel": 0.7167252486797289
+        },
+        "attack-2": {
+          "primaryHand": "R",
+          "maxTravel": 0.7511385700660509
+        },
+        "attack-3": {
+          "primaryHand": "L",
+          "maxTravel": 0.8757656075311814
+        }
+      }
+    },
+    {
+      "id": "duong-khai-kiem",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      },
+      "bladeTrajectoryMaxSeparation": {
+        "attack-1 / attack-2": 2.7005856354839772,
+        "attack-1 / attack-3": 1.3537910341898658,
+        "attack-2 / attack-3": 2.3816089112961674
+      }
+    },
+    {
+      "id": "linh-ho",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "linh-ho-tien-hoa",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "thanh-dieu",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "thanh-dieu-tien-hoa",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "thiet-nha-tru",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "thiet-nha-tru-tinh-anh",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "hac-lang",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "hac-lang-tinh-anh",
+      "variants": 3,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 3,
+          "sameEntryExitPose": true
+        }
+      }
+    },
+    {
+      "id": "hac-phong-lang-vuong",
+      "variants": 4,
+      "directions": {
+        "S": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "SW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "W": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "NW": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "N": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "NE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "E": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        },
+        "SE": {
+          "uniqueFramesPerAttack": [
+            13,
+            13,
+            13,
+            13
+          ],
+          "distinctVariants": 4,
+          "sameEntryExitPose": true
+        }
+      }
+    }
+  ],
+  "totalAttackVariants": 37,
+  "allDirectionsChecked": true
+}

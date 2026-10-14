@@ -1,0 +1,349 @@
+{
+  "scope": "directional-actor-export-and-gait",
+  "actors": [
+    {
+      "id": "doc-thiem",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1024,
+        1016
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 1.2128666487410446e-07,
+      "maxSampledStanceDrift": 1.254868062794401e-07
+    },
+    {
+      "id": "duong-khai",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1280,
+        1142
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 3.414284955677271e-08,
+      "maxSampledStanceDrift": 8.204650880916375e-08
+    },
+    {
+      "id": "duong-khai-kiem",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1280,
+        1341
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 3.414284955677271e-08,
+      "maxSampledStanceDrift": 8.204650880916375e-08
+    },
+    {
+      "id": "linh-ho",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1280,
+        1017
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 4.2146848510894035e-08,
+      "maxSampledStanceDrift": 7.41368316736768e-08
+    },
+    {
+      "id": "linh-ho-tien-hoa",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1280,
+        1098
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 4.2146848510894035e-08,
+      "maxSampledStanceDrift": 7.41368316736768e-08
+    },
+    {
+      "id": "thanh-dieu",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1280,
+        1011
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": null,
+      "maxSampledStanceDrift": null
+    },
+    {
+      "id": "thanh-dieu-tien-hoa",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1536,
+        1139
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": null,
+      "maxSampledStanceDrift": null
+    },
+    {
+      "id": "thiet-nha-tru",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1536,
+        1185
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 9.453726962543667e-08,
+      "maxSampledStanceDrift": 7.095115661659435e-08
+    },
+    {
+      "id": "thiet-nha-tru-tinh-anh",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1536,
+        1488
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 9.453726962543667e-08,
+      "maxSampledStanceDrift": 7.946529545499459e-08
+    },
+    {
+      "id": "hac-lang",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1536,
+        1156
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 6.365778852490731e-08,
+      "maxSampledStanceDrift": 8.58978220774631e-08
+    },
+    {
+      "id": "hac-lang-tinh-anh",
+      "expectedFrames": 576,
+      "nonEmpty": 576,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        1536,
+        1452
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 6.365778852490731e-08,
+      "maxSampledStanceDrift": 9.620556085110366e-08
+    },
+    {
+      "id": "hac-phong-lang-vuong",
+      "expectedFrames": 688,
+      "nonEmpty": 688,
+      "clipped": [],
+      "sourceClipped": [],
+      "uniqueWalkFrames": {
+        "S": 12,
+        "SW": 12,
+        "W": 12,
+        "NW": 12,
+        "N": 12,
+        "NE": 12,
+        "E": 12,
+        "SE": 12
+      },
+      "alphaModes": [
+        0,
+        255
+      ],
+      "atlasDimensions": [
+        2304,
+        2328
+      ],
+      "technicalPass": true,
+      "maxFootTargetError": 6.365778852490731e-08,
+      "maxSampledStanceDrift": 1.2025695095285727e-07
+    }
+  ],
+  "gait": {
+    "test": "dense analytic stance in world space, 1001 samples per leg",
+    "maxStanceDriftWorldUnits": 4.440892098500626e-16,
+    "maxSwingLiftWorldUnits": 0.15,
+    "phaseOffset": 0.5,
+    "technicalPass": true,
+    "limitation": "Số đo kiểm tra hàm pose; chuyển động PNG vẫn cần xem tại chỗ và trên nền di chuyển."
+  }
+}

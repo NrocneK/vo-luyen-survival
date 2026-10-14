@@ -1,0 +1,325 @@
+{
+  "checked": 22,
+  "frames": 320,
+  "results": [
+    {
+      "id": "duong-khai",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/characters/duong-khai.png"
+    },
+    {
+      "id": "duong-khai-kiem",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 21,
+      "borders": "pass",
+      "file": "assets/characters/duong-khai-kiem.png"
+    },
+    {
+      "id": "hac-lang",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/enemies/hac-lang.png"
+    },
+    {
+      "id": "thiet-nha-tru",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/enemies/thiet-nha-tru.png"
+    },
+    {
+      "id": "doc-thiem",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/enemies/doc-thiem.png"
+    },
+    {
+      "id": "hac-lang-tinh-anh",
+      "frames": 16,
+      "size": [
+        320,
+        320
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/enemies/hac-lang-tinh-anh.png"
+    },
+    {
+      "id": "thiet-nha-tru-tinh-anh",
+      "frames": 16,
+      "size": [
+        320,
+        320
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 29,
+      "borders": "pass",
+      "file": "assets/enemies/thiet-nha-tru-tinh-anh.png"
+    },
+    {
+      "id": "hac-phong-lang-vuong",
+      "frames": 16,
+      "size": [
+        512,
+        512
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 163,
+      "borders": "pass",
+      "file": "assets/bosses/hac-phong-lang-vuong.png"
+    },
+    {
+      "id": "linh-ho",
+      "frames": 16,
+      "size": [
+        192,
+        192
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/pets/linh-ho.png"
+    },
+    {
+      "id": "thanh-dieu",
+      "frames": 16,
+      "size": [
+        192,
+        192
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/pets/thanh-dieu.png"
+    },
+    {
+      "id": "linh-ho-tien-hoa",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 9,
+      "borders": "pass",
+      "file": "assets/pets/linh-ho-tien-hoa.png"
+    },
+    {
+      "id": "thanh-dieu-tien-hoa",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/pets/thanh-dieu-tien-hoa.png"
+    },
+    {
+      "id": "items",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/items/items.png"
+    },
+    {
+      "id": "equipment",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 14,
+      "borders": "pass",
+      "file": "assets/equipment/equipment.png"
+    },
+    {
+      "id": "skills",
+      "frames": 16,
+      "size": [
+        256,
+        256
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/skills/skills.png"
+    },
+    {
+      "id": "hac-phong-son-props",
+      "frames": 16,
+      "size": [
+        512,
+        512
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 65,
+      "borders": "pass",
+      "file": "assets/maps/hac-phong-son-props.png"
+    },
+    {
+      "id": "ui-kit",
+      "frames": 16,
+      "size": [
+        1024,
+        1024
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/ui/ui-kit.png"
+    },
+    {
+      "id": "combat-effects",
+      "frames": 16,
+      "size": [
+        512,
+        512
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/effects/combat-effects.png"
+    },
+    {
+      "id": "support-effects",
+      "frames": 16,
+      "size": [
+        512,
+        512
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/effects/support-effects.png"
+    },
+    {
+      "id": "awakened-effects",
+      "frames": 16,
+      "size": [
+        512,
+        512
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sourceCutPixels": 0,
+      "borders": "pass",
+      "file": "assets/effects/awakened-effects.png"
+    },
+    {
+      "id": "hac-phong-son-ground",
+      "size": [
+        1024,
+        1024
+      ],
+      "opaque": true
+    },
+    {
+      "id": "cultivation-courtyard",
+      "size": [
+        1600,
+        900
+      ],
+      "opaque": true
+    }
+  ],
+  "scope": "technical-export-only",
+  "visualAcceptance": "rejected",
+  "gameplayReady": false
+}

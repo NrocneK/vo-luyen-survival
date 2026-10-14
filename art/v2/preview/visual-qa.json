@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "date": "2026-10-13",
+  "reviewedActors": [
+    "doc-thiem",
+    "duong-khai",
+    "duong-khai-kiem",
+    "hac-lang",
+    "hac-lang-tinh-anh",
+    "hac-phong-lang-vuong",
+    "linh-ho",
+    "linh-ho-tien-hoa",
+    "thanh-dieu",
+    "thanh-dieu-tien-hoa",
+    "thiet-nha-tru",
+    "thiet-nha-tru-tinh-anh"
+  ],
+  "methods": [
+    "runtime PNG pose boards at 1x/3x",
+    "12-phase gait in eight directions",
+    "slow playback and frame stepping",
+    "world movement on fixed isometric ground",
+    "weapon attack and grounded death poses",
+    "species silhouette and evolved pet variants"
+  ],
+  "checks": {
+    "frontBackAndDiagonals": true,
+    "alternatingLegsAndKneeFlexion": true,
+    "cameraScaleAndOriginStable": true,
+    "sceneLayeringAndReadability": true,
+    "noClippedLimbs": true
+  },
+  "evidence": [
+    "duong-khai-walk-poses.png",
+    "hac-lang-walk-poses.png",
+    "doc-thiem-walk-poses.png",
+    "family-motion-check.png",
+    "hac-phong-son-isometric.png"
+  ],
+  "atlasHashes": {
+    "doc-thiem": "dfd4d97b2b910e3e0bc60c06c4ab8bc4eff91e16d9909b43bced666f92fe58b9",
+    "duong-khai": "c52440e779283ee4e029d168dc4e16280e81b64f164853f58402bd922821c24f",
+    "duong-khai-kiem": "e81a0ea7491422a29ed6c02670abc59d4a72db01a1074de5059ed63e22cec0c7",
+    "hac-lang": "478b5d485ed2db645acf26e386159c722c7b36a41e781381a5b9e7a0ec1e9495",
+    "hac-lang-tinh-anh": "adc23ea2c77e34aba732aa3afef91d28da0a38d3bba89c6e5be70b586c671a6b",
+    "hac-phong-lang-vuong": "004ee775ab7c7b457bff7804c1809073bf6163ae65a6e818b53946a03b000591",
+    "linh-ho": "6f170d72ec1f9a69a906c0c5de7a7149b2a0000ea4d2cc72995dec526ca97ddc",
+    "linh-ho-tien-hoa": "18050a5c614f3a7fabc3254c0a267a12daa216f063c9495543fc69a1567010da",
+    "thanh-dieu": "68329179994fd060a2336a46a782f107f25002c2a8e4c42ebe9514c7d7a41be1",
+    "thanh-dieu-tien-hoa": "c40593a6bbb9545150fec81e08c0cdf7e0180faaeae3942484f03c5dd9cc0f0a",
+    "thiet-nha-tru": "a1ea8caae5b50df85868df5254e995ff6639f8d249c106ce26ee7ae1ca24ce84",
+    "thiet-nha-tru-tinh-anh": "e4cda9b5115b9cac6e7abcd7f6e37dddb299a58043e0997867136539684baa40"
+  }
+}

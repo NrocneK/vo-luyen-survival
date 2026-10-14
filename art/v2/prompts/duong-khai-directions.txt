@@ -1,0 +1,15 @@
+Use case: identity-preserve. Asset: production-ready directional IDLE sprite atlas, not concept art.
+Reference image 1 is the previous Yang Kai character sprite for IDENTITY and COLORS only. Correct its camera and facing directions.
+ONE atlas of EXACTLY 8 full-body character sprites, 4 columns x 2 rows, truly transparent background, no labels/text/grid/scenery/shadows.
+Same young adult xianxia man in all cells: black high ponytail, midnight teal martial robe, ivory collar, red waist sash, bronze gauntlets, brown boots, dark trousers. Preserve this identity and outfit. Split robe hem exposes both knees/shins/feet enough for later walking animation.
+CAMERA: fixed orthographic ISOMETRIC / Diablo-style elevated view, looking down about 35 degrees. Always see top of head and top surfaces of shoulders. This is not a side-scroller, not a flat side profile. Fixed camera, character rotates on the ground plane, consistent proportions and lens in all 8 images. Pixel art with controlled dark outlines, around 64 pixel tall logical character, crisp square pixels, no smoothing.
+Exact row-major facing order in SCREEN SPACE:
+Row1 col1 S: faces directly toward viewer / bottom of screen, visible face and chest.
+Row1 col2 SW: faces bottom-left, face/chest visible in three-quarter view.
+Row1 col3 W: faces screen left but remains viewed from ABOVE, top of head/shoulders visible, both feet project to floor.
+Row1 col4 NW: faces upper-left, back/left rear three-quarter view, face mostly hidden.
+Row2 col1 N: faces directly away toward top of screen, show BACK of head/ponytail, shoulder back, red sash knot and robe back, NO visible face.
+Row2 col2 NE: faces upper-right, back/right rear three-quarter view, face mostly hidden.
+Row2 col3 E: faces screen right from ABOVE, matching W camera.
+Row2 col4 SE: faces bottom-right, visible face/chest three-quarter.
+All are neutral standing martial-ready idle poses, relaxed separated feet, hands near waist. Identical anatomy, scale and foot-floor anchor for every cell, generous empty transparent padding. The rear views must truly show his back, not a flipped front/side image.

@@ -1,0 +1,33 @@
+{
+  "actor": "thanh-dieu",
+  "name": "Thanh Điểu",
+  "camera": {
+    "type": "orthographic",
+    "elevationDegrees": 35.26438968,
+    "azimuthDegrees": -45,
+    "orthoScale": 3.141666889190674
+  },
+  "counts": {
+    "idle": 8,
+    "walk": 12,
+    "attack": 10,
+    "death": 10
+  },
+  "nativeFrameSize": 104,
+  "renderSize": 208,
+  "origin": [
+    0.5000001788139343,
+    0.7781230211257935
+  ],
+  "walk": {
+    "cycleSeconds": 0.8,
+    "worldSpeed": 0.85,
+    "frames": 12,
+    "type": "flight",
+    "stride": null,
+    "stanceFraction": null
+  },
+  "trace": [],
+  "maxFootTargetError": null,
+  "sourceWorkflow": "3D rig -> orthographic PNG -> fixed palette pixel sprites"
+}

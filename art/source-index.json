@@ -1,0 +1,177 @@
+[
+  {
+    "id": "duong-khai",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-10a14dcf-2bbc-4c4b-ac71-8c3625e7f896.png",
+    "kind": "characters",
+    "prompt": "Use case: stylized-concept. Asset type: FINAL production-ready pixel-art game character animation sprite sheet, not concept art, not a reference board.\nCreate ONE exact square 1024x1024 RGBA sprite sheet with truly transparent background, exactly 4 columns and 4 rows of equally-sized 256x256 cells. No labels, text, borders, checkerboard, grid lines or scenery.\nSubject: Yang Kai / Duong Khai early cultivation hero for a xianxia survival game: slim young adult man, black high ponytail, dark midnight teal martial robe, ivory inner collar, bright dark-red sash, brown boots, simple bronze gauntlets. Consistent face/clothing/proportions across ALL 16 cells. Crisp attractive hand-crafted pixel art, limited palette, clean 1-pixel dark outline, coherent square pixels at about 48x48 logical drawing resolution enlarged 4x without smoothing. Each sprite fits in a 192x192 artwork area inside its cell. Fixed camera slightly overhead three-quarter view, always facing screen right and slightly down. Feet anchored at cell center-x and y=224 except falling death poses. Stable scale and registration in every frame; no cropped body or particles crossing cells.\nRow 1, cells 1-4: four subtle IDLE breathing frames, loop, gauntlets held ready.\nRow 2: four genuinely different WALK cycle poses, alternating feet and arms, ponytail moves, loop; in-place animation.\nRow 3: four distinct PUNCH attack phases: wind-up, punch extending right, maximum extension with a small gold-orange qi streak, recovery. Keep the whole pose inside each cell.\nRow 4: four DEATH phases: wounded stagger, kneel, falling right, lying collapsed completely; no gore.\nAll cells fully separated by transparent padding. Use usable sequential animation frames, NOT four identical still poses. Leave generous transparent margins. Entire image is a game sprite sheet delivered at exact 1024x1024."
+  },
+  {
+    "id": "hac-lang",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-6bca8e6a-b130-42f6-9d0c-d2f01f5d29d2.png",
+    "kind": "enemies",
+    "prompt": "FINAL production pixel-art animation sprite sheet for a xianxia survival game, not a reference or concept board. Reference image 1 is STYLE ONLY, depicting the hero; do NOT draw that human. Draw the requested creature only. Exactly 4 columns x 4 rows, 16 separated cells, same regular square grid across the WHOLE square canvas, transparent background. No labels, text, borders or visible grid. Match hero's crisp detailed pixel-art rendering, dark outlines, upper-left highlights and slightly overhead three-quarter camera. Consistent creature anatomy, scale and colors throughout. Always face RIGHT. Anchor feet at identical coordinates in all upright frames. Transparent padding around each creature, no parts crossing a cell. Four rows respectively: 4 subtle idle loop frames; 4 clearly different walking/running cycle frames; 4 attack windup/strike/recovery frames; 4 collapse death frames ending in body lying on ground, no gore. Real sequential movement, no identical repeated poses.\nSubject: Hac Lang, compact lean dark charcoal-gray wolf with lighter slate muzzle and chest, tiny muted gold eyes, no armor and no magical aura. Strong quadruped silhouette. WALK row is prowling gait. ATTACK row crouches then lunges bites right, returns. Creature occupies maximum 70% of each cell width."
+  },
+  {
+    "id": "thiet-nha-tru",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-5f5f3390-f2df-419e-9977-2e1ab4689ba4.png",
+    "kind": "enemies",
+    "prompt": "FINAL production pixel-art animation sprite sheet for a xianxia survival game, not a reference or concept board. Reference image 1 is STYLE ONLY, depicting the hero; do NOT draw that human. Draw the requested creature only. Exactly 4 columns x 4 rows, 16 separated cells, same regular square grid across the WHOLE square canvas, transparent background. No labels, text, borders or visible grid. Match hero's crisp detailed pixel-art rendering, dark outlines, upper-left highlights and slightly overhead three-quarter camera. Consistent creature anatomy, scale and colors throughout. Always face RIGHT. Anchor feet at identical coordinates in all upright frames. Transparent padding around each creature, no parts crossing a cell. Four rows respectively: 4 subtle idle loop frames; 4 clearly different walking/running cycle frames; 4 attack windup/strike/recovery frames; 4 collapse death frames ending in body lying on ground, no gore. Real sequential movement, no identical repeated poses.\nSubject: Thiet Nha Tru, stocky brown wild boar with iron-gray snout, two ivory tusks, a black bristle ridge and short thick legs. No armor or magical aura. RUN row alternating fast trot. ATTACK row lowers head, scrapes hoof, charges and recovers. Entire animal stays within each cell."
+  },
+  {
+    "id": "doc-thiem",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-4e06e676-37f1-44e0-94da-3f744b4db728.png",
+    "kind": "enemies",
+    "prompt": "FINAL production pixel-art animation sprite sheet for a xianxia survival game, not a reference or concept board. Reference image 1 is STYLE ONLY, depicting the hero; do NOT draw that human. Draw the requested creature only. Exactly 4 columns x 4 rows, 16 separated cells, same regular square grid across the WHOLE square canvas, transparent background. No labels, text, borders or visible grid. Match hero's crisp detailed pixel-art rendering, dark outlines, upper-left highlights and slightly overhead three-quarter camera. Consistent creature anatomy, scale and colors throughout. Always face RIGHT. Anchor feet at identical coordinates in all upright frames. Transparent padding around each creature, no parts crossing a cell. Four rows respectively: 4 subtle idle loop frames; 4 clearly different walking/running cycle frames; 4 attack windup/strike/recovery frames; 4 collapse death frames ending in body lying on ground, no gore. Real sequential movement, no identical repeated poses.\nSubject: Doc Thiem, squat moss-green poisonous toad with golden eyes, dark olive warty back and pale cream belly. Four clear feet, no clothing or aura. WALK row a small hop cycle. ATTACK row puffs throat, opens mouth toward right, ejects one tiny purple poison bead, recovers. Body scale stays identical across frames."
+  },
+  {
+    "id": "hac-lang-tinh-anh",
+    "kind": "enemies",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-e117c51c-5c84-4462-ad58-600c19284f52.png",
+    "prompt": "Edit the provided production wolf animation sprite sheet into a DISTINCT elite version. Preserve ALL 16 frames, exact 4x4 layout, right-facing camera and each animation action. Add pale silver jagged bony shoulder and forehead plates, amber crystals growing along the spine, a visible ivory scar over one eye, brighter amber eyes, two longer canine fangs. Deep blue-black fur. Keep readable pixel art, no scenery, no text, truly transparent background. NO outer aura crossing cells. Four rows remain idle, walk, attack, death. This is a ready-to-use final animation sprite sheet, not an illustration."
+  },
+  {
+    "id": "thiet-nha-tru-tinh-anh",
+    "kind": "enemies",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-8af608d5-2e08-4cc7-8570-e141a6fc2fc1.png",
+    "prompt": "Edit the provided production boar animation sheet into a DISTINCT elite iron-tusk boar. Preserve ALL 16 frames, exact 4x4 grid, same right-facing camera and animation actions. Add dark steel segmented dorsal armor, two amber crystal shoulder spikes and visibly longer ivory tusks, dark burgundy bristles. Pixel-art shading identical to reference. No scenery, no text, real transparent background. Each sprite stays fully in its own cell; no glow or parts crossing cells. Rows remain idle, walk, attack, death. Final game animation sprites, not concept art."
+  },
+  {
+    "id": "hac-phong-lang-vuong",
+    "kind": "bosses",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-cd405a9f-4130-4a91-8038-169f403652e2.png",
+    "prompt": "Create a FINAL production 4x4 animation sprite sheet for Hac Phong Lang Vuong, a LARGE unique alpha wolf BOSS. The reference is pixel-art STYLE and quadruped anatomy guidance only. New boss has enormous red-black angular mane, charcoal-purple fur, red crystal horns/spikes on shoulders, golden-orange eyes, muscular front legs and a long dark tail. Threatening regal silhouette, no saddle or rider. Exact 16 separate frames in regular 4x4 square grid, genuinely transparent background, no labels/grid/scenery. Slight overhead three-quarter camera, faces RIGHT throughout. Row1 four idle breathing frames. Row2 four walking frames with different paw positions. Row3 four claw/lunge attack phases (crouch, rising snarl, extended forward lunge, recovery); small red claw streak contained inside cell. Row4 four dying collapse frames, final body lying still, no gore. Keep scale and foot anchor consistent in all upright frames, all body parts contained with transparent padding. Sharp detailed pixel art matching reference, not painting. Actual animation-ready sprites, no illustration board."
+  },
+  {
+    "id": "duong-khai-kiem",
+    "kind": "characters",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-136b31f8-bc96-47b4-9244-099df3fd39b7.png",
+    "prompt": "Edit the supplied Yang Kai hero sprite sheet into a SWORD-equipped animation variant. Keep exactly the same face, black ponytail, midnight teal robe, ivory collar, red sash, boots, dark outlines, perspective, scale, registration and 4x4 grid. Replace fists combat with one modest straight steel Chinese jian sword with bronze guard. Row1 holds sword at low ready across 4 breathing frames. Row2 four distinct walking poses carrying the sword. Row3 four distinct sword slash phases: draw-back, forward diagonal slash, fully extended slash with small cyan qi arc contained inside the cell, recovery. Row4 retain four collapse death poses but sword falls beside him, no gore. Transparent background throughout. No text or scenery. Final usable animation frames, not a concept board."
+  },
+  {
+    "id": "linh-ho",
+    "kind": "pets",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-9c94b5cd-1f3d-49d6-b444-b767b9bc0753.png",
+    "prompt": "Create a FINAL production pixel-art animation sprite sheet, square regular 4 columns x 4 rows, 16 independent frames, transparent background, no labels/text/grid/scenery. Match the reference hero's detailed crisp pixel art, dark outline, limited palette and slightly overhead three-quarter camera. Each frame fully contained with padding, stable size/center and baseline. Faces RIGHT. Rows: 4 idle breathing frames; 4 distinct locomotion loop frames; 4 attack windup/cast/recovery frames; 4 recall/rest frames. Genuine sequential motion, no identical copies. Reference is STYLE ONLY, do not include human hero. Subject: Linh Ho, a small charming silver-white spirit fox, one very fluffy tail with pale cyan tip, dark paw socks, teal eyes, tiny gold forehead mark. Sleek quadruped anatomy. Locomotion = light trotting. Attack = fox gathers a small cyan qi sphere near muzzle and releases it toward right. Recall row = crouch, curl, tail wraps around body, sleep peacefully. No saddles or clothes."
+  },
+  {
+    "id": "thanh-dieu",
+    "kind": "pets",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-e1e4fd1d-5ed7-4932-8e81-2df15f42d177.png",
+    "prompt": "Create a FINAL production pixel-art animation sprite sheet, square regular 4 columns x 4 rows, 16 independent frames, transparent background, no labels/text/grid/scenery. Match the reference hero's detailed crisp pixel art, dark outline, limited palette and slightly overhead three-quarter camera. Each frame fully contained with padding, stable size/center and baseline. Faces RIGHT. Rows: 4 idle breathing frames; 4 distinct locomotion loop frames; 4 attack windup/cast/recovery frames; 4 recall/rest frames. Genuine sequential motion, no identical copies. Reference is STYLE ONLY, do not include human hero. Subject: Thanh Dieu, a small elegant emerald-teal spirit bird, cream chest, gold crest and gold feet, cobalt tips on wings, two long green tail feathers. Idle = hovering with small wingbeats. Locomotion = four different flight wing positions in-place. Attack = winds up then releases one tiny mint-green restorative/qi spark right, recovers. Recall row = descends, folds wings, settles, rests. Bird scale and center identical across the 16 frames."
+  },
+  {
+    "id": "items",
+    "kind": "items",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-e35ece5d-192b-4cb7-82f1-ad52fdf45cff.png",
+    "prompt": "FINAL production pixel-art ICON ATLAS for xianxia survival game. Reference is STYLE ONLY, no human characters. Exactly sixteen separate icons in 4 columns x 4 rows on a square transparent canvas. Every icon centered in its own equal cell, surrounded by generous fully transparent margins (at least 20% of cell). Do not draw borders, frames, captions, labels, letters, inventory slots, grid lines, background texture or checkerboard. Pixel-art sharp outlines, readable silhouette at 32x32 logical size, restrained dark outline, lit upper left. Each icon distinct and complete, no overlap. Follow this exact row-major ordering. Row1 left to right: (1) a luminous pale turquoise faceted spirit-stone currency crystal; (2) small blue diamond XP gem; (3) large violet diamond XP gem; (4) green medicinal herb sprig with a tiny red berry.\nRow2: (5) rough dark iron ore chunk with silver streaks; (6) round amber monster core; (7) folded brown beast hide; (8) three purple cultivation pills on a tiny cream saucer.\nRow3: (9) one amber permanent-strengthening pill on cream saucer; (10) a round red healing potion flask with gold cork; (11) small bowl of gold-brown pet food; (12) white-cyan spirit fox egg with a cyan tail-shaped mark, NO text.\nRow4: (13) green-blue spirit bird egg with gold feather mark; (14) brilliant cyan evolution crystal; (15) golden breakthrough lotus seed; (16) small pouch of silver refining dust.",
+    "layout": "icons"
+  },
+  {
+    "id": "equipment",
+    "kind": "equipment",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-06ddd4e8-3bfb-4dfe-bd1e-5b532aad7482.png",
+    "prompt": "FINAL production pixel-art ICON ATLAS for xianxia survival game. Reference is STYLE ONLY, no human characters. Exactly sixteen separate icons in 4 columns x 4 rows on a square transparent canvas. Every icon centered in its own equal cell, surrounded by generous fully transparent margins (at least 20% of cell). Do not draw borders, frames, captions, labels, letters, inventory slots, grid lines, background texture or checkerboard. Pixel-art sharp outlines, readable silhouette at 32x32 logical size, restrained dark outline, lit upper left. Each icon distinct and complete, no overlap. Follow this exact row-major ordering. Row1: (1) a bronze martial gauntlet; (2) a modest straight iron Chinese jian sword bronze guard; (3) folded midnight teal cloth cuirass with red sash; (4) small jade ring.\nRow2: (5) special crimson-gold flame jian sword, ornate but clear silhouette; (6) special jade lotus amulet on a dark cord; (7) ivory blueprint scroll with a tiny sword diagram and wax seal, no writing; (8) ivory blueprint scroll with tiny lotus amulet diagram and cyan wax seal, no writing.\nRow3: (9) neutral white-gray weapon slot emblem shaped like crossed swords; (10) neutral white-gray armor slot emblem shaped like a cuirass; (11) neutral white-gray ring slot emblem; (12) neutral white-gray treasure slot emblem shaped like a diamond pendant.\nRow4: (13) bronze three-legged alchemy furnace with tiny orange flame; (14) black iron anvil with hammer; (15) small brown leather backpack; (16) cozy twig pet nest with pale cushion. No square backplates behind any icon.",
+    "layout": "icons"
+  },
+  {
+    "id": "skills",
+    "kind": "skills",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-4bb2523a-539d-4182-81b3-e7ebad04f99f.png",
+    "prompt": "FINAL production pixel-art ICON ATLAS for xianxia survival game. Reference is STYLE ONLY, no human characters. Exactly sixteen separate icons in 4 columns x 4 rows on a square transparent canvas. Every icon centered in its own equal cell, surrounded by generous fully transparent margins (at least 20% of cell). Do not draw borders, frames, captions, labels, letters, inventory slots, grid lines, background texture or checkerboard. Pixel-art sharp outlines, readable silhouette at 32x32 logical size, restrained dark outline, lit upper left. Each icon distinct and complete, no overlap. Follow this exact row-major ordering. Row1: (1) bronze fist wrapped in orange qi = basic fist skill; (2) steel blade crossing a cyan crescent = basic sword skill; (3) red-orange open palm with flame = fire-palm attack; (4) amber torso silhouette under a shield = constitution support.\nRow2: (5) luminous cyan spiral encircling a pearl = qi-gathering support; (6) golden dragon silhouette curling around a flaming fist = awakened fist; (7) two crossed cyan blades inside a small cyclone = awakened sword; (8) red heart = maximum health.\nRow3: (9) red-orange pointed sword = damage; (10) light blue winged boot = movement speed; (11) bronze hourglass with cyan sparks = attack speed; (12) red starburst target = critical hit.\nRow4: (13) iron shield = armor; (14) turquoise magnet pulling three blue gems = pickup radius; (15) green leaf and small plus symbol = regeneration; (16) golden four-leaf clover = fortune. No letters or numerals; plus symbol is allowed as small shape only.",
+    "layout": "icons"
+  },
+  {
+    "id": "linh-ho-tien-hoa",
+    "kind": "pets",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-e397a809-845c-4fba-8519-299772843d42.png",
+    "prompt": "Edit the provided FINAL 4x4 spirit fox sprite sheet into its evolved form Ngoc Vi Linh Ho. Preserve the exact 16 animation poses, layout, camera, stable cell scale and body white/cyan identity. Add THREE distinct fluffy white tails with pale turquoise tips instead of one, a small ornate golden forehead crest, cyan ankle bands. Every tail must fit inside its own cell, no overlapping frames. Keep the fox friendly and clear at small scale. REMOVE large outward magical beams in attack row: show casting pose with only one tiny cyan pearl beside muzzle. Rows remain idle/walk/attack/recall-rest. Transparent background, no labels/scenery. Production-ready pixel sprites."
+  },
+  {
+    "id": "thanh-dieu-tien-hoa",
+    "kind": "pets",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-60bf1c1f-8c2d-45b8-bb22-b3da2067c516.png",
+    "prompt": "Edit provided FINAL 4x4 Thanh Dieu sprite sheet into evolved Phong Linh Loan spirit bird. Preserve exact 16 poses, grid, right-facing camera, emerald/teal/cobalt/gold colors and stable scale. Add elegant longer golden crest and THREE thin long tail plumes with gold eyespots; stronger cobalt wing tips. Do not turn it into a huge phoenix or change body scale. All plumes contained in each frame. REMOVE big magical beams: attack row only casting posture and one tiny mint qi spark beside beak. Rows idle/flight/attack/recall-rest. Transparent background, no labels or scenery. Final animation-ready pixel sprites."
+  },
+  {
+    "id": "duong-khai-kiem-clean",
+    "kind": "characters",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-6c491793-179a-4326-aaa5-1944bfd3125f.png",
+    "prompt": "Production cleanup edit of supplied Yang Kai sword animation sprite sheet. Preserve hero identity, all 16 poses, colors and exact 4x4 layout. REMOVE ALL cyan qi arcs, glows and particles in the attack row; only the character and physical sword remain. Reduce extended sword/arm pose width if necessary so EVERY frame has at least 24 pixels fully transparent padding to all four cell edges. No crossing cell boundaries anywhere, especially third row columns 2 and 3 and final death poses. Do not add anything else. Transparent background. Keep identical camera and pixel-art style. Final regular-grid animation asset."
+  },
+  {
+    "id": "linh-ho-clean",
+    "kind": "pets",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-1fb09aa8-21d4-4627-b3a6-ed9bd7f9b372.png",
+    "prompt": "Production cleanup edit of supplied 4x4 white cyan fox animation sheet. Preserve all 16 poses, fox identity, colors and arrangement. REMOVE ALL large cyan magic rings, beams, sparkles and outward particles from attack row. Only the FOX anatomy remains in each frame, including attack/casting poses. Keep tail, muzzle and paws entirely inside each cell with at least 24px transparent padding. No scene, labels, or new features. Final transparent pixel-art animation sprite sheet."
+  },
+  {
+    "id": "hac-phong-son-ground",
+    "kind": "maps",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-5fa1e1b4-cbc1-4388-9e0b-b5925db16184.png",
+    "prompt": "Final production pixel-art game asset, consistent with reference hero's crisp detailed pixels, restrained dark outlines, upper-left lighting, midnight teal/jade/earth/bronze palette. No text, labels, watermarks or human characters. Create ONE square top-down orthographic GROUND MAP image for Hac Phong Son forest survival arena. It is the actual playable ground layer, NOT an illustration or diorama. Camera directly above ground, absolutely no horizon, sky, buildings, 3D perspective, isometric diamond edges or vignetting. Dark moss-green grass mixed with muted brown packed soil, scattered very small leaves and stones. Broad subdued irregular dirt paths make two clear loops through a large open central clearing. At least 80% walkable open space. No large trees, boulders, logs, actors, monsters, items, built-in UI or ground grid. Keep low contrast so actors/effects remain clearly readable. Full opaque image reaching all four edges, square 1024x1024 composition.",
+    "layout": "background"
+  },
+  {
+    "id": "hac-phong-son-props",
+    "kind": "maps",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-a329b130-e758-4baa-8978-e1e7f4d73e04.png",
+    "prompt": "Final production pixel-art game asset, consistent with reference hero's crisp detailed pixels, restrained dark outlines, upper-left lighting, midnight teal/jade/earth/bronze palette. No text, labels, watermarks or human characters. Create a FINAL transparent 4x4 atlas of sixteen separate environment props, regular equal cells. Slight overhead three-quarter orthographic view consistent with the hero, not isometric. Fully contained objects and transparent padding, no ground slabs under them. Row1: one dark green pine tree; one mossy broadleaf tree; one bare twisted tree; one bamboo clump. Row2: one large mossy gray boulder; one small rounded rock cluster; one tall dark pointed stone; one broken stone pillar. Row3: one horizontal fallen log; one old tree stump; one gnarled exposed root; one small fern bush. Row4: one cluster of red mushrooms; one short broken gray stone wall; one weathered stone shrine; one bronze lantern on low stone base. Keep each prop in its cell with generous margins. No labels or visible grid. These are final placeable map sprites, not concept drawings.",
+    "layout": "icons"
+  },
+  {
+    "id": "cultivation-courtyard",
+    "kind": "maps",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-6ae45fa1-63fb-4567-9c7f-edc80d994af9.png",
+    "prompt": "Final production pixel-art game asset, consistent with reference hero's crisp detailed pixels, restrained dark outlines, upper-left lighting, midnight teal/jade/earth/bronze palette. No text, labels, watermarks or human characters. Create FINAL usable 16:9 background image for the cultivation/rest menu of a Chinese xianxia game. Pixel-art quiet mountain sect courtyard, seen slightly overhead. Left edge: bronze three-legged alchemy furnace and modest forge under a timber awning. Right edge: spirit pet nest near jade-green bamboo and a small training dummy. Center: a LARGE calm uncluttered dark-gray stone courtyard reserved for interface overlays. Far upper edge: ancient tiled roof, distant misty peaks and a small pine. Warm lantern light contrasts teal dusk. No people, monsters, text, menu panels or interface already drawn. A polished in-game menu background, not a reference board.",
+    "layout": "background"
+  },
+  {
+    "id": "ui-kit",
+    "kind": "ui",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-c9e58020-2c33-49dc-8bc6-cc076b9a24ec.png",
+    "prompt": "Final production pixel-art game asset, consistent with reference hero's crisp detailed pixels, restrained dark outlines, upper-left lighting, midnight teal/jade/earth/bronze palette. No text, labels, watermarks or human characters. Create FINAL production modular UI texture atlas with exactly 16 separate elements in regular 4x4 equal-cell grid, fully transparent gaps. Each object centered and complete, no text. Row1: dark midnight-teal rectangular window panel bronze carved corner border; ordinary skill card frame jade border dark center; rare skill card frame blue-silver border dark center; awakened skill card frame red-gold border dark center. Row2: horizontal bronze/teal button normal; same button brighter golden hover; same button muted gray disabled; square inventory slot dark bronze frame empty center. Row3: round bronze portrait frame with transparent interior; long thin red-black boss health bar frame with empty transparent interior; long thin bronze player health bar frame empty transparent interior; long thin blue-silver XP bar frame empty transparent interior. Row4: red health bar fill texture horizontal rounded rectangle; cyan XP bar fill texture same shape; small steel padlock icon; small golden check mark icon. Use clean pixel-art edges suitable for slicing/resizing UI, generous margins around all elements. No rendered words, numbers, scenery, portraits or figures.",
+    "layout": "icons"
+  },
+  {
+    "id": "combat-effects",
+    "kind": "effects",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-baa277de-d025-492c-9915-1621c960b78f.png",
+    "prompt": "FINAL production pixel-art animated VFX SPRITE SHEET, 4 columns x 4 rows on square transparent canvas, exactly 16 separated frames. Each row is one DIFFERENT effect with four sequential phases from appearing/growing to peak to dissipating. Center each effect at the SAME point in each cell, stable registration. Keep ALL particles within its own cell and leave large transparent margins. No human/animal characters, no scenery, no text, no labels or grid. Crisp square pixels, colored silhouette, intentional transparent/partial-alpha glow, clean readable at game scale. Art consistent with reference hero and xianxia game. Row1: orange-gold qi punch impact, tiny flash grows into short right-facing strike burst then vanishes. Row2: cyan sword crescent slash facing right, thin arc grows into a wider short sweep then fades. Row3: red-orange fire palm burst travelling RIGHT, small flame grows into medium fire wave then dissipates. Row4: purple poison projectile, small sphere with tiny right-directed trail, slight pulse then breaks into sparks. No giant explosions; each frame fully isolated.",
+    "layout": "effects"
+  },
+  {
+    "id": "support-effects",
+    "kind": "effects",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-02539388-c5f9-4f5f-aeed-9a822089426a.png",
+    "prompt": "FINAL production pixel-art animated VFX SPRITE SHEET, 4 columns x 4 rows on square transparent canvas, exactly 16 separated frames. Each row is one DIFFERENT effect with four sequential phases from appearing/growing to peak to dissipating. Center each effect at the SAME point in each cell, stable registration. Keep ALL particles within its own cell and leave large transparent margins. No human/animal characters, no scenery, no text, no labels or grid. Crisp square pixels, colored silhouette, intentional transparent/partial-alpha glow, clean readable at game scale. Art consistent with reference hero and xianxia game. Row1: white-gold hit spark four phases, tiny -> bright -> scattered -> faded. Row2: emerald healing sparkle ring with a few tiny plus-shaped sparks four phases. Row3: golden cultivation/level-up pillar with small lotus spark under it, four phases growing then fading. Row4: red boss attack warning circle viewed top-down, thin outline pulses slightly, translucent red interior, last frame dimmer. Warning must read as a dangerous floor marker, not a fire explosion. No text or numerals.",
+    "layout": "effects"
+  },
+  {
+    "id": "awakened-effects",
+    "kind": "effects",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-aa1c1d73-ee7c-4c12-9e76-71489b336904.png",
+    "prompt": "FINAL production pixel-art animated VFX SPRITE SHEET, 4 columns x 4 rows on square transparent canvas, exactly 16 separated frames. Each row is one DIFFERENT effect with four sequential phases from appearing/growing to peak to dissipating. Center each effect at the SAME point in each cell, stable registration. Keep ALL particles within its own cell and leave large transparent margins. No human/animal characters, no scenery, no text, no labels or grid. Crisp square pixels, colored silhouette, intentional transparent/partial-alpha glow, clean readable at game scale. Art consistent with reference hero and xianxia game. Row1: awakened golden dragon-shaped qi fist strike, compact right-facing golden dragon head burst, four phases appearing/extending/dispersing. Row2: awakened cyan sword cyclone, circular cluster of three cyan blade crescents, four rotational phases. Row3: small cyan spirit qi bolt with short right-facing tail, four pulsing phases. Row4: small mint-green wind/healing feather burst, four phases expanding/dispersing. Each effect has generous transparent margin and never reaches another frame.",
+    "layout": "effects"
+  },
+  {
+    "id": "items-final",
+    "kind": "items",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-0722fa81-e48c-4e44-9d49-e8e086c09571.png",
+    "prompt": "Edit the supplied final 4x4 inventory icon atlas. Change ONLY row3 column2 (the red potion bottle) into THREE red healing pills resting on a small cream porcelain saucer, similar rendering to purple cultivation pills in row2 column4 but clearly red. It represents Hoi Nguyen Dan, healing medicinal pills, NOT a drink. Keep the exact grid and preserve ALL other 15 icons, their colors and positions. Genuine transparent background, no text, labels or grid. Final production icon atlas.",
+    "layout": "icons"
+  },
+  {
+    "id": "support-effects-clean",
+    "kind": "effects",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-527856a8-369e-4bef-b046-c783a643f13c.png",
+    "prompt": "FINAL pixel-art VFX animation sprite sheet. EXACTLY 16 VERY SMALL isolated drawings in a REGULAR FOUR BY FOUR grid. Canvas square, transparent. Each object MUST FIT ONLY WITHIN THE CENTER HALF of its own cell: maximum width and height 50% of cell, leaving WIDE 25% TRANSPARENT MARGINS on ALL sides. There must be a big EMPTY horizontal and vertical band between every pair of frames. No nebulous glow, mist, halo, smoke, long beams, background, labels or grid. Hard-edged clean square pixels, compact flat-alpha shapes. 4 rows, 4 sequential phases each row. Smallest phase, growing phase, peak phase, faded smaller phase. Objects centered, no movement across cells. Production animation sprites, not a mood board. ROW1: white-gold compact impact spark. ROW2: small green healing ring with exactly three tiny plus sparks above it; no pillar or beam. ROW3: small golden lotus outline surrounded by a short ring of sparks, no beam or pillar. ROW4: simple thin RED CIRCLE floor warning marker seen directly above, with faint red transparent interior, four pulse phases, no flames or spikes. All effects are compact, isolated and small, maximum drawing 128x128 inside each 256x256 cell.",
+    "layout": "effects"
+  },
+  {
+    "id": "awakened-effects-clean",
+    "kind": "effects",
+    "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a13156-ac37-7833-b887-be35040320c5\\exec-c1fd6a7a-cee1-480c-b4b7-eebc9cc8a9ba.png",
+    "prompt": "FINAL pixel-art VFX animation sprite sheet. EXACTLY 16 VERY SMALL isolated drawings in a REGULAR FOUR BY FOUR grid. Canvas square, transparent. Each object MUST FIT ONLY WITHIN THE CENTER HALF of its own cell: maximum width and height 50% of cell, leaving WIDE 25% TRANSPARENT MARGINS on ALL sides. There must be a big EMPTY horizontal and vertical band between every pair of frames. No nebulous glow, mist, halo, smoke, long beams, background, labels or grid. Hard-edged clean square pixels, compact flat-alpha shapes. 4 rows, 4 sequential phases each row. Smallest phase, growing phase, peak phase, faded smaller phase. Objects centered, no movement across cells. Production animation sprites, not a mood board. ROW1: small solid gold right-facing dragon-head-shaped qi burst with very SHORT trailing sparks, no fog or halo. ROW2: small cyan circular slash made of THREE simple sword crescents, rotate slightly across phases, no fog or halo. ROW3: small cyan pearl projectile with SHORT right-facing tail, no fog. ROW4: small mint-green feather and three sparkles, no fog. Draw compact clean simple shapes, all fully within center half of each cell with enormous transparent padding.",
+    "layout": "effects"
+  }
+]

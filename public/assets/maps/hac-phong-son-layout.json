@@ -1,0 +1,252 @@
+{
+  "id": "hac-phong-son",
+  "width": 1024,
+  "height": 1024,
+  "ground": "hac-phong-son-ground",
+  "spawn": {
+    "x": 512,
+    "y": 526
+  },
+  "props": [
+    {
+      "frame": "cay-thong",
+      "x": 100,
+      "y": 180,
+      "scale": 1.4,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 31,
+        "radiusY": 14
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "x": 240,
+      "y": 120,
+      "scale": 1.3,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 29,
+        "radiusY": 13
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "x": 870,
+      "y": 150,
+      "scale": 1.4,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 31,
+        "radiusY": 14
+      }
+    },
+    {
+      "frame": "bui-truc",
+      "x": 975,
+      "y": 350,
+      "scale": 1.3,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 29,
+        "radiusY": 13
+      }
+    },
+    {
+      "frame": "cay-kho",
+      "x": 80,
+      "y": 570,
+      "scale": 1.2,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 26,
+        "radiusY": 12
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "x": 960,
+      "y": 690,
+      "scale": 1.4,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 31,
+        "radiusY": 14
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "x": 90,
+      "y": 950,
+      "scale": 1.4,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 31,
+        "radiusY": 14
+      }
+    },
+    {
+      "frame": "bui-truc",
+      "x": 910,
+      "y": 970,
+      "scale": 1.4,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 31,
+        "radiusY": 14
+      }
+    },
+    {
+      "frame": "da-lon",
+      "x": 220,
+      "y": 340,
+      "scale": 0.65,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 14,
+        "radiusY": 6
+      }
+    },
+    {
+      "frame": "da-nho",
+      "x": 795,
+      "y": 680,
+      "scale": 0.6,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 13,
+        "radiusY": 6
+      }
+    },
+    {
+      "frame": "da-nhon",
+      "x": 865,
+      "y": 460,
+      "scale": 0.7,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 15,
+        "radiusY": 7
+      }
+    },
+    {
+      "frame": "cot-da",
+      "x": 160,
+      "y": 720,
+      "scale": 0.75,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 16,
+        "radiusY": 8
+      }
+    },
+    {
+      "frame": "than-cay",
+      "x": 280,
+      "y": 870,
+      "scale": 0.7,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 15,
+        "radiusY": 7
+      }
+    },
+    {
+      "frame": "goc-cay",
+      "x": 780,
+      "y": 880,
+      "scale": 0.65,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 14,
+        "radiusY": 6
+      }
+    },
+    {
+      "frame": "re-cay",
+      "x": 260,
+      "y": 185,
+      "scale": 0.65,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 14,
+        "radiusY": 6
+      }
+    },
+    {
+      "frame": "duong-xi",
+      "x": 160,
+      "y": 510,
+      "scale": 0.55,
+      "solid": false,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 12,
+        "radiusY": 6
+      }
+    },
+    {
+      "frame": "nam-do",
+      "x": 820,
+      "y": 275,
+      "scale": 0.45,
+      "solid": false,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 10,
+        "radiusY": 4
+      }
+    },
+    {
+      "frame": "tuong-vo",
+      "x": 725,
+      "y": 180,
+      "scale": 0.7,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 15,
+        "radiusY": 7
+      }
+    },
+    {
+      "frame": "mieu-da",
+      "x": 520,
+      "y": 115,
+      "scale": 0.7,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 15,
+        "radiusY": 7
+      }
+    },
+    {
+      "frame": "den-da",
+      "x": 575,
+      "y": 120,
+      "scale": 0.45,
+      "solid": true,
+      "collision": {
+        "shape": "ellipse",
+        "radiusX": 10,
+        "radiusY": 4
+      }
+    }
+  ]
+}

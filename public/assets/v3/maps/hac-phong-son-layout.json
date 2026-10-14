@@ -1,0 +1,977 @@
+{
+  "id": "hac-phong-son",
+  "camera": {
+    "type": "orthographic",
+    "elevationDegrees": 35.26438968,
+    "azimuthDegrees": -45
+  },
+  "dimensions": [
+    1280,
+    896
+  ],
+  "worldBounds": {
+    "minX": -12,
+    "maxX": 12,
+    "minY": -12,
+    "maxY": 12
+  },
+  "pixelsPerWorldUnit": 33.10344827586207,
+  "screenOrigin": [
+    640.0,
+    448.0
+  ],
+  "projectionMatrix": [
+    [
+      23.407672756520196,
+      23.407672756520196
+    ],
+    [
+      13.514426167079606,
+      -13.514426167079606
+    ]
+  ],
+  "playerSpawn": [
+    0,
+    0
+  ],
+  "bossSpawn": [
+    -6,
+    6
+  ],
+  "props": [
+    {
+      "frame": "cay-thong",
+      "world": [
+        -11,
+        -10
+      ],
+      "screen": [
+        148.43887211307594,
+        434.4855738329204
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        11,
+        -10
+      ],
+      "screen": [
+        663.4076727565202,
+        731.8029495086716
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -10,
+        -11
+      ],
+      "screen": [
+        148.43887211307594,
+        461.5144261670796
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -10,
+        11
+      ],
+      "screen": [
+        663.4076727565202,
+        164.1970504913283
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        -11,
+        -7
+      ],
+      "screen": [
+        218.6618903826365,
+        393.9422953316816
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        11,
+        -7
+      ],
+      "screen": [
+        733.6306910260807,
+        691.2596710074329
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        -7,
+        -11
+      ],
+      "screen": [
+        218.6618903826365,
+        502.0577046683184
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        -7,
+        11
+      ],
+      "screen": [
+        733.6306910260807,
+        204.74032899256707
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -11,
+        -4
+      ],
+      "screen": [
+        288.8849086521971,
+        353.39901683044275
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        11,
+        -4
+      ],
+      "screen": [
+        803.8537092956414,
+        650.7163925061941
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -4,
+        -11
+      ],
+      "screen": [
+        288.8849086521971,
+        542.6009831695573
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -4,
+        11
+      ],
+      "screen": [
+        803.8537092956414,
+        245.28360749380593
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        -11,
+        0
+      ],
+      "screen": [
+        382.51559967827785,
+        299.3413121621243
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        11,
+        0
+      ],
+      "screen": [
+        897.4844003217222,
+        596.6586878378757
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        0,
+        -11
+      ],
+      "screen": [
+        382.51559967827785,
+        596.6586878378757
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        0,
+        11
+      ],
+      "screen": [
+        897.4844003217222,
+        299.3413121621243
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -11,
+        4
+      ],
+      "screen": [
+        476.14629070435865,
+        245.28360749380593
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        11,
+        4
+      ],
+      "screen": [
+        991.115091347803,
+        542.6009831695573
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        4,
+        -11
+      ],
+      "screen": [
+        476.14629070435865,
+        650.7163925061941
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        4,
+        11
+      ],
+      "screen": [
+        991.115091347803,
+        353.39901683044275
+      ],
+      "scale": 1.1500000000000001,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        -11,
+        7
+      ],
+      "screen": [
+        546.3693089739193,
+        204.74032899256707
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        11,
+        7
+      ],
+      "screen": [
+        1061.3381096173634,
+        502.0577046683184
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        7,
+        -11
+      ],
+      "screen": [
+        546.3693089739193,
+        691.2596710074329
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-la-rong",
+      "world": [
+        7,
+        11
+      ],
+      "screen": [
+        1061.3381096173634,
+        393.9422953316816
+      ],
+      "scale": 1.25,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        -11,
+        10
+      ],
+      "screen": [
+        616.5923272434798,
+        164.1970504913283
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        11,
+        10
+      ],
+      "screen": [
+        1131.5611278869242,
+        461.5144261670796
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        10,
+        -11
+      ],
+      "screen": [
+        616.5923272434798,
+        731.8029495086716
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "cay-thong",
+      "world": [
+        10,
+        11
+      ],
+      "screen": [
+        1131.5611278869242,
+        434.4855738329204
+      ],
+      "scale": 1.05,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.48
+      }
+    },
+    {
+      "frame": "da-lon",
+      "world": [
+        -4,
+        2
+      ],
+      "screen": [
+        593.1846544869596,
+        366.91344299752234
+      ],
+      "scale": 0.65,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.65
+      }
+    },
+    {
+      "frame": "da-nho",
+      "world": [
+        5,
+        1
+      ],
+      "screen": [
+        780.4460365391212,
+        502.0577046683184
+      ],
+      "scale": 0.6,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "da-nhon",
+      "world": [
+        2,
+        -5
+      ],
+      "screen": [
+        569.7769817304394,
+        542.6009831695573
+      ],
+      "scale": 0.75,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "than-cay",
+      "world": [
+        -5,
+        -4
+      ],
+      "screen": [
+        429.3309451913183,
+        434.4855738329204
+      ],
+      "scale": 0.75,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.55
+      }
+    },
+    {
+      "frame": "goc-cay",
+      "world": [
+        5,
+        5
+      ],
+      "screen": [
+        874.076727565202,
+        448.0
+      ],
+      "scale": 0.65,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "re-cay",
+      "world": [
+        -8,
+        0
+      ],
+      "screen": [
+        452.7386179478384,
+        339.88459066336316
+      ],
+      "scale": 0.65,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.45
+      }
+    },
+    {
+      "frame": "tuong-vo",
+      "world": [
+        -8,
+        7
+      ],
+      "screen": [
+        616.5923272434798,
+        245.28360749380593
+      ],
+      "scale": 0.75,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.6
+      }
+    },
+    {
+      "frame": "cot-da",
+      "world": [
+        -9,
+        8
+      ],
+      "screen": [
+        616.5923272434798,
+        218.2547551596467
+      ],
+      "scale": 0.7,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "mieu-da",
+      "world": [
+        -9,
+        9
+      ],
+      "screen": [
+        640.0,
+        204.74032899256707
+      ],
+      "scale": 0.82,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.55
+      }
+    },
+    {
+      "frame": "den-da",
+      "world": [
+        -7,
+        9
+      ],
+      "screen": [
+        686.8153455130404,
+        231.7691813267263
+      ],
+      "scale": 0.7,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.35
+      }
+    },
+    {
+      "frame": "cay-kho",
+      "world": [
+        8,
+        -7
+      ],
+      "screen": [
+        663.4076727565202,
+        650.7163925061941
+      ],
+      "scale": 0.85,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "bui-truc",
+      "world": [
+        7,
+        -9
+      ],
+      "screen": [
+        593.1846544869596,
+        664.2308186732737
+      ],
+      "scale": 0.9,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": {
+        "shape": "circle",
+        "radiusWorld": 0.4
+      }
+    },
+    {
+      "frame": "duong-xi",
+      "world": [
+        3,
+        5
+      ],
+      "screen": [
+        827.2613820521616,
+        420.9711476658408
+      ],
+      "scale": 0.55,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": null
+    },
+    {
+      "frame": "nam-do",
+      "world": [
+        -3,
+        -6
+      ],
+      "screen": [
+        429.3309451913183,
+        488.54327850123883
+      ],
+      "scale": 0.55,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": null
+    },
+    {
+      "frame": "duong-xi",
+      "world": [
+        -9,
+        -6
+      ],
+      "screen": [
+        288.8849086521971,
+        407.45672149876117
+      ],
+      "scale": 0.65,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": null
+    },
+    {
+      "frame": "nam-do",
+      "world": [
+        9,
+        6
+      ],
+      "screen": [
+        991.115091347803,
+        488.54327850123883
+      ],
+      "scale": 0.5,
+      "origin": [
+        0.5,
+        0.953125
+      ],
+      "collision": null
+    }
+  ],
+  "previewActors": [
+    {
+      "id": "duong-khai",
+      "world": [
+        0,
+        0
+      ],
+      "direction": "S"
+    },
+    {
+      "id": "linh-ho",
+      "world": [
+        -1.0,
+        -0.8
+      ],
+      "direction": "SE"
+    },
+    {
+      "id": "thanh-dieu",
+      "world": [
+        1.0,
+        0.8
+      ],
+      "direction": "S"
+    },
+    {
+      "id": "hac-lang",
+      "world": [
+        -4,
+        -2
+      ],
+      "direction": "SE"
+    },
+    {
+      "id": "thiet-nha-tru",
+      "world": [
+        4,
+        -1
+      ],
+      "direction": "SW"
+    },
+    {
+      "id": "doc-thiem",
+      "world": [
+        -3,
+        1
+      ],
+      "direction": "NW"
+    },
+    {
+      "id": "hac-lang-tinh-anh",
+      "world": [
+        5,
+        4
+      ],
+      "direction": "W"
+    },
+    {
+      "id": "hac-phong-lang-vuong",
+      "world": [
+        -6,
+        6
+      ],
+      "direction": "S"
+    }
+  ]
+}

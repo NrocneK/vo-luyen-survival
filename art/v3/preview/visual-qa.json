@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "time": "2026-10-13T22:26:05.463814+07:00",
+  "scope": "Bộ đòn bổ sung trên tạo hình đã được tạm duyệt, giai đoạn 0.",
+  "methods": [
+    "Xem các pose runtime cuối của đủ 12 actor trên hai bảng final-contact.",
+    "Kiểm tra chuyển động/pha chuẩn bị, tiếp xúc và thu về theo các rig người, bốn chân, chim và thiềm.",
+    "Kiểm tra bộ quyền đổi tay và ba cung kiếm bằng pose, từng khung và trang xem tám hướng.",
+    "Kiểm tra các đòn cào, vồ và gầm mở hàm của boss; xem trực tiếp khung gầm đủ tám hướng.",
+    "Kiểm tra palette/viền PNG, clipping và ghép trên nền isometric bằng atlas runtime.",
+    "Xem mặt/lưng của các bản tiến hóa và tinh anh; bảo toàn kiểu chuyển động của loài."
+  ],
+  "atlasHashes": {
+    "doc-thiem": "40f96e0b75f3cb02d154bc0798d2da4ba96b18fb685b6c62255859b865ddab6c",
+    "duong-khai": "10ace6a621e88633cb34fbe1c891e64a765f051e668e601493891789da776a58",
+    "duong-khai-kiem": "608b616e7c3f6138d16fb0efb5cce1956259cc61727ab8f714886416745cf5d2",
+    "linh-ho": "9e8c6a0f9b102577f14e3eb7fa4fbe21a95869701acdabae585524aaa8695f19",
+    "linh-ho-tien-hoa": "366ac7ca9c79e80e4ffdc04b87124ce92e6849182b50c698748fb8d83bc93a43",
+    "thanh-dieu": "0ebe33f35df4f77e910900c9d41c2a30ffc0fceceb29fc487b7192be02dc302d",
+    "thanh-dieu-tien-hoa": "a6d7317b5d1f36dc2cdc0fb16be28e7b429bdc9c4ec39a4eafe4bdb449f61419",
+    "thiet-nha-tru": "d7a465af2b89d4fe713f22ecfbf3b8d4a87dc52f241b0365368c2cf2459c5fa7",
+    "thiet-nha-tru-tinh-anh": "5d30eac0890269be2fa26164ff45481c599db3b6483ae598129a9438df46951b",
+    "hac-lang": "04d72d9405877cc35c8c7366f8c2082ac724e44721592e1abf4f0681d862c62f",
+    "hac-lang-tinh-anh": "5f0c78b4d16d2b2feb7731e8faec4ff277ab2568db6e95dd02c7c18b2f6e24b4",
+    "hac-phong-lang-vuong": "eb3bb4e8d58e087a28c5dfe987d0a45423749f88d6c78b287ae5052ba15324b5"
+  },
+  "actorIds": [
+    "doc-thiem",
+    "duong-khai",
+    "duong-khai-kiem",
+    "linh-ho",
+    "linh-ho-tien-hoa",
+    "thanh-dieu",
+    "thanh-dieu-tien-hoa",
+    "thiet-nha-tru",
+    "thiet-nha-tru-tinh-anh",
+    "hac-lang",
+    "hac-lang-tinh-anh",
+    "hac-phong-lang-vuong"
+  ],
+  "graphicsUpgradeDeferredByUser": true
+}

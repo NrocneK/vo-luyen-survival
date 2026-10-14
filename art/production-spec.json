@@ -1,0 +1,400 @@
+[
+  {
+    "id": "duong-khai",
+    "source": "duong-khai",
+    "kind": "characters",
+    "type": "actor",
+    "name": "Dương Khai — quyền",
+    "size": 64
+  },
+  {
+    "id": "duong-khai-kiem",
+    "source": "duong-khai-kiem-clean",
+    "kind": "characters",
+    "type": "actor",
+    "name": "Dương Khai — kiếm",
+    "size": 64
+  },
+  {
+    "id": "hac-lang",
+    "source": "hac-lang",
+    "kind": "enemies",
+    "type": "actor",
+    "name": "Hắc Lang",
+    "size": 64
+  },
+  {
+    "id": "thiet-nha-tru",
+    "source": "thiet-nha-tru",
+    "kind": "enemies",
+    "type": "actor",
+    "name": "Thiết Nha Trư",
+    "size": 64
+  },
+  {
+    "id": "doc-thiem",
+    "source": "doc-thiem",
+    "kind": "enemies",
+    "type": "actor",
+    "name": "Độc Thiềm",
+    "size": 64
+  },
+  {
+    "id": "hac-lang-tinh-anh",
+    "source": "hac-lang-tinh-anh",
+    "kind": "enemies",
+    "type": "actor",
+    "name": "Hắc Lang Tinh Anh",
+    "size": 80
+  },
+  {
+    "id": "thiet-nha-tru-tinh-anh",
+    "source": "thiet-nha-tru-tinh-anh",
+    "kind": "enemies",
+    "type": "actor",
+    "name": "Thiết Nha Trư Tinh Anh",
+    "size": 80
+  },
+  {
+    "id": "hac-phong-lang-vuong",
+    "source": "hac-phong-lang-vuong",
+    "kind": "bosses",
+    "type": "actor",
+    "name": "Hắc Phong Lang Vương",
+    "size": 128
+  },
+  {
+    "id": "linh-ho",
+    "source": "linh-ho-clean",
+    "kind": "pets",
+    "type": "actor",
+    "name": "Linh Hồ",
+    "size": 48
+  },
+  {
+    "id": "thanh-dieu",
+    "source": "thanh-dieu",
+    "kind": "pets",
+    "type": "actor",
+    "name": "Thanh Điểu",
+    "size": 48
+  },
+  {
+    "id": "linh-ho-tien-hoa",
+    "source": "linh-ho-tien-hoa",
+    "kind": "pets",
+    "type": "actor",
+    "name": "Ngọc Vĩ Linh Hồ",
+    "size": 64
+  },
+  {
+    "id": "thanh-dieu-tien-hoa",
+    "source": "thanh-dieu-tien-hoa",
+    "kind": "pets",
+    "type": "actor",
+    "name": "Phong Linh Loan",
+    "size": 64
+  },
+  {
+    "id": "items",
+    "source": "items-final",
+    "kind": "items",
+    "type": "icons",
+    "name": "Vật phẩm và nguyên liệu",
+    "size": 64,
+    "names": [
+      "linh-thach",
+      "xp-nho",
+      "xp-lon",
+      "linh-thao",
+      "thiet-khoang",
+      "yeu-dan",
+      "da-thu",
+      "tu-vi-dan",
+      "cuong-the-dan",
+      "hoi-nguyen-dan",
+      "thuc-an-sung-vat",
+      "trung-linh-ho",
+      "trung-thanh-dieu",
+      "tinh-thach-tien-hoa",
+      "hat-sen-dot-pha",
+      "bot-luyen-khi"
+    ],
+    "labels": [
+      "Linh thạch",
+      "XP nhỏ",
+      "XP lớn",
+      "Linh thảo",
+      "Thiết khoáng",
+      "Yêu đan",
+      "Da thú",
+      "Tu Vi Đan",
+      "Cường Thể Đan",
+      "Hồi Nguyên Đan",
+      "Thức ăn",
+      "Trứng Linh Hồ",
+      "Trứng Thanh Điểu",
+      "Tinh thạch tiến hóa",
+      "Hạt sen đột phá",
+      "Bột luyện khí"
+    ]
+  },
+  {
+    "id": "equipment",
+    "source": "equipment",
+    "kind": "equipment",
+    "type": "icons",
+    "name": "Trang bị và bản vẽ",
+    "size": 64,
+    "names": [
+      "dong-quyen-sao",
+      "thiet-kiem",
+      "vo-phuc",
+      "ngoc-gioi",
+      "liet-duong-kiem",
+      "ngoc-lien-bi-bao",
+      "ban-ve-liet-duong-kiem",
+      "ban-ve-ngoc-lien",
+      "slot-vu-khi",
+      "slot-giap",
+      "slot-trang-suc",
+      "slot-bi-bao",
+      "dan-lo",
+      "de-luyen-khi",
+      "tui-do",
+      "o-sung-vat"
+    ],
+    "labels": [
+      "Đồng Quyền Sáo",
+      "Thiết Kiếm",
+      "Võ Phục",
+      "Ngọc Giới",
+      "Liệt Dương Kiếm",
+      "Ngọc Liên Bí Bảo",
+      "Bản vẽ kiếm",
+      "Bản vẽ bí bảo",
+      "Ô vũ khí",
+      "Ô giáp",
+      "Ô trang sức",
+      "Ô bí bảo",
+      "Đan lô",
+      "Đe luyện khí",
+      "Túi đồ",
+      "Ổ sủng vật"
+    ]
+  },
+  {
+    "id": "skills",
+    "source": "skills",
+    "kind": "skills",
+    "type": "icons",
+    "name": "Kỹ năng và thẻ chỉ số",
+    "size": 64,
+    "names": [
+      "cuong-quyen",
+      "nguyen-khi-tram",
+      "duong-viem-chuong",
+      "cuong-the",
+      "tu-khi",
+      "long-viem-quyen",
+      "kiem-khi-phong-bao",
+      "sinh-luc",
+      "sat-thuong",
+      "toc-do",
+      "toc-danh",
+      "chi-mang",
+      "giap",
+      "thu-hut",
+      "hoi-phuc",
+      "may-man"
+    ],
+    "labels": [
+      "Cương Quyền",
+      "Nguyên Khí Trảm",
+      "Dương Viêm Chưởng",
+      "Cường Thể",
+      "Tụ Khí",
+      "Long Viêm Quyền",
+      "Kiếm Khí Phong Bạo",
+      "Sinh lực",
+      "Sát thương",
+      "Tốc độ",
+      "Tốc đánh",
+      "Chí mạng",
+      "Giáp",
+      "Thu hút",
+      "Hồi phục",
+      "May mắn"
+    ]
+  },
+  {
+    "id": "hac-phong-son-props",
+    "source": "hac-phong-son-props",
+    "kind": "maps",
+    "type": "props",
+    "name": "Chướng ngại vật Hắc Phong Sơn",
+    "size": 128,
+    "names": [
+      "cay-thong",
+      "cay-la-rong",
+      "cay-kho",
+      "bui-truc",
+      "da-lon",
+      "da-nho",
+      "da-nhon",
+      "cot-da",
+      "than-cay",
+      "goc-cay",
+      "re-cay",
+      "duong-xi",
+      "nam-do",
+      "tuong-vo",
+      "mieu-da",
+      "den-da"
+    ],
+    "labels": [
+      "Thông",
+      "Cây lá rộng",
+      "Cây khô",
+      "Trúc",
+      "Đá lớn",
+      "Đá nhỏ",
+      "Đá nhọn",
+      "Cột đá",
+      "Thân cây",
+      "Gốc cây",
+      "Rễ cây",
+      "Dương xỉ",
+      "Nấm đỏ",
+      "Tường vỡ",
+      "Miếu đá",
+      "Đèn đá"
+    ]
+  },
+  {
+    "id": "ui-kit",
+    "source": "ui-kit",
+    "kind": "ui",
+    "type": "ui",
+    "name": "Texture giao diện",
+    "size": 256,
+    "names": [
+      "panel",
+      "card-common",
+      "card-rare",
+      "card-awakened",
+      "button-normal",
+      "button-hover",
+      "button-disabled",
+      "inventory-slot",
+      "portrait-frame",
+      "boss-bar-frame",
+      "health-bar-frame",
+      "xp-bar-frame",
+      "health-fill",
+      "xp-fill",
+      "lock",
+      "check"
+    ],
+    "labels": [
+      "Panel",
+      "Thẻ thường",
+      "Thẻ hiếm",
+      "Thẻ thức tỉnh",
+      "Nút thường",
+      "Nút sáng",
+      "Nút khóa",
+      "Ô đồ",
+      "Khung chân dung",
+      "Khung máu boss",
+      "Khung máu",
+      "Khung XP",
+      "Ruột máu",
+      "Ruột XP",
+      "Khóa",
+      "Đánh dấu"
+    ]
+  },
+  {
+    "id": "combat-effects",
+    "source": "combat-effects",
+    "kind": "effects",
+    "type": "effects",
+    "name": "Hiệu ứng chiến đấu",
+    "size": 128,
+    "rows": [
+      "qi-punch",
+      "sword-slash",
+      "fire-palm",
+      "poison-bolt"
+    ],
+    "labels": [
+      "Quyền khí",
+      "Kiếm khí",
+      "Hỏa chưởng",
+      "Độc"
+    ]
+  },
+  {
+    "id": "support-effects",
+    "source": "support-effects-clean",
+    "kind": "effects",
+    "type": "effects",
+    "name": "Hiệu ứng hỗ trợ",
+    "size": 128,
+    "rows": [
+      "hit-spark",
+      "healing",
+      "level-up",
+      "boss-warning"
+    ],
+    "labels": [
+      "Trúng đòn",
+      "Hồi phục",
+      "Lên cấp",
+      "Cảnh báo boss"
+    ]
+  },
+  {
+    "id": "awakened-effects",
+    "source": "awakened-effects-clean",
+    "kind": "effects",
+    "type": "effects",
+    "name": "Hiệu ứng thức tỉnh",
+    "size": 128,
+    "rows": [
+      "dragon-fist",
+      "sword-storm",
+      "spirit-bolt",
+      "wind-feather"
+    ],
+    "labels": [
+      "Long quyền",
+      "Bão kiếm",
+      "Linh khí",
+      "Phong vũ"
+    ]
+  },
+  {
+    "id": "hac-phong-son-ground",
+    "source": "hac-phong-son-ground",
+    "kind": "maps",
+    "type": "background",
+    "name": "Nền Hắc Phong Sơn",
+    "dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "id": "cultivation-courtyard",
+    "source": "cultivation-courtyard",
+    "kind": "maps",
+    "type": "background",
+    "name": "Khu vực tu luyện",
+    "dimensions": [
+      1600,
+      900
+    ]
+  }
+]

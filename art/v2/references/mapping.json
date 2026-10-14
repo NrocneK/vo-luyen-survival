@@ -1,0 +1,34 @@
+{
+  "S": [
+    0,
+    false
+  ],
+  "SW": [
+    7,
+    true
+  ],
+  "W": [
+    2,
+    false
+  ],
+  "NW": [
+    5,
+    true
+  ],
+  "N": [
+    4,
+    false
+  ],
+  "NE": [
+    5,
+    false
+  ],
+  "E": [
+    6,
+    false
+  ],
+  "SE": [
+    7,
+    false
+  ]
+}

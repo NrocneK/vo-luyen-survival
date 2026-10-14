@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "actors": 12,
+  "directionsPerActor": 8,
+  "attackVariants": 37,
+  "actorFrames": 7024,
+  "pngFiles": 7384,
+  "atlasAndIndividualFramesMatch": true,
+  "noClippedActors": true,
+  "allActorTexturesUnder4096": true,
+  "gaitSource": "actual bone heads and world movement, saved in qa-report.json",
+  "groundProjection": "true isometric 35.26438968 degrees"
+}

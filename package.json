@@ -1,0 +1,36 @@
+{
+  "name": "vo-luyen-survival",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "node scripts/sync-assets.mjs && vite --host 127.0.0.1",
+    "sync:assets": "node scripts/sync-assets.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "format": "prettier --write src scripts tests qa/*.ts vite.config.ts",
+    "check:format": "prettier --check src scripts tests qa/*.ts vite.config.ts",
+    "test:balance": "node --experimental-strip-types qa/simulate.ts",
+    "build": "node scripts/sync-assets.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@fontsource-variable/noto-serif": "5.3.0",
+    "@fontsource/be-vietnam-pro": "5.3.0",
+    "phaser": "3.90.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  }
+}

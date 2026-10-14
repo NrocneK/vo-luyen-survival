@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "page": "art/ASSET_PREVIEW.html",
+  "checks": {
+    "actorCanvases": 12,
+    "effectCanvases": 12,
+    "iconCards": 48,
+    "iconImagesLoaded": 96,
+    "mapImagesLoaded": 17,
+    "uiImagesLoaded": 16,
+    "brokenImages": [],
+    "consoleErrorsAfterFix": [],
+    "pauseAndStep": "pass",
+    "animationSelection": "pass",
+    "horizontalMirror": "pass",
+    "forestBackground": "pass"
+  },
+  "notes": "Kiểm tra bằng trình duyệt trên bản PNG xuất; tab kiểm tra riêng đã đóng, trang asset được giữ cho người dùng. Không có kiểm thử gameplay hoặc Phaser trong giai đoạn 0.",
+  "scope": "technical-export-only",
+  "visualAcceptance": "rejected",
+  "gameplayReady": false
+}

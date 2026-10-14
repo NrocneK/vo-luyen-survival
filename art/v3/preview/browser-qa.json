@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8765/art/v3/ASSET_PREVIEW.html",
+  "actorSelections": 12,
+  "clipSelections": 85,
+  "directionsPerSelection": 8,
+  "finalRechecks": {"actors": ["hac-lang", "hac-lang-tinh-anh", "hac-phong-lang-vuong"], "clipSelections": 22},
+  "controls": ["tốc độ 0,25×", "tạm dừng", "khung kế", "đòn đơn không lặp", "combo luân phiên", "zoom 1× và 2×"],
+  "visualScreens": ["kiếm quét ngang ở khung tiếp xúc, đủ 8 hướng", "boss gầm ở khung tiếp xúc, đủ 8 hướng", "cảnh isometric với atlas cắt alpha"],
+  "sharedAssets": {"iconsLoaded": 48, "uiImagesLoaded": 16, "effectCanvases": 12, "sceneReady": true},
+  "consoleErrors": []
+}

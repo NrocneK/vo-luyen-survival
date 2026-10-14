@@ -1,0 +1,16 @@
+Use case: identity-preserve. FINAL game WALK animation sprite strip for Yang Kai, one direction only.
+Input image 1 is the exact character/camera/pose identity anchor. Preserve his face, ponytail, midnight teal robe, ivory collar, red sash, bronze gauntlets, trousers and brown boots.
+Keep camera fixed elevated orthographic ISOMETRIC looking down about 35 degrees, see top of head and shoulders. ALL 8 frames have exactly the same facing direction and camera as reference.
+Layout EXACTLY 4 columns x 2 rows, 8 full-body frames, transparent background, no labels/text/grid/ground/shadows/weapon effects. Stable scale, fixed root position, generous padding. Pixel art with clear outline and readable knees, ankles and feet. Robe split must allow visible stepping legs.
+Draw a REAL 8-phase in-place walking cycle with left and right legs changing support roles, elbows and shoulders counter-swinging. Small natural pelvis compression/rise, knees bend, heels/toes roll, lifted foot visibly clears ground. Do not simply change hair/robe on a static stance; do not duplicate poses.
+Exact frame order:
+Row1 col1 CONTACT LEFT: left heel plants clearly AHEAD in travel direction, right toes remain BEHIND; right arm forward.
+Row1 col2 DOWN LEFT: weight over left flat planted foot, left knee compresses, right heel rises behind.
+Row1 col3 PASS LEFT: right foot lifted, right knee bent as it passes the planted left leg under pelvis.
+Row1 col4 UP LEFT: left toes push from behind, right knee raised ahead with boot off ground ready to plant.
+Row2 col1 CONTACT RIGHT: REVERSE frame0 legs; RIGHT heel now AHEAD, LEFT toes BEHIND; left arm forward.
+Row2 col2 DOWN RIGHT: weight over right flat foot, right knee compresses, left heel rises behind.
+Row2 col3 PASS RIGHT: LEFT foot off ground and knee bent, swinging past planted right leg.
+Row2 col4 UP RIGHT: right toes push behind, left knee leads forward preparing frame0. Frame7 transitions smoothly to frame0, NOT a duplicate.
+Every sprite entirely within its own cell with transparent margins. Foot placement must change along the ground-plane travel direction, not always horizontally. Front and rear directions need depth/foreshortening of steps.
+FACING CONSTRAINT: Character faces DIRECTLY DOWN toward viewer throughout. Show FACE and chest. Left/right contact alternates along vertical screen depth: forward boot lower/nearer, back boot higher/farther. Front view, never turn sideways.
