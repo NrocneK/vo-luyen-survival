@@ -45,8 +45,8 @@ export function HomePanel({
         Chuẩn bị lịch luyện <span>↗</span>
       </button>
       <p className="help-note">
-        Thao tác tại các khu trong động phủ hoặc thanh bên trái. Tiến trình được lưu trên trình
-        duyệt này.
+        Bấm lối đi trên sân để đến từng phòng, hoặc dùng thanh bên trái để chuyển khu nhanh. Tiến
+        trình được lưu trên trình duyệt này.
       </p>
     </>
   );

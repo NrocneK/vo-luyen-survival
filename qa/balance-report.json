@@ -2,48 +2,16 @@
   {
     "realm": 0,
     "seed": 12,
-    "won": false,
-    "time": 333,
-    "kills": 306,
-    "level": 9,
-    "hp": 0,
-    "skills": {
-      "cuong-quyen": 6,
-      "cuong-the": 2
-    },
-    "peakEnemies": 11,
-    "bossAttacks": [],
-    "elitesSeen": [
-      "hac-lang-tinh-anh"
-    ],
-    "rewards": {
-      "stone": 43,
-      "cultivation": 147.23333333334543,
-      "resources": {
-        "da-thu": 1,
-        "linh-thao": 0,
-        "yeu-dan": 0,
-        "thuc-an-sung-vat": 0,
-        "tinh-thach-tien-hoa": 0,
-        "trung-linh-ho": 0
-      },
-      "equipment": [],
-      "blueprints": []
-    }
-  },
-  {
-    "realm": 0,
-    "seed": 87,
     "won": true,
-    "time": 640,
-    "kills": 1478,
-    "level": 49,
-    "hp": 227,
+    "time": 634,
+    "kills": 1404,
+    "level": 47,
+    "hp": 170,
     "skills": {
       "cuong-quyen": 6,
       "cuong-the": 5
     },
-    "peakEnemies": 47,
+    "peakEnemies": 50,
     "bossAttacks": [
       1,
       2,
@@ -55,12 +23,58 @@
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1122,
-      "cultivation": 1475.0000000000236,
+      "stone": 1058,
+      "cultivation": 1430.6000000000217,
       "resources": {
-        "da-thu": 139,
-        "thiet-khoang": 62,
-        "linh-thao": 58,
+        "da-thu": 112,
+        "thiet-khoang": 30,
+        "linh-thao": 52,
+        "yeu-dan": 9,
+        "thuc-an-sung-vat": 9,
+        "tinh-thach-tien-hoa": 5,
+        "trung-linh-ho": 1,
+        "hat-sen-dot-pha": 1,
+        "trung-thanh-dieu": 1
+      },
+      "equipment": [
+        "ngoc-gioi"
+      ],
+      "blueprints": [
+        "ngoc-lien-bi-bao",
+        "liet-duong-kiem"
+      ]
+    }
+  },
+  {
+    "realm": 0,
+    "seed": 87,
+    "won": true,
+    "time": 636,
+    "kills": 1455,
+    "level": 43,
+    "hp": 215,
+    "skills": {
+      "cuong-quyen": 6,
+      "cuong-the": 5
+    },
+    "peakEnemies": 61,
+    "bossAttacks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "elitesSeen": [
+      "hac-lang-tinh-anh",
+      "thiet-nha-tru-tinh-anh"
+    ],
+    "rewards": {
+      "stone": 994,
+      "cultivation": 1461.2000000000232,
+      "resources": {
+        "da-thu": 107,
+        "thiet-khoang": 43,
+        "linh-thao": 41,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
@@ -81,15 +95,15 @@
     "realm": 0,
     "seed": 2026,
     "won": true,
-    "time": 674,
-    "kills": 1657,
-    "level": 52,
-    "hp": 215,
+    "time": 660,
+    "kills": 1551,
+    "level": 47,
+    "hp": 186,
     "skills": {
       "cuong-quyen": 6,
       "cuong-the": 5
     },
-    "peakEnemies": 38,
+    "peakEnemies": 63,
     "bossAttacks": [
       1,
       2,
@@ -101,16 +115,16 @@
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1252,
-      "cultivation": 1582.4000000000224,
+      "stone": 1120,
+      "cultivation": 1518.8000000000252,
       "resources": {
-        "da-thu": 158,
-        "linh-thao": 67,
+        "da-thu": 140,
+        "thiet-khoang": 43,
+        "linh-thao": 56,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
         "trung-linh-ho": 1,
-        "thiet-khoang": 67,
         "hat-sen-dot-pha": 1,
         "trung-thanh-dieu": 1
       },
@@ -126,48 +140,17 @@
   {
     "realm": 3,
     "seed": 12,
-    "won": false,
-    "time": 273,
-    "kills": 200,
-    "level": 5,
-    "hp": 0,
-    "skills": {
-      "cuong-quyen": 4,
-      "cuong-the": 1
-    },
-    "peakEnemies": 11,
-    "bossAttacks": [],
-    "elitesSeen": [
-      "hac-lang-tinh-anh"
-    ],
-    "rewards": {
-      "stone": 35,
-      "cultivation": 113.02000000000021,
-      "resources": {
-        "da-thu": 1,
-        "yeu-dan": 0,
-        "thuc-an-sung-vat": 0,
-        "tinh-thach-tien-hoa": 0,
-        "trung-linh-ho": 0
-      },
-      "equipment": [],
-      "blueprints": []
-    }
-  },
-  {
-    "realm": 3,
-    "seed": 87,
     "won": true,
-    "time": 649,
-    "kills": 1540,
-    "level": 44,
-    "hp": 251,
+    "time": 646,
+    "kills": 1466,
+    "level": 43,
+    "hp": 206,
     "skills": {
       "cuong-quyen": 6,
-      "cuong-the": 5,
-      "duong-viem-chuong": 5
+      "duong-viem-chuong": 5,
+      "cuong-the": 5
     },
-    "peakEnemies": 38,
+    "peakEnemies": 100,
     "bossAttacks": [
       1,
       2,
@@ -179,12 +162,59 @@
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1096,
-      "cultivation": 1512.2000000000248,
+      "stone": 1058,
+      "cultivation": 1467.8000000000231,
       "resources": {
-        "thiet-khoang": 58,
-        "da-thu": 133,
-        "linh-thao": 55,
+        "da-thu": 136,
+        "thiet-khoang": 43,
+        "linh-thao": 46,
+        "yeu-dan": 9,
+        "thuc-an-sung-vat": 9,
+        "tinh-thach-tien-hoa": 5,
+        "trung-linh-ho": 1,
+        "hat-sen-dot-pha": 1,
+        "trung-thanh-dieu": 1
+      },
+      "equipment": [
+        "ngoc-gioi"
+      ],
+      "blueprints": [
+        "ngoc-lien-bi-bao",
+        "liet-duong-kiem"
+      ]
+    }
+  },
+  {
+    "realm": 3,
+    "seed": 87,
+    "won": true,
+    "time": 645,
+    "kills": 1522,
+    "level": 44,
+    "hp": 236,
+    "skills": {
+      "cuong-quyen": 6,
+      "cuong-the": 5,
+      "duong-viem-chuong": 5
+    },
+    "peakEnemies": 57,
+    "bossAttacks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "elitesSeen": [
+      "hac-lang-tinh-anh",
+      "thiet-nha-tru-tinh-anh"
+    ],
+    "rewards": {
+      "stone": 1056,
+      "cultivation": 1501.4000000000246,
+      "resources": {
+        "da-thu": 117,
+        "linh-thao": 54,
+        "thiet-khoang": 57,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
@@ -204,37 +234,47 @@
   {
     "realm": 3,
     "seed": 2026,
-    "won": false,
-    "time": 515,
-    "kills": 850,
-    "level": 13,
-    "hp": 0,
+    "won": true,
+    "time": 645,
+    "kills": 1496,
+    "level": 44,
+    "hp": 206,
     "skills": {
       "cuong-quyen": 6,
-      "cuong-the": 4,
-      "duong-viem-chuong": 2
+      "cuong-the": 5,
+      "duong-viem-chuong": 5
     },
-    "peakEnemies": 22,
-    "bossAttacks": [],
+    "peakEnemies": 44,
+    "bossAttacks": [
+      1,
+      2,
+      3,
+      4
+    ],
     "elitesSeen": [
       "hac-lang-tinh-anh",
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 76,
-      "cultivation": 299.27333333338345,
+      "stone": 1046,
+      "cultivation": 1485.8000000000243,
       "resources": {
-        "da-thu": 3,
-        "linh-thao": 1,
-        "thiet-khoang": 1,
-        "yeu-dan": 1,
-        "thuc-an-sung-vat": 1,
-        "tinh-thach-tien-hoa": 0,
-        "trung-linh-ho": 0
+        "da-thu": 154,
+        "thiet-khoang": 51,
+        "linh-thao": 54,
+        "yeu-dan": 9,
+        "thuc-an-sung-vat": 9,
+        "tinh-thach-tien-hoa": 5,
+        "trung-linh-ho": 1,
+        "hat-sen-dot-pha": 1,
+        "trung-thanh-dieu": 1
       },
-      "equipment": [],
+      "equipment": [
+        "ngoc-gioi"
+      ],
       "blueprints": [
-        "ngoc-lien-bi-bao"
+        "ngoc-lien-bi-bao",
+        "liet-duong-kiem"
       ]
     }
   },
@@ -242,17 +282,17 @@
     "realm": 6,
     "seed": 12,
     "won": true,
-    "time": 619,
-    "kills": 1431,
-    "level": 48,
+    "time": 648,
+    "kills": 1543,
+    "level": 49,
     "hp": 257,
     "skills": {
       "nguyen-khi-tram": 6,
       "cuong-the": 5,
-      "tu-khi": 5,
-      "duong-viem-chuong": 5
+      "duong-viem-chuong": 5,
+      "tu-khi": 5
     },
-    "peakEnemies": 35,
+    "peakEnemies": 53,
     "bossAttacks": [
       1,
       2,
@@ -264,12 +304,12 @@
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1068,
-      "cultivation": 1446.8000000000225,
+      "stone": 1124,
+      "cultivation": 1514.0000000000252,
       "resources": {
-        "da-thu": 130,
-        "thiet-khoang": 57,
-        "linh-thao": 58,
+        "da-thu": 144,
+        "thiet-khoang": 56,
+        "linh-thao": 61,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
@@ -291,16 +331,16 @@
     "seed": 87,
     "won": true,
     "time": 611,
-    "kills": 1369,
-    "level": 47,
-    "hp": 242,
+    "kills": 1382,
+    "level": 46,
+    "hp": 226,
     "skills": {
       "nguyen-khi-tram": 6,
       "cuong-the": 5,
       "duong-viem-chuong": 5,
       "tu-khi": 5
     },
-    "peakEnemies": 44,
+    "peakEnemies": 39,
     "bossAttacks": [
       1,
       2,
@@ -312,12 +352,12 @@
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1086,
-      "cultivation": 1409.6000000000213,
+      "stone": 1072,
+      "cultivation": 1417.4000000000215,
       "resources": {
-        "thiet-khoang": 49,
-        "da-thu": 115,
-        "linh-thao": 53,
+        "da-thu": 105,
+        "thiet-khoang": 51,
+        "linh-thao": 49,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
@@ -338,37 +378,38 @@
     "realm": 6,
     "seed": 2026,
     "won": true,
-    "time": 613,
-    "kills": 1364,
-    "level": 48,
-    "hp": 241,
+    "time": 628,
+    "kills": 1429,
+    "level": 47,
+    "hp": 242,
     "skills": {
       "nguyen-khi-tram": 6,
       "cuong-the": 5,
-      "duong-viem-chuong": 5,
-      "tu-khi": 5
+      "tu-khi": 5,
+      "duong-viem-chuong": 5
     },
-    "peakEnemies": 44,
+    "peakEnemies": 45,
     "bossAttacks": [
       1,
       2,
-      3
+      3,
+      4
     ],
     "elitesSeen": [
       "hac-lang-tinh-anh",
       "thiet-nha-tru-tinh-anh"
     ],
     "rewards": {
-      "stone": 1070,
-      "cultivation": 1406.6000000000208,
+      "stone": 1078,
+      "cultivation": 1445.6000000000226,
       "resources": {
-        "thiet-khoang": 52,
-        "da-thu": 149,
+        "da-thu": 133,
+        "linh-thao": 48,
+        "thiet-khoang": 44,
         "yeu-dan": 9,
         "thuc-an-sung-vat": 9,
         "tinh-thach-tien-hoa": 5,
         "trung-linh-ho": 1,
-        "linh-thao": 56,
         "hat-sen-dot-pha": 1,
         "trung-thanh-dieu": 1
       },

@@ -1,6 +1,6 @@
-# Võ Luyện — Hắc Phong Sơn 1.0
+# Võ Luyện — Hắc Phong Sơn 1.1
 
-Game survival tiên hiệp trên trình duyệt, góc nhìn isometric, dùng React + TypeScript + Vite + Phaser 3. Bản này có một map hoàn chỉnh cùng lobby Lăng Tiêu Các và toàn bộ vòng lặp tiến trình của bản mẫu. Hình ảnh dùng bộ asset v3 đã duyệt.
+Game survival tiên hiệp trên trình duyệt, góc nhìn isometric, dùng React + TypeScript + Vite + Phaser 3. Bản này có một map hoàn chỉnh cùng lobby Lăng Tiêu Các và toàn bộ vòng lặp tiến trình của bản mẫu. Nhân vật/quái dùng bộ asset v3 đã duyệt; các phòng lobby và nền rừng mở rộng dùng bộ môi trường v4.
 
 ## Cài đặt và chạy
 
@@ -39,6 +39,8 @@ Lần cài thư viện cần Internet. Sau khi build, mã game, font, hình và 
 
 Bạn nhận 180 linh thạch, nguyên liệu ban đầu, quyền sáo, kiếm, võ phục và 2 Hồi Nguyên Đan. Các khu lobby dùng được trực tiếp:
 
+Lobby bắt đầu ở **Sân trung tâm**. Bấm **Đan phòng ở phía trái/Tây**, **Luyện khí đường ở phía phải/Đông**, **Tĩnh thất phía Bắc** hoặc **Linh thú viên phía Nam** để chuyển sang cảnh riêng của từng khu. Trong phòng có lối **Về sân trung tâm**. Thanh bên cho phép chuyển khu nhanh; Trang bị, Lịch luyện và Thiết lập dùng tại sân.
+
 - **Tu luyện:** hấp thụ linh khí chậm, dùng Tu Vi Đan và đột phá. Cảnh giới tăng chỉ số vĩnh viễn, mở kỹ năng và 2–6 ô mang theo. Mốc đầu là Thối Thể; có đột phá mẫu đến Khai Nguyên tầng 1.
 - **Luyện đan:** ba công thức tăng tu vi, tăng chỉ số vĩnh viễn và hồi máu trong màn. Luyện đủ 4 viên mở đan sư bậc II. Cường Thể Đan dùng tối đa 5 viên.
 - **Luyện khí:** bốn mẫu phổ thông và hai mẫu đặc biệt. Trang bị đặc biệt cần bản vẽ từ tinh anh/boss.
@@ -62,6 +64,8 @@ Linh thú và trang bị được giữ qua các lượt. Trong màn, XP, cấp,
 | Thu/phóng camera | Nút +/− dưới minimap |
 
 Di chuyển để nhặt XP và chiến lợi phẩm, tránh đòn báo trước. Có Hắc Lang truy đuổi, Thiết Nha Trư lao húc và Độc Thiềm phun độc. Hai tinh anh xuất hiện ở phút 3 và 6. Phút 10 xuất hiện **Hắc Phong Lang Vương** với cào trái, cào phải, vồ và gầm; phải diệt boss để thắng.
+
+Map rộng **64 × 64 đơn vị thế giới**, gần **10 lần diện tích bản 1.0**. Tỉ lệ hình nhân vật và tốc độ không đổi. Lối mòn và trung tâm đã dọn thoáng; chỉ còn hai vật cản ở Miếu cổ/Rừng trúc, cùng ít cây trang trí ngoài rìa. Quái sinh gần vị trí hiện tại của nhân vật; camera và minimap bao quát cả vùng mới.
 
 Kỹ năng tấn công nâng đến bậc 5; hỗ trợ tối đa bậc 5. **Cương Quyền bậc 5 + Cường Thể đã kích hoạt** cho thẻ Long Viêm Quyền bậc 6. **Nguyên Khí Trảm bậc 5 + Tụ Khí đã kích hoạt** cho Kiếm Khí Phong Bạo bậc 6. Sau khi hết nâng kỹ năng, thẻ chỉ số vẫn tiếp tục xuất hiện.
 
@@ -90,6 +94,7 @@ tests/                   # Các quy tắc quan trọng và lượt mô phỏng �
 qa/                      # Bộ điều khiển kiểm thử, fixture và báo cáo
 scripts/sync-assets.mjs   # Kiểm tra atlas, chọn và đồng bộ asset runtime
 public/assets/v3/        # Asset gốc đã duyệt
+public/assets/v4/        # Nền các phòng và ô nền rừng mới
 public/game/             # Asset runtime tự sinh, dùng để build
 art/                     # Nguồn tạo hình và trang xem asset
 ```
@@ -97,6 +102,8 @@ art/                     # Nguồn tạo hình và trang xem asset
 | Cần chỉnh | File |
 | --- | --- |
 | Thời lượng, mốc tinh anh, giới hạn quái, tốc độ/ranh giới | `src/data/stages.ts` |
+| Bố cục map rộng, phép chiếu dùng chung, props và lối mòn | `src/data/stages.ts` |
+| Các khu lobby, nền và vị trí đứng của nhân vật | `src/data/lobby.ts` |
 | Máu, công, tốc độ, hành vi từng quái/boss | `src/data/enemies.ts` |
 | Kỹ năng, liên kết thức tỉnh và thẻ chỉ số | `src/data/skills.ts` |
 | Cảnh giới, số ô và tốc độ idle | `src/data/realms.ts` |
@@ -106,7 +113,7 @@ art/                     # Nguồn tạo hình và trang xem asset
 | Vùng chân của vật cản theo hình hiển thị | `src/game/math/mapGeometry.ts` |
 | Nhịp spawn, sát thương, XP, projectile | `src/game/systems/RunEngine.ts` |
 
-Không sửa trực tiếp `assets.generated.json`; chạy `npm run sync:assets` để sinh lại từ manifest v3. Địa hình cố định; seed mới mỗi lượt quyết định vị trí spawn, chiến lợi phẩm và thẻ.
+Không sửa trực tiếp `assets.generated.json`; chạy `npm run sync:assets` để sinh lại từ manifest actor v3 và môi trường v4. Địa hình cố định; seed mới mỗi lượt quyết định vị trí spawn, chiến lợi phẩm và thẻ. Nguồn nền mới và script xuất ảnh nằm trong `art/v4/`.
 
 ## Quyết định kỹ thuật
 
@@ -114,8 +121,10 @@ Không sửa trực tiếp `assets.generated.json`; chạy `npm run sync:assets`
 
 **RunEngine** tách khỏi Phaser, nhận input và bước thời gian. Kiểm tra tự động chạy cùng luật chiến đấu với game, gồm cả hai tinh anh, bốn đòn boss, thức tỉnh, thưởng và reset. RNG có seed giúp tái lập lỗi. Renderer đọc trạng thái đó để hiện đúng pose tấn công/death; đòn đánh gây sát thương ở pha tiếp xúc.
 
-Tọa độ mặt đất dùng chung cho actor/vật cản rồi chiếu isometric 35,264°. Vật thể dài được ghép nhiều vùng chân, không dùng một vòng tròn nhỏ ở gốc hình. Walk tiến theo quãng đường thực, không trượt chân khi bị chặn. Cây mờ khi che nhân vật.
+Tọa độ mặt đất dùng chung cho actor/vật cản rồi chiếu isometric 35,264°. Scene, va chạm và minimap đọc cùng `forestLayout`/`forestProjection`. Nền map lớn dùng `TileSprite` với ô ảnh 512 × 512 có mép nối khớp, thay vì một ảnh khổng lồ. Vật thể còn giữ dùng vùng chân theo hình; walk tiến theo quãng đường thực, không trượt chân khi bị chặn. Cây mờ khi che nhân vật.
 
 Atlas được cache, đối tượng hình được giữ theo ID, quái và hiệu ứng có giới hạn. Engine tải ở chunk riêng. Font đóng gói cục bộ kèm giấy phép OFL; nhạc ngũ cung và hiệu ứng dùng Web Audio, khởi động sau thao tác người dùng.
 
 Thiết kế và lịch sử asset: [GAME_DESIGN.md](docs/GAME_DESIGN.md), [ASSET_WORKFLOW.md](docs/ASSET_WORKFLOW.md). Bản này hoàn thiện map đầu; các map/thế giới tiếp theo và đợt nâng chất lượng tạo hình được mở rộng sau.
+
+Kết quả kiểm tra bản mở rộng: [LOBBY_MAP_1_1_QA.md](docs/LOBBY_MAP_1_1_QA.md). GitHub Actions chạy test/build trên mỗi lần push; tại máy cá nhân vẫn nên kiểm tra trước khi đồng bộ.

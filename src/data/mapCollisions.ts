@@ -1,3 +1,3 @@
-import { assets } from './assets';
-import { buildMapObstacles } from '../game/math/mapGeometry';
-export const mapObstacles = () => buildMapObstacles(assets.sceneLayout);
+import { forestLayout } from './stages.ts';
+import { buildMapObstacles } from '../game/math/mapGeometry.ts';
+export const mapObstacles = () => buildMapObstacles(forestLayout);

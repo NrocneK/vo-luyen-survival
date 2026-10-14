@@ -35,6 +35,7 @@ export class GameBridge {
     const idle = claimIdle(profile, Date.now());
     this.snapshot = {
       mode: 'menu',
+      lobbyArea: 'courtyard',
       status: 'loading',
       progress: 0,
       weapon: weaponFromEquipment(profile.equipped.weapon),
@@ -85,6 +86,10 @@ export class GameBridge {
   }
   dispatch(command: GameCommand): void {
     this.activateAudio();
+    if (command.type === 'travel') {
+      if (this.snapshot.mode !== 'menu') return;
+      this.update({ lobbyArea: command.area });
+    }
     if (command.type === 'start' && this.snapshot.status !== 'ready') return;
     this.commands.forEach((listener) => listener(command));
   }

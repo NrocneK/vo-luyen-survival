@@ -299,8 +299,20 @@ export class RunEngine {
       const angle = this.random() * Math.PI * 2,
         range = 7 + this.random() * 2;
       point = {
-        x: Math.max(-9.3, Math.min(9.3, this.position.x + Math.cos(angle) * range)),
-        y: Math.max(-9.3, Math.min(9.3, this.position.y + Math.sin(angle) * range)),
+        x: Math.max(
+          stage.bounds.minX + definition.radius,
+          Math.min(
+            stage.bounds.maxX - definition.radius,
+            this.position.x + Math.cos(angle) * range,
+          ),
+        ),
+        y: Math.max(
+          stage.bounds.minY + definition.radius,
+          Math.min(
+            stage.bounds.maxY - definition.radius,
+            this.position.y + Math.sin(angle) * range,
+          ),
+        ),
       };
       if (
         distance(point, this.position) > 4.5 &&

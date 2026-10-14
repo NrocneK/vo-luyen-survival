@@ -12390,6 +12390,56 @@
       ],
       "file": "assets/v3/maps/cultivation-courtyard.png",
       "sha256": "6ccc7f10827017bfef4a010f6a53dcb53dacacf8701cd9ab99fee95b1359c9cd"
+    },
+    {
+      "id": "lobby-alchemy",
+      "file": "assets/v4/maps/lobby-alchemy.png",
+      "type": "background",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "28f967af5f9a5b7e8c67fe2971ea97e9e52b155f08f7609fb0dd7fb98c675b0a"
+    },
+    {
+      "id": "lobby-forge",
+      "file": "assets/v4/maps/lobby-forge.png",
+      "type": "background",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "a9b19e8b494d95098804767db182929c1342bcc2c0a125c3bba1e19321d8cc8b"
+    },
+    {
+      "id": "lobby-cultivate",
+      "file": "assets/v4/maps/lobby-cultivate.png",
+      "type": "background",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "887b6ddbb4fa16d1ffe1d1b90ca3ec1b75a1762613c50ba8465b842ae2b0c81b"
+    },
+    {
+      "id": "lobby-pets",
+      "file": "assets/v4/maps/lobby-pets.png",
+      "type": "background",
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "eecce40f437bf05eaa025eaa4d0d1ca5c373e547886b9799f315302f1265a8c6"
+    },
+    {
+      "id": "forest-floor-tile",
+      "file": "assets/v4/maps/forest-floor-tile.png",
+      "type": "terrain-tile",
+      "size": [
+        512,
+        512
+      ],
+      "sha256": "22ddd6492219cb35b8a5032f3a897ec75cdf68d4cbdcc685dd8d4253eedd0bb3"
     }
   ],
   "sceneLayout": {

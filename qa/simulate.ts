@@ -1,9 +1,8 @@
-import { writeFileSync, readFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import { newProfile } from '../src/domain/profile.ts';
-import { buildMapObstacles } from '../src/game/math/mapGeometry.ts';
+import { mapObstacles } from '../src/data/mapCollisions.ts';
 import { playFullRun } from './playtest.ts';
-const manifest = JSON.parse(readFileSync('src/data/assets.generated.json', 'utf8'));
-const obstacles = buildMapObstacles(manifest.sceneLayout),
+const obstacles = mapObstacles(),
   reports = [];
 for (const realm of [0, 3, 6])
   for (const seed of [12, 87, 2026]) {

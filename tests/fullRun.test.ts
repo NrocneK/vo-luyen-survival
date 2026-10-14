@@ -1,15 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
 import { newProfile, applyResult, validateProfile } from '../src/domain/profile.ts';
 import { RunEngine } from '../src/game/systems/RunEngine.ts';
-import { buildMapObstacles } from '../src/game/math/mapGeometry.ts';
+import { mapObstacles } from '../src/data/mapCollisions.ts';
 import { playFullRun } from '../qa/playtest.ts';
 
 test('Mô phỏng toàn lượt 10 phút: hai tinh anh, bốn đòn boss, thức tỉnh, thắng, lưu thưởng và đặt lại', () => {
-  const manifest = JSON.parse(readFileSync('src/data/assets.generated.json', 'utf8'));
   const profile = newProfile(1000),
-    obstacles = buildMapObstacles(manifest.sceneLayout);
+    obstacles = mapObstacles();
   assert.ok(
     obstacles.every((obstacle) => Math.hypot(obstacle.x, obstacle.y) > obstacle.radius + 0.21),
   );

@@ -9,10 +9,11 @@ import { useState, useRef } from 'react';
 import { GameBridge } from '../app/GameBridge';
 import { Icon } from './AssetIcon';
 import { realms } from '../data/realms';
-import type { GameSnapshot } from '../shared/types';
+import { lobbyAreas, lobbyDoors } from '../data/lobby';
+import type { GameSnapshot, LobbyArea } from '../shared/types';
 
 const stations = [
-  { id: 'home', name: 'Động phủ', symbol: '⌂', subtitle: 'Nơi tâm an định' },
+  { id: 'home', name: 'Sân trung tâm', symbol: '⌂', subtitle: 'Nơi tâm an định' },
   { id: 'cultivate', name: 'Tu luyện', symbol: '◉', subtitle: 'Hấp thụ linh khí · Đột phá' },
   { id: 'alchemy', name: 'Luyện đan', symbol: '♨', subtitle: 'Đan lô · Dược liệu' },
   { id: 'forge', name: 'Luyện khí', symbol: '⚒', subtitle: 'Chế tạo · Bản vẽ' },
@@ -28,14 +29,19 @@ export function Lobby({ state, bridge }: { state: GameSnapshot; bridge: GameBrid
   const profile = state.profile,
     realm = realms[profile.realm];
   const current = stations.find((item) => item.id === station)!;
+  const area = lobbyAreas[state.lobbyArea];
   const selectStation = (id: string) => {
     setStation(id);
+    const destination: LobbyArea = ['alchemy', 'forge', 'cultivate', 'pets'].includes(id)
+      ? (id as LobbyArea)
+      : 'courtyard';
+    if (destination !== state.lobbyArea) bridge.dispatch({ type: 'travel', area: destination });
     bridge.activateAudio();
     bridge.audio.play('ui');
     bridge.toast('');
   };
   return (
-    <section className="lobby" aria-label="Lobby Lăng Tiêu Các">
+    <section className="lobby" data-area={state.lobbyArea} aria-label="Lobby Lăng Tiêu Các">
       <div className="lobby-shade" />
       <header className="lobby-header">
         <div className="lobby-brand">
@@ -72,25 +78,42 @@ export function Lobby({ state, bridge }: { state: GameSnapshot; bridge: GameBrid
           </button>
         ))}
       </nav>
+      <div className="lobby-location" key={state.lobbyArea} aria-live="polite">
+        <span className="overline">LĂNG TIÊU CÁC</span>
+        <h2>{area.name}</h2>
+        <small>{area.description}</small>
+      </div>
       <div className="courtyard-caption">
         <span className="overline">ĐỆ TỬ LĂNG TIÊU CÁC</span>
         <h1>Dương Khai</h1>
         <span>{realm.name}</span>
         <div className="realm-line" />
       </div>
-      <div className="courtyard-hotspots">
-        <button className="hotspot cultivate" onClick={() => selectStation('cultivate')}>
-          <span>◉</span>Tu luyện
-        </button>
-        <button className="hotspot alchemy" onClick={() => selectStation('alchemy')}>
-          <span>♨</span>Đan phòng
-        </button>
-        <button className="hotspot forge" onClick={() => selectStation('forge')}>
-          <span>⚒</span>Luyện khí
-        </button>
-        <button className="hotspot pets" onClick={() => selectStation('pets')}>
-          <span>✧</span>Linh thú
-        </button>
+      <div className="lobby-routes" aria-label="Lối đi giữa các khu">
+        {state.lobbyArea === 'courtyard' ? (
+          lobbyDoors.map((door) => (
+            <button
+              key={door.area}
+              className={`room-door door-${door.area}`}
+              onClick={() => selectStation(door.area)}
+              aria-label={`Đi đến ${lobbyAreas[door.area].name}`}
+            >
+              <span className="door-arrow">{door.symbol}</span>
+              <span>
+                <strong>{lobbyAreas[door.area].name}</strong>
+                <small>{door.direction}</small>
+              </span>
+            </button>
+          ))
+        ) : (
+          <button className="room-door door-return" onClick={() => selectStation('home')}>
+            <span className="door-arrow">←</span>
+            <span>
+              <strong>Về sân trung tâm</strong>
+              <small>Lăng Tiêu Các</small>
+            </span>
+          </button>
+        )}
       </div>
       <aside className="station-panel" aria-label={`Khu ${current.name}`}>
         <header>
@@ -177,7 +200,7 @@ export function Lobby({ state, bridge }: { state: GameSnapshot; bridge: GameBrid
       </aside>
       <footer className="lobby-footer">
         <span>HẮC PHONG SƠN · CHƯƠNG KHỞI ĐẦU</span>
-        <span>VÕ LUYỆN 1.0</span>
+        <span>VÕ LUYỆN 1.1</span>
       </footer>
       {state.status === 'loading' && (
         <div className="asset-loading">

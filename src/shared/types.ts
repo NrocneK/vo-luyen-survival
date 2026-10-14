@@ -6,6 +6,7 @@ export type Direction = 'S' | 'SW' | 'W' | 'NW' | 'N' | 'NE' | 'E' | 'SE';
 export type WeaponId = 'fists' | 'sword';
 import type { Profile, RunView, Card, RunResult } from './models';
 export type GameMode = 'menu' | 'playing' | 'paused' | 'levelup' | 'result';
+export type LobbyArea = 'courtyard' | 'alchemy' | 'forge' | 'cultivate' | 'pets';
 export interface WorldBounds {
   minX: number;
   maxX: number;
@@ -62,6 +63,7 @@ export interface AssetCatalogue {
 
 export interface GameSnapshot {
   mode: GameMode;
+  lobbyArea: LobbyArea;
   status: 'loading' | 'ready' | 'error';
   progress: number;
   weapon: WeaponId;
@@ -80,6 +82,7 @@ export interface GameSnapshot {
   saveOk: boolean;
 }
 export type GameCommand =
+  | { type: 'travel'; area: LobbyArea }
   | { type: 'start' }
   | { type: 'pause' }
   | { type: 'resume' }

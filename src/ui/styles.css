@@ -301,36 +301,87 @@ progress::-webkit-progress-value {
   margin: 15px auto;
   background: linear-gradient(90deg, transparent, #b3a06b, transparent);
 }
-.courtyard-hotspots .hotspot {
+.lobby-location {
+  position: absolute;
+  top: 108px;
+  left: 25%;
+  width: 36%;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 2px 12px #07140c;
+  animation: enter-room 0.25s ease-out;
+}
+.lobby-location h2 {
+  color: #ead8ac;
+  font-size: 24px;
+  margin: 6px 0;
+}
+.lobby-location small {
+  color: #bbcbb8;
+  font-size: 9px;
+}
+.lobby-routes .room-door {
   position: absolute;
   display: flex;
   align-items: center;
-  gap: 7px;
-  background: rgba(8, 27, 18, 0.87);
-  font-size: 10px;
-  padding: 9px 13px;
-  border-color: #8a937164;
-  box-shadow: 0 4px 20px #0003;
+  gap: 12px;
+  background: linear-gradient(135deg, #183828ed, #091d16ed);
+  padding: 12px 16px;
+  border: 1px solid #aa955773;
+  border-radius: 3px;
+  box-shadow: 0 4px 24px #0005;
+  text-align: left;
 }
-.hotspot > span {
-  font-size: 17px;
+.room-door strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #ebdbb0;
+}
+.room-door small {
+  display: block;
+  margin-top: 5px;
+  font-size: 8px;
+  color: #a0b69e;
+}
+.room-door .door-arrow {
+  font-size: 23px;
   color: var(--gold);
 }
-.hotspot.cultivate {
-  left: 26%;
-  top: 26%;
+.door-cultivate {
+  left: 42%;
+  top: 28%;
+  transform: translateX(-50%);
 }
-.hotspot.alchemy {
-  left: 46%;
-  top: 22%;
+.door-alchemy {
+  left: 19%;
+  top: 53%;
 }
-.hotspot.forge {
-  left: 48%;
-  top: 72%;
+.door-forge {
+  right: 35%;
+  top: 53%;
 }
-.hotspot.pets {
-  left: 25%;
-  top: 75%;
+.door-pets {
+  left: 42%;
+  bottom: 12%;
+  transform: translateX(-50%);
+}
+.door-return {
+  left: 20%;
+  bottom: 12%;
+}
+.lobby:not([data-area='courtyard']) .courtyard-caption {
+  top: 41%;
+}
+@keyframes enter-room {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .station-panel {
   position: absolute;
@@ -772,6 +823,11 @@ progress::-webkit-progress-value {
   box-shadow: 0 10px 40px #0007;
   font-size: 11px;
   line-height: 1.8;
+}
+.lobby > .toast {
+  bottom: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .toast button {
   position: absolute;
@@ -1259,13 +1315,20 @@ progress::-webkit-progress-value {
     left: 15%;
     width: 44%;
   }
-  .hotspot.alchemy,
-  .hotspot.forge {
-    left: 43%;
+  .courtyard-caption,
+  .lobby-location {
+    left: 22%;
+    width: 40%;
   }
-  .hotspot.cultivate,
-  .hotspot.pets {
-    left: 18%;
+  .door-alchemy {
+    left: 17%;
+  }
+  .door-forge {
+    right: 36%;
+  }
+  .room-door {
+    padding: 10px 12px;
+    gap: 8px;
   }
   .resource-header {
     gap: 12px;
@@ -1330,7 +1393,8 @@ progress::-webkit-progress-value {
     padding: 18px;
   }
   .courtyard-caption,
-  .courtyard-hotspots {
+  .lobby-routes,
+  .lobby-location {
     display: none;
   }
   .lobby-footer {
@@ -1342,6 +1406,9 @@ progress::-webkit-progress-value {
   .toast {
     left: 70px;
     width: calc(100% - 82px);
+    bottom: 55px;
+  }
+  .lobby > .toast {
     bottom: 55px;
   }
   .game-hud {

@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { GameBridge } from '../../app/GameBridge';
-import { assets } from '../../data/assets';
-import { areaAt, stage } from '../../data/stages';
+import { areaAt, stage, forestLayout, forestProjection, forestTrails } from '../../data/stages';
+import { lobbyAreas } from '../../data/lobby';
 import { weapons } from '../../data/weapons';
 import { enemies } from '../../data/enemies';
 import { mapObstacles } from '../../data/mapCollisions';
@@ -14,7 +14,11 @@ import type { GameCommand } from '../../shared/types';
 export class ForestScene extends Phaser.Scene {
   private player!: ActorView;
   private courtyard!: Phaser.GameObjects.Image;
-  private map: Phaser.GameObjects.Image[] = [];
+  private map: (
+    | Phaser.GameObjects.Image
+    | Phaser.GameObjects.TileSprite
+    | Phaser.GameObjects.Graphics
+  )[] = [];
   private foliage: Phaser.GameObjects.Image[] = [];
   private controls!: Record<string, Phaser.Input.Keyboard.Key>;
   private engine: RunEngine | null = null;
@@ -26,16 +30,13 @@ export class ForestScene extends Phaser.Scene {
   private warnings!: Phaser.GameObjects.Graphics;
   private publishIn = 0;
   private lastMode = 'menu';
-  private projection: Projection = {
-    origin: { x: assets.sceneLayout.screenOrigin[0], y: assets.sceneLayout.screenOrigin[1] },
-    pixelsPerUnit: assets.sceneLayout.pixelsPerWorldUnit,
-  };
+  private projection: Projection = forestProjection;
   constructor(private bridge: GameBridge) {
     super('forest');
   }
   create(): void {
-    this.map.push(this.add.image(0, 0, stage.groundId).setOrigin(0).setDepth(-2000));
-    for (const prop of assets.sceneLayout.props) {
+    this.createGround();
+    for (const prop of forestLayout.props) {
       const point = project({ x: prop.world[0], y: prop.world[1] }, this.projection);
       const image = this.add
         .image(point.x, point.y, stage.propsId, prop.frame)
@@ -79,7 +80,7 @@ export class ForestScene extends Phaser.Scene {
       this.sync();
     };
     const resize = () => {
-      if (this.bridge.getSnapshot().mode === 'menu') this.showLobby();
+      if (this.bridge.getSnapshot().mode === 'menu') this.showLobby(false);
     };
     this.game.events.on(Phaser.Core.Events.BLUR, onBlur);
     this.game.events.on(Phaser.Core.Events.HIDDEN, onBlur);
@@ -92,18 +93,62 @@ export class ForestScene extends Phaser.Scene {
     });
     this.bridge.update({ status: 'ready', progress: 1 });
   }
-  private showLobby(): void {
+  private createGround(): void {
+    const [width, height] = forestLayout.dimensions;
+    // TileSprite trải cùng một ô nền: map lớn không cần texture hàng chục megapixel.
+    this.map.push(
+      this.add
+        .tileSprite(0, 0, width, height, stage.groundId)
+        .setOrigin(0)
+        .setTileScale(1, 1 / Math.sqrt(3))
+        .setDepth(-2000),
+    );
+    const paths = this.add.graphics().setDepth(-1990);
+    for (const trail of forestTrails) {
+      const points = trail.map((point) => project(point, this.projection));
+      paths.lineStyle(58, 0x716447, 0.1).strokePoints(points);
+      paths.lineStyle(30, 0x9c8961, 0.1).strokePoints(points);
+    }
+    this.map.push(paths);
+    const { minX, minY, maxX, maxY } = stage.bounds;
+    const left = project({ x: minX, y: minY }, this.projection);
+    const bottom = project({ x: maxX, y: minY }, this.projection);
+    const right = project({ x: maxX, y: maxY }, this.projection);
+    const top = project({ x: minX, y: maxY }, this.projection);
+    const rim = this.add.graphics().setDepth(-1980).fillStyle(0x081a13, 0.72);
+    for (const polygon of [
+      [{ x: 0, y: 0 }, { x: top.x, y: 0 }, top, left, { x: 0, y: left.y }],
+      [{ x: top.x, y: 0 }, { x: width, y: 0 }, { x: width, y: right.y }, right, top],
+      [
+        { x: width, y: right.y },
+        { x: width, y: height },
+        { x: bottom.x, y: height },
+        bottom,
+        right,
+      ],
+      [{ x: bottom.x, y: height }, { x: 0, y: height }, { x: 0, y: left.y }, left, bottom],
+    ])
+      rim.fillPoints(polygon, true);
+    rim.lineStyle(42, 0x173424, 0.35).strokePoints([left, bottom, right, top], true);
+    rim.lineStyle(8, 0x537052, 0.16).strokePoints([left, bottom, right, top], true);
+    this.map.push(rim);
+  }
+  private showLobby(animate = true): void {
     this.cameras.main.stopFollow().removeBounds().setZoom(1).setScroll(0, 0);
     this.map.forEach((image) => image.setVisible(false));
-    this.courtyard.setVisible(true);
+    this.courtyard
+      .setVisible(true)
+      .setTexture(lobbyAreas[this.bridge.getSnapshot().lobbyArea].background);
     const factor = Math.max(
       this.scale.width / this.courtyard.width,
       this.scale.height / this.courtyard.height,
     );
     this.courtyard
-      .setPosition(this.scale.width * 0.46, this.scale.height * 0.5)
-      .setScale(factor * 1.05)
-      .setAlpha(0.85);
+      .setPosition(this.scale.width * 0.5, this.scale.height * 0.5)
+      .setScale(factor)
+      .setAlpha(animate ? 0 : 0.95);
+    this.tweens.killTweensOf(this.courtyard);
+    if (animate) this.tweens.add({ targets: this.courtyard, alpha: 0.95, duration: 220 });
     this.player.setActor(weapons[this.bridge.getSnapshot().weapon].actorId);
     this.input.keyboard?.removeCapture([
       'UP',
@@ -132,6 +177,9 @@ export class ForestScene extends Phaser.Scene {
   }
   private command(command: GameCommand): void {
     switch (command.type) {
+      case 'travel':
+        if (this.bridge.getSnapshot().mode === 'menu') this.showLobby();
+        break;
       case 'start':
         if (this.bridge.getSnapshot().mode !== 'menu') return;
         this.clearRun();
@@ -145,8 +193,8 @@ export class ForestScene extends Phaser.Scene {
         this.player.resetScale();
         this.player.render(this.engine.position, 'S', 0);
         this.cameras.main
-          .setBounds(0, 0, ...assets.sceneLayout.dimensions)
-          .setZoom(2)
+          .setBounds(0, 0, ...forestLayout.dimensions)
+          .setZoom(stage.cameraZoom)
           .centerOn(this.player.sprite.x, this.player.sprite.y)
           .startFollow(this.player.sprite, true, 0.1, 0.1);
         this.input.keyboard?.resetKeys();
@@ -162,7 +210,13 @@ export class ForestScene extends Phaser.Scene {
           'Q',
           'SPACE',
         ]);
-        this.bridge.update({ mode: 'playing', zoom: 2, result: null, cards: [], toast: '' });
+        this.bridge.update({
+          mode: 'playing',
+          zoom: stage.cameraZoom,
+          result: null,
+          cards: [],
+          toast: '',
+        });
         this.sync();
         break;
       case 'pause':
@@ -179,8 +233,14 @@ export class ForestScene extends Phaser.Scene {
           this.sync();
         } else {
           this.clearRun();
+          this.bridge.update({
+            mode: 'menu',
+            lobbyArea: 'courtyard',
+            cards: [],
+            result: null,
+            toast: '',
+          });
           this.showLobby();
-          this.bridge.update({ mode: 'menu', cards: [], result: null, toast: '' });
         }
         break;
       case 'card':
@@ -208,16 +268,18 @@ export class ForestScene extends Phaser.Scene {
     if (!this.player) return;
     const dt = Math.min(delta / 1000, 0.1);
     if (!this.engine) {
-      const profile = this.bridge.getSnapshot().profile;
+      const snapshot = this.bridge.getSnapshot();
+      const profile = snapshot.profile;
+      const [x, y] = lobbyAreas[snapshot.lobbyArea].hero;
       this.player.setActor(weapons[this.bridge.getSnapshot().weapon].actorId);
-      this.player.lobby(this.scale.width * 0.43, this.scale.height * 0.64, dt);
+      this.player.lobby(this.scale.width * x, this.scale.height * y, dt);
       const id = profile.activePet,
         pet = id ? profile.pets[id] : null;
       if (id && pet) {
         const actor = pet.evolved ? `${id}-tien-hoa` : id;
         this.pet ??= new ActorView(this, actor, this.projection);
         this.pet.setActor(actor);
-        this.pet.lobby(this.scale.width * 0.43 + 75, this.scale.height * 0.64 + 12, dt);
+        this.pet.lobby(this.scale.width * x + 75, this.scale.height * y + 12, dt);
         this.pet.sprite.setScale(1.15);
       } else if (this.pet) {
         this.pet.destroy();

@@ -7,10 +7,21 @@ const root = process.cwd();
 const source = JSON.parse(
   await readFile(resolve(root, 'public/assets/v3/asset-manifest.json'), 'utf8'),
 );
+const environments = JSON.parse(
+  await readFile(resolve(root, 'public/assets/v4/environment-manifest.json'), 'utf8'),
+);
+if (environments.status !== 'validated')
+  throw new Error('Nền lobby/map cần qua kiểm tra trước khi tích hợp.');
+for (const asset of environments.sharedAssets) {
+  const bytes = await readFile(resolve(root, 'public', asset.file));
+  if (createHash('sha256').update(bytes).digest('hex') !== asset.sha256)
+    throw new Error(`Nền lệch hash: ${asset.id}`);
+}
+const sharedAssets = [...source.sharedAssets, ...environments.sharedAssets];
 if (source.status !== 'validated')
   throw new Error('Bộ asset cần được kiểm tra trước khi tích hợp.');
 const actorIds = source.actors.map((actor) => actor.id);
-const sharedIds = source.sharedAssets.map((asset) => asset.id);
+const sharedIds = sharedAssets.map((asset) => asset.id);
 const selectedActors = source.actors.filter((actor) => actorIds.includes(actor.id));
 const actors = selectedActors.map(
   ({ id, name, size, origin, atlas, atlasData, animations, walk, camera, attacks }) => ({
@@ -41,7 +52,7 @@ await writeFile(
     {
       version: source.version,
       actors,
-      sharedAssets: source.sharedAssets.filter((asset) => sharedIds.includes(asset.id)),
+      sharedAssets: sharedAssets.filter((asset) => sharedIds.includes(asset.id)),
       sceneLayout: source.sceneLayout,
     },
     null,
@@ -50,7 +61,7 @@ await writeFile(
 );
 const files = new Set([
   ...actors.flatMap((actor) => [actor.atlas, actor.atlasData]),
-  ...source.sharedAssets
+  ...sharedAssets
     .filter((asset) => sharedIds.includes(asset.id))
     .flatMap((asset) => [asset.file, asset.atlas].filter(Boolean)),
   ...(await Promise.all(
