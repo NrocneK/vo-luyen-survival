@@ -1,0 +1,153 @@
+.upgrade-card.augment {
+  border-color: #78cbd2;
+  background: linear-gradient(155deg, #244b4c, #152f34);
+}
+.upgrade-card.augment .card-type {
+  color: #a0e6e9;
+}
+.card-skill-name {
+  font-size: 10px;
+  color: #9ccecd;
+  margin: 0 0 5px;
+}
+.upgrade-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 0 0 16px;
+}
+.reroll-button {
+  padding: 11px 18px;
+  border: 1px solid #a4c9b56b;
+  background: #19382e;
+  color: #d5e5cf;
+  font-size: 12px;
+}
+.reroll-button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.reroll-status {
+  font-size: 10px;
+  color: #adc4ab;
+}
+.run-build {
+  border-top: 1px solid #99b29b40;
+  padding-top: 12px;
+  margin-top: 15px;
+  text-align: left;
+  color: #b9d8cb;
+  font-size: 11px;
+}
+.run-build summary {
+  cursor: pointer;
+  padding: 5px 0;
+}
+.run-build ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.run-build li {
+  padding: 10px;
+  background: #17352f;
+  border: 1px solid #70a79f35;
+}
+.run-build li strong,
+.run-build li small {
+  display: block;
+}
+.run-build li strong {
+  color: #b0e2e1;
+  font-size: 12px;
+}
+.run-build li small {
+  font-size: 10px;
+  margin: 4px 0;
+  color: #9dbbaf;
+}
+.run-build p {
+  font-size: 10px;
+  line-height: 1.75;
+  margin: 6px 0 0;
+  color: #b4cbbb;
+}
+.run-build.compact {
+  margin-top: 8px;
+}
+.skill-slot.augmented {
+  position: relative;
+  box-shadow: inset 0 0 0 1px #72cad0;
+}
+.skill-slot .augment-marker {
+  position: absolute;
+  right: 2px;
+  left: auto;
+  top: 1px;
+  bottom: auto;
+  color: #a4eff4;
+  font-size: 13px;
+  line-height: 1;
+  width: 15px;
+  height: 15px;
+  padding-top: 1px;
+  background: #15393d;
+  border: 1px solid #79c5cc;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .upgrade-card {
+    padding: 14px 10px;
+  }
+  .upgrade-cards {
+    gap: 8px;
+  }
+  .upgrade-actions {
+    gap: 8px;
+  }
+  .upgrade-card .card-skill-name {
+    font-size: 9px;
+  }
+}
+@media (max-width: 560px) {
+  .upgrade-cards {
+    grid-template-columns: 1fr;
+  }
+  .upgrade-card {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    column-gap: 12px;
+    text-align: left;
+    align-items: start;
+    min-height: 0;
+  }
+  .upgrade-card .asset-icon {
+    grid-column: 1;
+    grid-row: 1 / 6;
+    align-self: center;
+  }
+  .upgrade-card > :not(.asset-icon) {
+    grid-column: 2;
+  }
+  .upgrade-card h3 {
+    font-size: 15px;
+    margin: 4px 0 8px;
+  }
+  .upgrade-card p {
+    font-size: 11px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+  }
+  .upgrade-card .card-type {
+    margin-bottom: 4px;
+    font-size: 9px;
+  }
+  .upgrade-panel {
+    padding: 18px 14px;
+  }
+}

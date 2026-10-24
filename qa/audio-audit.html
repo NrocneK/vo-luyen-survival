@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kiểm tra âm thanh nội bộ</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font: 15px/1.6 system-ui;
+        background: #091519;
+        color: #def0eb;
+      }
+      body {
+        max-width: 1120px;
+        margin: 40px auto;
+        padding: 0 24px;
+      }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 8px;
+      }
+      p {
+        color: #a7c2bc;
+      }
+      section {
+        padding: 22px;
+        margin: 20px 0;
+        border: 1px solid #2b4a48;
+        border-radius: 12px;
+        background: #102227;
+      }
+      button,
+      select {
+        padding: 10px 16px;
+        margin: 5px;
+        border: 1px solid #608e7f;
+        border-radius: 7px;
+        background: #193d35;
+        color: inherit;
+        font: inherit;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.45;
+        cursor: wait;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #2b4a48;
+      }
+      audio {
+        width: 230px;
+        height: 34px;
+      }
+      canvas {
+        width: 200px;
+        height: 54px;
+      }
+      .ok {
+        color: #89dfb4;
+      }
+      .bad {
+        color: #ffae8f;
+      }
+      #status {
+        min-height: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kiểm tra âm thanh nội bộ</h1>
+    <p>
+      Trang QA dùng đúng GameAudio và dữ liệu nhạc của game. Mỗi đoạn đo qua OfflineAudioContext 48
+      kHz, hai kênh; giữ bus, envelope, compressor và master như runtime.
+    </p>
+    <section>
+      <select id="theme" aria-label="Chọn chủ đề">
+        <option value="hac-phong-son">Hắc Phong Sơn</option>
+        <option value="truyen-thua-dong-thien">Truyền Thừa Động Thiên</option>
+        <option value="cuu-am-son-coc">Cửu Âm Sơn Cốc</option>
+        <option value="ly-dia">Ly Địa</option>
+        <option value="trung-do-doat-dich">Trung Đô — Đoạt Đích</option>
+        <option value="trung-do-hao-kiep">Trung Đô — Hạo Kiếp</option>
+      </select>
+      <button id="battle">Nghe nhạc chiến đấu</button>
+      <button id="boss">Nghe nhạc boss</button>
+      <button id="lobby">Nghe nhạc lobby</button>
+      <button id="stop">Dừng nhạc</button>
+      <p id="playing">Chưa phát nhạc.</p>
+      <div>
+        <button id="fist">Nghe ba đòn quyền</button>
+        <button id="sword">Nghe ba đường kiếm</button>
+        <button id="ring">Nghe Viêm Hoàn</button>
+        <button id="chain">Nghe Lôi Liên</button>
+      </div>
+    </section>
+    <section>
+      <button id="audit">Đo toàn bộ âm thanh</button>
+      <button id="save" disabled>Lưu báo cáo JSON</button>
+      <p id="status" role="status">Chưa chạy phép đo.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Đoạn kiểm tra</th>
+            <th>Đỉnh / RMS</th>
+            <th>Mẫu tràn</th>
+            <th>Dạng sóng</th>
+            <th>Nghe bản đo</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </section>
+    <script type="module" src="./audio-audit.ts"></script>
+  </body>
+</html>

@@ -1,14 +1,19 @@
 import type { SkillDef, Card, Stats } from '../shared/models';
+import type { AugmentId } from '../shared/augments';
+import { worldTwoSkillDefs } from './worldTwoSkills.ts';
+import { eligibleAugments } from './augments.ts';
+import { awakeningLink, awakeningFor, awakeningDescription, canAwaken } from './awakenings.ts';
 export const skills: Record<string, SkillDef> = {
+  ...worldTwoSkillDefs,
   'cuong-quyen': {
     id: 'cuong-quyen',
     name: 'Cương Quyền',
     icon: 'cuong-quyen',
     kind: 'attack',
     realm: 0,
-    description: 'Ba đòn đổi tay, phóng quyền kình xuyên mục tiêu.',
-    linked: 'cuong-the',
-    awakened: 'Long Viêm Quyền',
+    description:
+      'Ba đòn đổi tay, phóng quyền kình tới khi chạm địch hoặc ra khỏi map. Bậc 1–5 trúng 1–5 mục tiêu; thức tỉnh xuyên không giới hạn.',
+    ...awakeningLink('cuong-quyen'),
     effect: 'qi-punch',
   },
   'nguyen-khi-tram': {
@@ -17,9 +22,9 @@ export const skills: Record<string, SkillDef> = {
     icon: 'nguyen-khi-tram',
     kind: 'attack',
     realm: 0,
-    description: 'Ba đường kiếm, kiếm khí xuyên qua nhiều đối thủ.',
-    linked: 'tu-khi',
-    awakened: 'Kiếm Khí Phong Bạo',
+    description:
+      'Ba đường kiếm, kiếm khí bay tới khi chạm địch hoặc ra khỏi map. Bậc 1–5 trúng 1–5 mục tiêu; thức tỉnh xuyên không giới hạn.',
+    ...awakeningLink('nguyen-khi-tram'),
     effect: 'sword-slash',
   },
   'duong-viem-chuong': {
@@ -28,8 +33,10 @@ export const skills: Record<string, SkillDef> = {
     icon: 'duong-viem-chuong',
     kind: 'attack',
     realm: 1,
-    description: 'Phóng chưởng lửa nổ quanh mục tiêu. Mỗi bậc tăng sát thương và phạm vi.',
+    description:
+      'Chưởng lửa bay tới địch, nổ một lần khi chạm mục tiêu đầu. Bậc 1–5 xuyên qua 1–5 mục tiêu trực tiếp; mỗi mục tiêu chỉ chịu một lần sát thương từ cùng viên đạn.',
     effect: 'fire-palm',
+    ...awakeningLink('duong-viem-chuong'),
   },
   'cuong-the': {
     id: 'cuong-the',
@@ -48,6 +55,56 @@ export const skills: Record<string, SkillDef> = {
     realm: 2,
     description: 'Mỗi bậc +8% tốc đánh, +0,25 phạm vi hút XP. Liên kết thức tỉnh Nguyên Khí Trảm.',
     effect: 'level-up',
+  },
+  'viem-hoan': {
+    id: 'viem-hoan',
+    name: 'Viêm Hoàn',
+    icon: 'duong-viem-chuong',
+    kind: 'attack',
+    realm: 19,
+    description:
+      'Vòng lửa bám theo nhân vật, gây sát thương liên tục cho địch bên trong. Bán kính tăng theo bậc; sóng nhiệt lan từ tâm đến rìa vòng.',
+    ...awakeningLink('viem-hoan'),
+    effect: 'fire-palm',
+  },
+  'hoa-linh': {
+    id: 'hoa-linh',
+    name: 'Hỏa Linh',
+    icon: 'sat-thuong',
+    kind: 'support',
+    realm: 19,
+    description:
+      'Mỗi bậc +5 công kích và +0,08 hồi máu/giây. Liên kết thức tỉnh Dương Viêm Chưởng và Viêm Hoàn.',
+    effect: 'healing',
+  },
+  'loi-lien': {
+    id: 'loi-lien',
+    name: 'Lôi Liên',
+    icon: 'nguyen-khi-tram',
+    kind: 'attack',
+    realm: 28,
+    description: 'Lôi kình truyền qua những mục tiêu gần nhau; tăng bậc để tăng số lần truyền.',
+    ...awakeningLink('loi-lien'),
+    effect: 'spirit-bolt',
+  },
+  'loi-tam': {
+    id: 'loi-tam',
+    name: 'Lôi Tâm',
+    icon: 'chi-mang',
+    kind: 'support',
+    realm: 28,
+    description: 'Mỗi bậc +3% chí mạng và +4% tốc đánh. Liên kết thức tỉnh Lôi Liên.',
+    effect: 'level-up',
+  },
+  'khinh-than': {
+    id: 'khinh-than',
+    name: 'Khinh Thân Quyết',
+    icon: 'toc-do',
+    kind: 'support',
+    realm: 37,
+    description:
+      'Mỗi bậc +0,13 tốc chạy, giảm 5% hồi chiêu lướt và tăng 0,05 giây bất tử khi lướt.',
+    effect: 'wind-feather',
   },
 };
 export const statCards: {
@@ -108,9 +165,13 @@ export const statCards: {
     amount: 0.25,
   },
 ];
-export function eligibleCards(selected: string[], ranks: Record<string, number>): Card[] {
+export function eligibleCards(
+  selected: string[],
+  ranks: Record<string, number>,
+  chosen: AugmentId[] = [],
+): Card[] {
   const result: Card[] = [];
-  for (const id of selected) {
+  for (const id of new Set(selected)) {
     const skill = skills[id];
     if (!skill) continue;
     const rank = ranks[id] ?? 0;
@@ -123,14 +184,14 @@ export function eligibleCards(selected: string[], ranks: Record<string, number>)
         icon: skill.icon,
         description: rank ? `Cường hóa ${skill.name}. ${skill.description}` : skill.description,
       });
-    else if (rank === 5 && skill.linked && (ranks[skill.linked] ?? 0) >= 1)
+    else if (canAwaken(id, ranks))
       result.push({
         id: `awaken:${id}`,
         kind: 'awaken',
         skill: id,
         name: `Thức tỉnh · ${skill.awakened}`,
-        icon: id === 'cuong-quyen' ? 'long-viem-quyen' : 'kiem-khi-phong-bao',
-        description: 'Bậc 6: tăng mạnh sát thương, thêm đạn và phạm vi. Giữ đến hết lượt.',
+        icon: awakeningFor(id)!.icon,
+        description: awakeningDescription(awakeningFor(id)!.skill, chosen),
       });
   }
   for (const card of statCards)
@@ -142,5 +203,5 @@ export function eligibleCards(selected: string[], ranks: Record<string, number>)
       icon: card.icon,
       description: card.description,
     });
-  return result;
+  return [...result, ...eligibleAugments(selected, ranks, chosen)];
 }

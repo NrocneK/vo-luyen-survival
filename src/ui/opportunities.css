@@ -1,0 +1,112 @@
+.run-objectives {
+  position: absolute;
+  z-index: 4;
+  left: 24px;
+  top: 113px;
+  width: 260px;
+  display: grid;
+  gap: 10px;
+  pointer-events: none;
+  max-height: calc(100dvh - 240px);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.run-objectives .stage-mechanic {
+  position: static;
+  width: auto;
+}
+.opportunity-hud {
+  padding: 12px 14px;
+  background: #16251bee;
+  border: 1px solid #d2b56b80;
+  border-left: 3px solid #d6b768;
+  color: #d6dfc9;
+}
+.opportunity-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #d1bd87;
+  font-size: 9px;
+  margin-bottom: 7px;
+}
+.opportunity-hud strong {
+  color: #f0d9a3;
+  font-size: 13px;
+}
+.opportunity-hud p {
+  font-size: 10px;
+  line-height: 1.65;
+  margin: 7px 0;
+  color: #c1ccb4;
+}
+.opportunity-hud small {
+  display: block;
+  font-size: 9px;
+  line-height: 1.6;
+  color: #afc3ac;
+}
+.opportunity-hud button {
+  width: 100%;
+  margin-top: 9px;
+  padding: 8px 6px;
+  border: 1px solid #c5b27b88;
+  background: #435538;
+  color: #f0dfb6;
+  font:
+    10px 'Be Vietnam Pro',
+    sans-serif;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.opportunity-hud button:disabled {
+  cursor: default;
+  background: #23372b;
+  color: #acbaa0;
+  border-color: #66724e;
+}
+.opportunity-hud details {
+  pointer-events: auto;
+  margin-top: 8px;
+}
+.opportunity-hud summary {
+  cursor: pointer;
+  font-size: 9px;
+  color: #cfbd8f;
+}
+.opportunity-progress {
+  height: 4px;
+  background: #2c4037;
+  margin: 9px 0 5px;
+}
+.opportunity-progress i {
+  display: block;
+  height: 100%;
+  background: #b9d8b4;
+}
+.opportunity-hud.phase-claimable {
+  border-left-color: #bde393;
+}
+.opportunity-hud.phase-expired {
+  opacity: 0.75;
+}
+@media (max-width: 760px) {
+  .run-objectives {
+    left: 12px;
+    width: min(230px, calc(100vw - 165px));
+    gap: 7px;
+  }
+  .opportunity-hud {
+    padding: 8px 9px;
+  }
+  .opportunity-heading {
+    font-size: 8px;
+  }
+  .opportunity-hud strong {
+    font-size: 11px;
+  }
+  .opportunity-hud p,
+  .opportunity-hud small {
+    font-size: 8px;
+  }
+}

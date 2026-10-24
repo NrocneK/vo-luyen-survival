@@ -1,0 +1,55 @@
+{
+  "version": "2.3.1",
+  "status": "passed",
+  "checks": [
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "loaded": [
+        "hero-v9-unarmed-0.png",
+        "hero-v9-unarmed-1.png",
+        "hero-v9-unarmed-0.json",
+        "hero-v9-unarmed-1.json",
+        "hero-v9-unarmed-2.png",
+        "hero-v9-unarmed-2.json",
+        "hero-v9-sword-0.png",
+        "hero-v9-sword-0.json",
+        "hero-v9-sword-1.png",
+        "hero-v9-sword-1.json",
+        "hero-v9-sword-2.png",
+        "hero-v9-sword-2.json",
+        "hero-v9-sword-3.png",
+        "hero-v9-sword-3.json"
+      ],
+      "result": "Lobby → mặc bảy món → 14 màn Thông Huyền → Sa Thành/di chuyển/pause → rút lui → căn cứ; giữ save chính"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "loaded": [
+        "hero-v9-unarmed-0.png",
+        "hero-v9-unarmed-0.json",
+        "hero-v9-unarmed-2.png",
+        "hero-v9-unarmed-1.png",
+        "hero-v9-unarmed-2.json",
+        "hero-v9-unarmed-1.json",
+        "hero-v9-sword-0.png",
+        "hero-v9-sword-1.png",
+        "hero-v9-sword-2.png",
+        "hero-v9-sword-0.json",
+        "hero-v9-sword-1.json",
+        "hero-v9-sword-2.json",
+        "hero-v9-sword-3.png",
+        "hero-v9-sword-3.json"
+      ],
+      "result": "Lobby → mặc bảy món → 14 màn Thông Huyền → Sa Thành/di chuyển/pause → rút lui → căn cứ; giữ save chính"
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "pixelRequests": []
+}

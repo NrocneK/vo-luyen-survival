@@ -17,7 +17,7 @@ export const weapons = {
     discipline: 'Kiếm pháp',
     actorId: 'duong-khai-kiem',
     icon: 'assets/v3/equipment/equipment/thiet-kiem.png',
-    description: 'Chém chéo thuận, chéo ngược và quét ngang.',
+    description: 'Chém chéo, chém ngang và đâm liên hoàn.',
     startingSkill: 'nguyen-khi-tram',
   },
 } as const satisfies Record<

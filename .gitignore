@@ -15,6 +15,22 @@ dist/
 qa/screenshots/
 *.log
 public/game/
+.local-backups/
+
+# Giữ các thử nghiệm nhân vật đã dừng tại máy; bản chơi dùng catalogue v9.
+art/hero-cel-v2/
+art/hero-clothing-fit-demo/
+art/hero-motion-v2/
+art/hero-pixel-base/
+art/hero-pixel-modular/
+art/hero-pixel-runtime/
+art/hero-redesign-study/
+art/hero-starter-animation/
+art/hero-starter-four-slot/
+art/hero-volume-rig/
+public/assets/v10/
+public/assets/v11/
+exports/
 
 # Bản đóng gói trùng asset, cấu hình riêng và file lưu thử không cần đưa lên GitHub.
 art/*.zip
@@ -22,5 +38,27 @@ art/*.zip
 .env.*
 !.env.example
 qa/fixture-progress.json
+qa/*-fixture.json
 *.blend1
 qa/github-*.ps1
+
+# Render, QA và nguồn bị loại của bài thử phong cách giữ ở máy làm việc.
+art/motion-style-study/renders/
+art/motion-style-study/internal/
+art/motion-style-study/*-internal.png
+art/motion-style-study/duong-khai-motion-study.blend1
+art/motion-style-study/cutout-prototype/
+art/motion-style-study/cutout-generated-prototype/
+art/motion-style-study/registration/
+art/motion-style-study/samples/*/internal/
+art/duong-khai-2-5d/internal/
+art/duong-khai-2-5d/export/internal/
+art/duong-khai-rebuild/internal/
+art/enemies-trung-do/renders/
+qa/*-preview.pid
+art/enemies-trung-do/renders/
+art/enemies-trung-do/models/
+art/enemies-thong-huyen/renders/
+art/enemies-thong-huyen/models/
+art/world-two-icons/generated-paths.json
+art/hero-equipment/internal/

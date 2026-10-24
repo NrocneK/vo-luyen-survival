@@ -1,0 +1,119 @@
+.stage-mechanic {
+  position: absolute;
+  z-index: 4;
+  left: 24px;
+  top: 113px;
+  width: 260px;
+  padding: 12px 14px;
+  pointer-events: none;
+  color: #d9e5d0;
+  background: #0b211be8;
+  border: 1px solid #66805c88;
+  border-left: 3px solid #8caa6e;
+}
+.mechanic-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: #afc69d;
+  margin-bottom: 7px;
+}
+.mechanic-heading output {
+  color: #f5dfad;
+  font-variant-numeric: tabular-nums;
+}
+.stage-mechanic strong {
+  font-size: 13px;
+  color: #eaddb5;
+  font-weight: 600;
+}
+.stage-mechanic p {
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 6px 0 0;
+  color: #bed0b7;
+}
+.stage-mechanic small {
+  display: block;
+  font-size: 9px;
+  margin-top: 8px;
+  color: #b8d9df;
+}
+.stage-mechanic.phase-rest {
+  opacity: 0.83;
+}
+.stage-mechanic.phase-warning {
+  border-left-color: #efad63;
+  background: #291e12ed;
+}
+.stage-mechanic.phase-active {
+  border-left-color: #e39967;
+}
+.stage-mechanic.phase-counter {
+  border-left-color: #88dce4;
+  background: #102c2bec;
+}
+.stage-mechanic[data-kind='poison'].phase-active {
+  border-left-color: #a4ce73;
+}
+.stage-mechanic[data-kind='rune'].phase-active {
+  border-left-color: #88dce4;
+}
+.stage-mechanic[data-kind='siege'].phase-active {
+  border-left-color: #c99be9;
+}
+.mechanic-progress {
+  height: 4px;
+  margin-top: 10px;
+  background: #263e38;
+}
+.mechanic-progress i {
+  display: block;
+  height: 100%;
+  background: #9cdbdc;
+}
+.stage-mechanic[data-kind='squad'] .mechanic-progress i {
+  background: #e1b979;
+}
+.stage-mechanic-info {
+  padding: 14px;
+  margin: 14px 0;
+  border: 1px solid #748a674d;
+  background: #28493655;
+}
+.stage-mechanic-info strong {
+  color: #e1c992;
+  font-size: 13px;
+}
+.stage-mechanic-info p {
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+@media (max-width: 760px) {
+  .stage-mechanic {
+    top: 113px;
+    left: 12px;
+    width: min(230px, calc(100vw - 165px));
+    padding: 8px 9px;
+  }
+  .mechanic-heading {
+    font-size: 8px;
+    gap: 5px;
+    margin-bottom: 4px;
+  }
+  .stage-mechanic strong {
+    font-size: 10px;
+  }
+  .stage-mechanic p {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  .stage-mechanic.phase-rest p {
+    display: none;
+  }
+  .stage-mechanic small {
+    font-size: 7px;
+  }
+}

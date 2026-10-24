@@ -904,6 +904,17 @@ progress::-webkit-progress-value {
   color: #a6b896;
   letter-spacing: 0.1em;
 }
+.test-speed-cycle {
+  pointer-events: auto;
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 12px;
+  min-width: 60px;
+  padding: 9px;
+  color: #f2d49a;
+  font-size: 12px;
+  white-space: nowrap;
+}
 .xp-track {
   position: absolute;
   z-index: 3;
@@ -1276,6 +1287,204 @@ progress::-webkit-progress-value {
   margin: 20px 0;
 }
 
+/* Hành trình dùng chung trong sân trung tâm, chọn màn và tổng kết. */
+.campaign-progress {
+  padding: 13px 14px;
+  border: 1px solid #b4a46d38;
+  background: #405b292b;
+  margin-bottom: 16px;
+}
+.campaign-progress .progress-label {
+  margin: 0;
+  gap: 8px;
+  font-size: 9px;
+}
+.campaign-progress.completed {
+  border-color: #dcc47b88;
+}
+.campaign-steps {
+  display: flex;
+  gap: 7px;
+  margin: 14px 0 10px;
+}
+.campaign-steps > span {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 26px;
+  color: #788e79;
+  background: #112b20;
+  border: 1px solid #79907133;
+  font-size: 10px;
+}
+.campaign-steps > .available {
+  color: #ead6a2;
+  border-color: #bb9b5d80;
+}
+.campaign-steps > .cleared {
+  color: #f0d78f;
+  background: #63733d70;
+  border-color: #d1b47070;
+}
+.station-body .campaign-progress p {
+  font-size: 10px;
+  margin: 0;
+}
+.next-milestone,
+.milestone-unlocked {
+  border-left: 2px solid #a9975c;
+  padding: 10px 13px;
+  margin-bottom: 18px;
+  background: #46592d33;
+}
+.next-milestone > *,
+.milestone-unlocked > strong {
+  display: block;
+}
+.next-milestone > small {
+  color: #aca77c;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+.next-milestone > strong,
+.milestone-unlocked > strong {
+  font-size: 15px;
+  color: #e3cf9c;
+  margin: 6px 0;
+}
+.next-milestone > span {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #b7c4ac;
+}
+.stage-list {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.stage-choice {
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr) 12px;
+  align-items: center;
+  text-align: left;
+  gap: 9px;
+  padding: 10px;
+  background: #243c2c;
+  border: 1px solid #82976e30;
+}
+.stage-choice.selected {
+  background: #52603b66;
+  border-color: #d0b675;
+}
+.stage-choice.locked {
+  background: #162c22;
+}
+.stage-choice strong {
+  display: block;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #d6d4ba;
+}
+.stage-choice small {
+  display: block;
+  font-size: 9px;
+  line-height: 1.7;
+  color: #9db297;
+}
+.stage-choice.locked small {
+  color: #b8a68c;
+}
+.stage-number {
+  color: #c5b575;
+  font-size: 16px;
+  font-family: 'Noto Serif Variable', serif;
+}
+.stage-objective {
+  padding: 10px 12px;
+  background: #3a54312e;
+  border-left: 2px solid #8caa69;
+  margin-bottom: 14px;
+}
+.stage-objective > strong {
+  font-size: 10px;
+  color: #d3c28f;
+}
+.station-body .stage-objective p {
+  margin: 3px 0 0;
+}
+.station-body .stage-lock {
+  color: #d5ad8a;
+}
+.station-body .stage-record {
+  color: #c2bd8d;
+  font-size: 9px;
+}
+.station-body .stage-entry {
+  color: #c6ba94;
+  font-size: 10px;
+}
+.stage-rewards {
+  border: 1px solid #82976e35;
+  margin: 9px 0;
+  padding: 9px 10px;
+  color: #c4c7a7;
+  font-size: 10px;
+}
+.stage-rewards > summary {
+  cursor: pointer;
+  line-height: 1.8;
+}
+.stage-rewards[open] > summary {
+  margin-bottom: 10px;
+}
+.loot-summary p {
+  font-size: 10px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.loot-summary .reward-grid > div {
+  min-width: 0;
+}
+.loot-summary .reward-grid span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.loot-summary .reward-grid strong,
+.loot-summary .asset-icon {
+  flex-shrink: 0;
+}
+.loot-summary.compact .reward-grid {
+  grid-template-columns: 1fr;
+}
+.first-clear-rewards {
+  border-color: #c2a46166;
+  margin-bottom: 18px;
+}
+.milestone-unlocked p {
+  margin-bottom: 0;
+}
+.world-complete {
+  padding: 18px;
+  margin: 20px 0;
+  border: 1px solid #cfb66c99;
+  background: linear-gradient(120deg, #74653445, #3e613933);
+}
+.world-complete h3 {
+  margin: 9px 0;
+  color: #e9d093;
+}
+.station-action .primary-button {
+  min-height: 44px;
+  height: auto;
+  line-height: 1.6;
+  white-space: normal;
+}
+.station-body .craft-realm,
+.station-body .pill-potency {
+  color: #d4bd87;
+  font-size: 10px;
+}
+
 @media (max-height: 680px) and (min-width: 900px) {
   .lobby-header {
     top: 15px;
@@ -1415,6 +1624,9 @@ progress::-webkit-progress-value {
     left: 12px;
     right: 12px;
     top: 12px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 6px;
   }
   .location-plaque {
     padding: 8px;
@@ -1431,12 +1643,18 @@ progress::-webkit-progress-value {
   }
   .run-clock {
     padding: 4px 12px;
+    position: static;
+    transform: none;
+    max-width: 130px;
   }
   .run-clock strong {
     font-size: 20px;
   }
   .run-clock span {
     font-size: 6px;
+  }
+  .test-speed-cycle {
+    display: none;
   }
   .pause-button {
     padding: 6px;

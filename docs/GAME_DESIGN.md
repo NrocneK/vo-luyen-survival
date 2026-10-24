@@ -1,10 +1,10 @@
 # Tài liệu thiết kế game — bản đã duyệt 0.1
 
-Ngày duyệt: 13/10/2026. Cập nhật: 14/10/2026. Bộ hình MVP v3 đã duyệt. Người dùng đã kiểm tra di chuyển và yêu cầu hoàn thiện game với map đầu, bao gồm lobby đầy đủ thay màn khởi động. Bản Hắc Phong Sơn 1.0 triển khai các hệ thống của giai đoạn 2–6; hướng dẫn chơi và cấu trúc thực tế nằm trong README.md.
+Ngày duyệt: 13/10/2026. Cập nhật: 16/10/2026. Bộ hình MVP v3 đang dùng trong game. Ngày 16/10 người dùng duyệt mẫu số 2 **Tiên hiệp 2.5D** cho đợt nâng cấp đồ họa; quy chuẩn tại [ART_DIRECTION_2_5D.md](ART_DIRECTION_2_5D.md). Người dùng đã kiểm tra di chuyển và yêu cầu hoàn thiện game với map đầu, bao gồm lobby đầy đủ thay màn khởi động. Bản Hắc Phong Sơn 1.0 triển khai các hệ thống của giai đoạn 2–6; hướng dẫn chơi và cấu trúc thực tế nằm trong README.md.
 
 ## 1. Ý tưởng cốt lõi
 
-Game survival tiên hiệp 2D pixel art với góc nhìn isometric chạy trên trình duyệt máy tính. Người chơi điều khiển Dương Khai, tự động chiến đấu với số lượng lớn đối thủ, lấy XP để phát triển bộ kỹ năng trong từng màn. Ngoài màn, nhân vật tích lũy cảnh giới, trang bị và sủng vật để ngày càng mạnh hơn, bảo vệ những người bên cạnh.
+Game survival tiên hiệp với đồ họa 2.5D, sprite 2D và góc nhìn isometric chạy trên trình duyệt máy tính. Người chơi điều khiển Dương Khai, tự động chiến đấu với số lượng lớn đối thủ, lấy XP để phát triển bộ kỹ năng trong từng màn. Ngoài màn, nhân vật tích lũy cảnh giới, trang bị và sủng vật để ngày càng mạnh hơn, bảo vệ những người bên cạnh.
 
 Tham khảo cảm giác chiến đấu của Vampire Survivors và thế giới Võ Luyện Đỉnh Phong. Chỉ chuyển những khu vực, thử thách và trận chiến nổi bật thành màn chơi; không chuyển toàn bộ chương truyện thành nhiệm vụ.
 
@@ -94,15 +94,15 @@ Theo yêu cầu người dùng, hoàn thiện và duyệt toàn bộ bộ hình 
 Quy trình:
 
 1. Chốt danh sách nội dung, mốc cảnh giới, bộ kỹ năng và cặp thức tỉnh; lập danh sách asset tương ứng.
-2. Chốt phong cách pixel art, góc nhìn, bảng màu, kích thước và quy tắc nhận diện nhân vật/quái/tinh anh/boss.
+2. Dùng phong cách tiên hiệp 2.5D mẫu số 2 đã duyệt; thống nhất góc nhìn, bảng màu, kích thước và quy tắc nhận diện nhân vật/quái/tinh anh/boss.
 3. Tạo và duyệt tạo hình Dương Khai, từng quái, boss, sủng vật, vật phẩm và trang bị theo từng nhóm nhỏ.
 4. Hoàn thiện sprite/khung hoạt ảnh cần dùng, biểu tượng kỹ năng và vật phẩm, hiệu ứng chiến đấu, tileset/chướng ngại vật, nền khu vực nghỉ và giao diện hình ảnh.
 5. Kiểm tra đồng bộ phong cách, độ rõ khi thu nhỏ, nền trong suốt, kích thước/căn ô khung hoạt ảnh và khả năng nhận diện đòn nguy hiểm.
 6. Lưu bộ hình hoàn chỉnh trong dự án, kèm bảng danh mục và bản xem trước; người dùng duyệt bộ asset trước khi chuyển sang giai đoạn 1.
 
-Actor dùng rig 3D rồi xuất sprite pixel 2D theo phương án người dùng đã chọn. Các hình tĩnh được tạo bằng imagegen, chuẩn hóa và đóng gói bằng script đã được cho phép. Tranh ý tưởng được phân biệt với ảnh dùng trực tiếp trong game. Bản xuất dùng trong game cần đáp ứng kích thước, bố cục và nền trong suốt phù hợp; không coi một bảng tranh ý tưởng là bộ sprite hoàn chỉnh.
+Actor dùng rig và khớp trong không gian 3D, xuất sprite 2D theo camera isometric cố định. Đầu ra đợt nâng cấp giữ sắc độ mềm và chất liệu tiên hiệp 2.5D của mẫu 2. Các hình tĩnh được tạo bằng imagegen, chuẩn hóa và đóng gói bằng script đã được cho phép. Tranh ý tưởng được phân biệt với ảnh dùng trực tiếp trong game. Bản xuất dùng trong game cần đáp ứng kích thước, bố cục và nền trong suốt phù hợp; không coi một bảng tranh ý tưởng là bộ sprite hoàn chỉnh.
 
-Đề xuất kích thước logic để duyệt: nhân vật và quái thường 48×48, tinh anh 64×64, boss 96×96 hoặc 128×128, biểu tượng 32×32, ô địa hình 32×32. Giữ cạnh pixel rõ và xem trước ở kích thước hiển thị thực tế. Hoạt ảnh nhân vật/quái tối thiểu gồm đứng, di chuyển, tấn công và bị hạ; boss bổ sung các đòn riêng.
+Các kích thước logic 48×48–128×128 thuộc đề xuất pixel art ban đầu. Chuẩn mẫu 2.5D mới dùng ô xuất 320×320 với điểm chân cố định; kích thước hiển thị trong game sẽ được kiểm tra trên camera thực tế khi tích hợp. Hoạt ảnh nhân vật/quái tối thiểu gồm đứng, di chuyển, tấn công và bị hạ; boss bổ sung các đòn riêng.
 
 ## 8. Công nghệ và cấu trúc dự án dự kiến
 
@@ -209,3 +209,21 @@ Lobby Lăng Tiêu Các hiển thị động phủ, nhân vật và linh thú đ�
 Hắc Phong Sơn dài 10 phút trước boss; tinh anh ở phút 3 và 6. Ba quái thường, hai tinh anh, một boss bốn đòn; hai bộ vũ khí ba chiêu, Dương Viêm Chưởng, Cường Thể, Tụ Khí và hai thức tỉnh. Có XP/thẻ, lướt, đan hồi máu, thắng/thua/rút lui, phần thưởng 100%/30% và reset lượt.
 
 Tu luyện từ Thối Thể tầng 1 đến đột phá mẫu Khai Nguyên tầng 1; đây là phạm vi của map mở đầu, không phải trần cảnh giới toàn Trung Đô. Ba công thức đan, sáu trang bị, hai linh thú có tiến hóa, idle 8 giờ, localStorage, xuất/nhập và âm thanh cục bộ được triển khai. Các mốc thế giới/map sau vẫn theo quy trình chọn lọc và duyệt nội dung khi mở rộng.
+
+## Thế giới 1 ngày 18/10/2026
+
+Người dùng chuyển trọng tâm sang gameplay và yêu cầu hoàn thiện thế giới đầu. Trần chương được chốt trực tiếp là **Thần Du đỉnh phong tầng 10**. Bản 1.2 triển khai Hắc Phong Sơn → Truyền Thừa Động Thiên → Cửu Âm Sơn Cốc → Ly Địa → Trung Đô · Đoạt Đích → Trung Đô · Hạo Kiếp. Chỉ chọn sáu mốc, mỗi lượt là một màn độc lập; cần vượt màn trước và đạt cảnh giới tối thiểu để mở màn sau.
+
+Có 47 mốc cảnh giới, mười kỹ năng, bốn liên kết thức tỉnh, mười một trang bị và thưởng vượt lần đầu theo màn. Thắng cả sáu màn và đạt trần mới hoàn tất thế giới. Giữ ba công thức đan, hai linh thú và hệ thống lobby hiện tại; hiệu lực Tu Vi Đan/idle tăng theo tiến trình. Profile v2 ghi thành tích và chuyển dữ liệu v1 tự động. Bộ hình runtime v3/v4 được dùng cho đợt hoàn thiện gameplay; bộ dựng mới được giữ riêng cho nâng cấp mỹ thuật sau. Chi tiết và kiểm tra tại [WORLD_ONE_QA.md](WORLD_ONE_QA.md).
+
+## Thức tỉnh — bản 1.6.0, ngày 20/10/2026
+
+Hoàn tất mục 3 của lộ trình bổ sung. Mười kỹ năng hiện có đủ **năm liên kết thức tỉnh**: Dương Viêm Chưởng + Hỏa Linh bổ sung Kim Ô Phần Thiên Chưởng. Hỏa Linh hỗ trợ được cả hai kỹ năng hỏa, không bị tiêu hao khi thức tỉnh. Tấn công đúng bậc 5 + hỗ trợ liên kết từ bậc 1 mở thẻ để người chơi chọn; cả mười biến chiêu được giữ sau khi chọn bậc 6, mọi nâng cấp này chỉ tồn tại trong lượt.
+
+Thông số và mô tả dùng dữ liệu chung; các hướng quyền/kiếm/hỏa/lôi được đo bằng 75 cặp thử có cùng điều kiện. Lobby/thẻ/menu tạm dừng hiển thị điều kiện và tiến độ, HUD hiện tên thức tỉnh thật. Phạm vi và số đo tại [AWAKENINGS_QA.md](AWAKENINGS_QA.md). Cơ duyên, cân bằng hành trình tu luyện và tổng kết sát thương vẫn là các mục 4–6 riêng.
+
+## Cơ duyên — bản 1.7.0, ngày 20/10/2026
+
+Hoàn tất mục 4 với rương hộ vệ, linh dược, tinh anh tùy chọn và thử thách tụ linh. Mỗi lượt trộn bốn loại theo seed và gieo vị trí gần đường di chuyển; chỉ một mục tiêu cùng lúc, có thể bỏ qua. Đến gần bấm E hoặc nút HUD để tham gia/nhận thưởng. Hộ vệ có cảnh báo hiện hình, dùng đúng loại theo bối cảnh sáu màn. Boss xuất hiện sẽ hủy cơ duyên chưa nhận.
+
+XP và hồi máu có tác dụng ngay trong lượt; chiến lợi phẩm còn lại tạm giữ rồi quyết toán 100%/30% cùng phần thưởng màn. Cơ duyên không tự ghi vào Profile, không thay điều kiện thắng hoặc tiến trình thế giới. Dữ liệu, thời gian, phần thưởng và kiểm tra tại [OPPORTUNITIES_QA.md](OPPORTUNITIES_QA.md). Mục tiếp theo là cân bằng hành trình bằng nhân vật thường.

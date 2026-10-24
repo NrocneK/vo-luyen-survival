@@ -2,9 +2,17 @@ import { RunEngine } from '../src/game/systems/RunEngine.ts';
 import { startingSkill } from '../src/domain/profile.ts';
 import type { Profile } from '../src/shared/models';
 import type { Point, CircleObstacle } from '../src/shared/types';
+import { stage } from '../src/data/stages.ts';
+import type { StageDef } from '../src/data/stages.ts';
+import { enemies } from '../src/data/enemies.ts';
 
-export function playFullRun(profile: Profile, obstacles: CircleObstacle[], seed: number) {
-  const run = new RunEngine(profile, obstacles, seed);
+export function playFullRun(
+  profile: Profile,
+  obstacles: CircleObstacle[],
+  seed: number,
+  selected: StageDef = stage,
+) {
+  const run = new RunEngine(profile, obstacles, seed, selected);
   let stalled = 0,
     last = { ...run.position },
     peakEnemies = 0;
@@ -34,8 +42,9 @@ export function playFullRun(profile: Profile, obstacles: CircleObstacle[], seed:
     const alive = run.enemies.filter((enemy) => !enemy.dead);
     peakEnemies = Math.max(peakEnemies, alive.length);
     for (const enemy of alive) {
-      if (enemy.type.includes('tinh-anh')) elitesSeen.add(enemy.type);
-      if (enemy.type === 'hac-phong-lang-vuong' && enemy.attack) bossAttacks.add(enemy.attack);
+      if (enemies[enemy.type].elite && enemies[enemy.type].behavior !== 'boss')
+        elitesSeen.add(enemy.type);
+      if (enemy.type === selected.bossId && enemy.attack) bossAttacks.add(enemy.attack);
     }
     let target: Point = { x: Math.sin(run.time * 0.07) * 5, y: Math.cos(run.time * 0.07) * 5 };
     const near = alive.filter(

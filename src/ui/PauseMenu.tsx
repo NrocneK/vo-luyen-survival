@@ -1,16 +1,29 @@
 import { useEffect, useRef } from 'react';
 import { GameBridge } from '../app/GameBridge';
+import { stageById } from '../data/stages';
+import { RunBuild } from './RunBuild';
+import { AwakeningGuide } from './AwakeningGuide';
+import { startingSkill } from '../domain/profile';
+import { GameGlyph } from './lobby/SurvivalUI';
+import { RunLoadout } from './CombatWidgets';
+import { clock } from './RunOverlays';
+import './combat-survival.css';
 
 export function PauseMenu({ bridge }: { bridge: GameBridge }) {
-  const panel = useRef<HTMLDivElement>(null);
+  const panel = useRef<HTMLDivElement>(null),
+    state = bridge.getSnapshot(),
+    stage = stageById(state.stageId);
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
-    const buttons = panel.current?.querySelectorAll<HTMLButtonElement>('button');
-    buttons?.[0]?.focus();
+    panel.current?.querySelector<HTMLButtonElement>('button')?.focus();
     const trap = (event: KeyboardEvent) => {
-      if (event.key !== 'Tab' || !buttons?.length) return;
-      const first = buttons[0],
-        last = buttons[buttons.length - 1];
+      if (event.key !== 'Tab') return;
+      const controls = [
+        ...(panel.current?.querySelectorAll<HTMLElement>('button:not(:disabled),summary') ?? []),
+      ].filter((el) => el.getClientRects().length);
+      if (!controls.length) return;
+      const first = controls[0],
+        last = controls.at(-1)!;
       if (event.shiftKey && document.activeElement === first) {
         event.preventDefault();
         last.focus();
@@ -26,25 +39,60 @@ export function PauseMenu({ bridge }: { bridge: GameBridge }) {
     };
   }, []);
   return (
-    <div className="pause-backdrop">
+    <div className="pause-backdrop survival-overlay" data-overlay="pause">
       <div
-        className="pause-panel"
+        className="pause-panel survival-pause"
         ref={panel}
         role="dialog"
         aria-modal="true"
         aria-labelledby="pause-title"
       >
-        <span className="overline">HẮC PHONG SƠN</span>
+        <span className="pause-emblem">
+          <GameGlyph name="pause" size={32} />
+        </span>
+        <span className="overline">{stage.name}</span>
         <h2 id="pause-title">Tạm dừng</h2>
-        <p>Đường lịch luyện còn ở phía trước.</p>
+        <div className="pause-stats">
+          <span>
+            <GameGlyph name="timer" size={19} />
+            {clock(state.run.time)}
+          </span>
+          <span>
+            <GameGlyph name="damage" size={19} />
+            {state.run.kills} hạ địch
+          </span>
+          <span>
+            <GameGlyph name="level" size={19} />
+            Cấp {state.run.level}
+          </span>
+        </div>
+        <RunLoadout state={state} />
         <button className="primary-button" onClick={() => bridge.dispatch({ type: 'resume' })}>
-          Tiếp tục<span aria-hidden="true">↗</span>
+          <GameGlyph name="play" size={19} />
+          Tiếp tục<kbd>ESC</kbd>
         </button>
-        <button className="secondary-button" onClick={() => bridge.dispatch({ type: 'leave' })}>
-          Rút lui · nhận 30% thưởng
+        <button
+          className="secondary-button retreat-button"
+          onClick={() => bridge.dispatch({ type: 'leave' })}
+        >
+          <GameGlyph name="expedition" size={18} />
+          Rút lui<span>Nhận 30% thưởng</span>
         </button>
-        <small>
-          <kbd>ESC</kbd> tiếp tục · <kbd>Q</kbd> dùng đan · <kbd>SPACE</kbd> lướt
+        <RunBuild chosen={state.run.augments} compact />
+        <AwakeningGuide
+          prepared={[startingSkill(state.profile), ...state.profile.selectedSkills]}
+          ranks={state.run.skills}
+        />
+        <small className="pause-controls">
+          <span>
+            <kbd>Q</kbd> Dùng đan
+          </span>
+          <span>
+            <kbd>SPACE</kbd> Lướt né
+          </span>
+          <span>
+            <kbd>E</kbd> Tương tác
+          </span>
         </small>
       </div>
     </div>

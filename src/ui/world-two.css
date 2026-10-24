@@ -1,0 +1,174 @@
+.world-tabs,
+.batch-choices,
+.world-travel {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 0.8rem 0;
+}
+.world-tabs button,
+.batch-choices button {
+  flex: 1;
+  min-width: 5rem;
+}
+.world-tabs .selected,
+.batch-choices .selected {
+  border-color: #e8c37d;
+  background: #394c40;
+  color: #ffe3a4;
+}
+.lobby[data-world='2'] .lobby-brand strong {
+  color: #eed098;
+}
+.mission-hud {
+  max-width: 340px;
+  border: 1px solid #9fbab26b;
+  background: #102824e8;
+  color: #f4e5c4;
+  padding: 10px 14px;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+.mission-hud strong,
+.mission-hud small {
+  display: block;
+}
+.mission-hud small {
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 4px;
+  color: #d2dacc;
+}
+.mission-hud button {
+  margin-top: 7px;
+  padding: 5px 10px;
+}
+.mission-track {
+  height: 5px;
+  background: #091512;
+  margin-top: 7px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.mission-track i {
+  display: block;
+  height: 100%;
+  background: #bcce98;
+}
+.burst-status {
+  color: #ffd5b2;
+  font-size: 11px;
+}
+.mission-protected {
+  color: #a4e8ca;
+  margin-top: 5px;
+  font-size: 11px;
+}
+.story-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  background: #071a18ef;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.story-dialog article {
+  width: min(660px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  padding: clamp(22px, 5vw, 52px);
+  border: 1px solid #b6a16c;
+  background: linear-gradient(140deg, #1d3935, #122724);
+  box-shadow: 0 20px 90px #0008;
+  color: #ecdfbd;
+}
+.story-dialog p {
+  line-height: 1.9;
+}
+.story-dialog footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.story-dialog h1 {
+  font-family: 'Noto Serif Variable', serif;
+}
+.story-choice {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+@media (max-width: 760px) {
+  .mission-hud {
+    max-width: 230px;
+    padding: 7px 9px;
+  }
+  .mission-hud small {
+    font-size: 10px;
+  }
+  .world-tabs {
+    gap: 4px;
+  }
+  .story-dialog {
+    padding: 12px;
+  }
+}
+
+.story-dialog.chapter-ending {
+  position: relative;
+  inset: auto;
+  display: block;
+  width: min(720px, calc(100vw - 24px));
+  max-height: 90dvh;
+  overflow: auto;
+  padding: clamp(22px, 5vw, 48px);
+  background: linear-gradient(140deg, #1d3935, #122724);
+  border: 1px solid #b6a16c;
+}
+.story-dialog .story-prose {
+  line-height: 1.9;
+}
+.story-choices {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+.story-choices .selected {
+  border-color: #d7b477;
+  background: #3b4f43;
+}
+
+@media (max-width: 760px) {
+  .game-hud[data-chapter='2'] ~ .boss-hud {
+    top: 80px;
+    left: 12px;
+    transform: none;
+    width: calc(100% - 24px);
+  }
+  .game-hud[data-chapter='2'] ~ .run-objectives {
+    top: 137px;
+    max-width: calc(100% - 134px);
+  }
+  .game-hud[data-chapter='2'] ~ .run-objectives .mission-hud {
+    max-width: 100%;
+  }
+  .game-hud[data-chapter='2'] ~ .map-panel {
+    top: 137px;
+    right: 12px;
+    width: 105px;
+  }
+  .game-hud[data-chapter='2'] ~ .map-panel .mini-map {
+    height: 65px;
+  }
+  .game-hud[data-chapter='2'] ~ .run-notice {
+    top: auto;
+    bottom: 192px;
+    max-width: calc(100% - 24px);
+    width: max-content;
+  }
+  .game-hud[data-chapter='2'] ~ .run-objectives .opportunity-hud {
+    max-width: 100%;
+  }
+}

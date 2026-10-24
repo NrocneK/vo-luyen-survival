@@ -2,7 +2,12 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync, statSync } from 'node:fs';
 const files = execFileSync(
   'git',
-  ['ls-files', '--cached', '--others', '--exclude-standard', '-z'],
+  [
+    'ls-files',
+    '--cached',
+    ...(process.argv.includes('--staged-only') ? [] : ['--others', '--exclude-standard']),
+    '-z',
+  ],
   { encoding: 'utf8' },
 )
   .split('\0')

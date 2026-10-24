@@ -1,4 +1,19 @@
 import type { Cost, PillId } from '../shared/models';
+export function pillName(realm: number, id: PillId): string {
+  return (
+    realm >= 47
+      ? {
+          'tu-vi-dan': 'Ngưng Nguyên Đan',
+          'hoi-nguyen-dan': 'Hồi Xuân Đan',
+          'cuong-the-dan': 'Tẩy Tủy Đan',
+        }
+      : {
+          'tu-vi-dan': 'Tu Vi Đan',
+          'hoi-nguyen-dan': 'Hồi Nguyên Đan',
+          'cuong-the-dan': 'Cường Thể Đan',
+        }
+  )[id];
+}
 export const recipes: { id: PillId; name: string; xp: number; cost: Cost; description: string }[] =
   [
     {
@@ -6,7 +21,7 @@ export const recipes: { id: PillId; name: string; xp: number; cost: Cost; descri
       name: 'Tu Vi Đan',
       xp: 0,
       cost: { stone: 25, resources: { 'linh-thao': 3 } },
-      description: 'Dùng tại lobby: +80 tu vi, không tự đột phá.',
+      description: 'Dùng tại lobby để tăng tu vi; hiệu lực tăng theo cảnh giới. Không tự đột phá.',
     },
     {
       id: 'hoi-nguyen-dan',

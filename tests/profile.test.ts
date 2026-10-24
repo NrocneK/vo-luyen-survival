@@ -9,6 +9,7 @@ import {
   forge,
   upgrade,
   equip,
+  unequip,
   unlockPet,
   feedPet,
   evolvePet,
@@ -18,6 +19,24 @@ import {
   applyResult,
 } from '../src/domain/profile.ts';
 import { eligibleCards } from '../src/data/skills.ts';
+import { stage } from '../src/data/stages.ts';
+
+test('tháo áo giữ món sở hữu, tiền và tu vi; bỏ đúng chỉ số, lưu/tải được và giữ vũ khí', () => {
+  const profile = newProfile();
+  const before = structuredClone(profile);
+  const stats = permanentStats(profile);
+  unequip(profile, 'vo-phuc');
+  assert.equal(profile.equipped.body, null);
+  assert.deepEqual(profile.equipment, before.equipment);
+  assert.equal(profile.stone, before.stone);
+  assert.equal(profile.cultivation, before.cultivation);
+  assert.equal(permanentStats(profile).hp, stats.hp - 15);
+  assert.equal(validateProfile(structuredClone(profile)).equipped.body, null);
+  unequip(profile, 'dong-quyen-sao');
+  assert.equal(profile.equipped.weapon, 'dong-quyen-sao');
+  equip(profile, 'vo-phuc');
+  assert.deepEqual(permanentStats(profile), stats);
+});
 
 test('Idle giới hạn 8 giờ, đồng hồ lùi không sinh tu vi âm', () => {
   const profile = newProfile(1000);
@@ -39,6 +58,7 @@ test('Tu vi không tự tăng cảnh giới; đột phá trừ đúng tài nguy�
   assert.equal(profile.realm, 9);
   profile.resources['hat-sen-dot-pha'] = 1;
   profile.pills['tu-vi-dan'] = 2;
+  profile.stageProgress['hac-phong-son'] = { wins: 1, bestTime: 630, bestKills: 1000 };
   breakthrough(profile);
   assert.equal(profile.realm, 10);
   assert.equal(profile.resources['hat-sen-dot-pha'], 0);
@@ -118,6 +138,7 @@ test('Thất bại nhận 30% số lượng; giữ vật phẩm theo từng lầ
   );
   const profile = newProfile();
   applyResult(profile, {
+    stageId: 'hac-phong-son',
     won: true,
     time: 620,
     kills: 500,
@@ -129,7 +150,7 @@ test('Thất bại nhận 30% số lượng; giữ vật phẩm theo từng lầ
   });
   assert.equal(profile.wins, 1);
   assert.equal(profile.runs, 1);
-  assert.equal(profile.stone, 306);
+  assert.equal(profile.stone, 306 + stage.firstClear.stone);
 });
 test('Thức tỉnh chỉ khi tấn công bậc 5 và hỗ trợ liên kết đã kích hoạt', () => {
   assert.ok(

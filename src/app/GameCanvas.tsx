@@ -33,7 +33,7 @@ export function GameCanvas({ bridge }: { bridge: GameBridge }) {
       ref={parent}
       tabIndex={0}
       role="region"
-      aria-label="Hắc Phong Sơn — dùng WASD hoặc phím mũi tên để di chuyển"
+      aria-label="Thế giới Trung Đô — dùng WASD hoặc phím mũi tên để di chuyển"
       onPointerDown={() => parent.current?.focus({ preventScroll: true })}
     />
   );

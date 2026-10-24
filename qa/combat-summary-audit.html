@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QA Tổng kết & Kết chương 1.8.0</title>
+    <style>
+      body { margin: 0; background: #10251f; color: #eee8d2; font: 12px system-ui; }
+      #tools { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; padding: 8px 12px; min-height: 50px; }
+      #tools button, #tools select { font: 12px system-ui; color: #e7ecd8; background: #244339; border: 1px solid #70917c; padding: 6px 9px; }
+      #audit { position: relative; height: calc(100dvh - 66px); isolation: isolate; }
+      #audit-hud { position: absolute; inset: 0; pointer-events: none; }
+      #audit-hud button, #audit-hud summary, #audit-hud .modal-backdrop, #audit-hud .lobby { pointer-events: auto; }
+      #audit-status { font-size: 10px; color: #b6ded0; }
+    </style>
+  </head>
+  <body>
+    <div id="tools"><strong>QA 1.8.0</strong><select id="fixture-kind" aria-label="Tình huống kiểm tra">
+      <option value="mixed">Giao tranh → Khải hoàn → Kết chương</option>
+      <option value="melee">Tử trận · cận chiến</option><option value="projectile">Tử trận · đạn địch đã chết</option>
+      <option value="poison">Tử trận · Độc chướng</option><option value="fire">Tử trận · Hỏa tuyến</option><option value="dark">Tử trận · Ám vực</option>
+      <option value="retreat">Chủ động rút lui</option><option value="late">Sáu màn xong · đột phá sau</option><option value="saved">Tiến trình đã hoàn thành</option>
+    </select><button id="fixture">Chạy tình huống</button><button id="save-fixture">Lưu & tải lại tiến trình hoàn thành</button><span id="audit-status">Đang nạp</span></div>
+    <main id="audit"><div id="game-canvas" class="game-canvas"></div><div id="audit-hud"></div></main>
+    <script type="module" src="./combat-summary-audit.tsx"></script>
+  </body>
+</html>

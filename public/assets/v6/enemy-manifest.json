@@ -1,0 +1,4469 @@
+{
+  "version": 6,
+  "status": "validated",
+  "renderer": "Blender Cycles CPU / mesh có rig / tám góc thật",
+  "source": "art/enemies-thong-huyen/build_enemies.py",
+  "actors": [
+    {
+      "id": "thong-huyen-nu-tu",
+      "name": "Nữ tu Thông Huyền",
+      "size": 128,
+      "origin": [
+        0.5000001043081284,
+        0.700390100479126
+      ],
+      "directions": [
+        "S",
+        "SW",
+        "W",
+        "NW",
+        "N",
+        "NE",
+        "E",
+        "SE"
+      ],
+      "atlas": "assets/v6/enemies/thong-huyen-nu-tu/atlas.png",
+      "atlasData": "assets/v6/enemies/thong-huyen-nu-tu/atlas.json",
+      "sha256": "3706d373b7153add2233766863a8eb5a6f357cdbfbd35646a41076788461cf79",
+      "atlasDataSha256": "5fd037a86215fb4f07d5e9d8d80b4a4830e9dd00780fadc78ad3304d39728a17",
+      "animations": {
+        "idle-S": {
+          "frames": [
+            "idle-S-00",
+            "idle-S-01",
+            "idle-S-02",
+            "idle-S-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SW": {
+          "frames": [
+            "idle-SW-00",
+            "idle-SW-01",
+            "idle-SW-02",
+            "idle-SW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-W": {
+          "frames": [
+            "idle-W-00",
+            "idle-W-01",
+            "idle-W-02",
+            "idle-W-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NW": {
+          "frames": [
+            "idle-NW-00",
+            "idle-NW-01",
+            "idle-NW-02",
+            "idle-NW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-N": {
+          "frames": [
+            "idle-N-00",
+            "idle-N-01",
+            "idle-N-02",
+            "idle-N-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NE": {
+          "frames": [
+            "idle-NE-00",
+            "idle-NE-01",
+            "idle-NE-02",
+            "idle-NE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-E": {
+          "frames": [
+            "idle-E-00",
+            "idle-E-01",
+            "idle-E-02",
+            "idle-E-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SE": {
+          "frames": [
+            "idle-SE-00",
+            "idle-SE-01",
+            "idle-SE-02",
+            "idle-SE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "walk-S": {
+          "frames": [
+            "walk-S-00",
+            "walk-S-01",
+            "walk-S-02",
+            "walk-S-03",
+            "walk-S-04",
+            "walk-S-05",
+            "walk-S-06",
+            "walk-S-07",
+            "walk-S-08",
+            "walk-S-09",
+            "walk-S-10",
+            "walk-S-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SW": {
+          "frames": [
+            "walk-SW-00",
+            "walk-SW-01",
+            "walk-SW-02",
+            "walk-SW-03",
+            "walk-SW-04",
+            "walk-SW-05",
+            "walk-SW-06",
+            "walk-SW-07",
+            "walk-SW-08",
+            "walk-SW-09",
+            "walk-SW-10",
+            "walk-SW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-W": {
+          "frames": [
+            "walk-W-00",
+            "walk-W-01",
+            "walk-W-02",
+            "walk-W-03",
+            "walk-W-04",
+            "walk-W-05",
+            "walk-W-06",
+            "walk-W-07",
+            "walk-W-08",
+            "walk-W-09",
+            "walk-W-10",
+            "walk-W-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NW": {
+          "frames": [
+            "walk-NW-00",
+            "walk-NW-01",
+            "walk-NW-02",
+            "walk-NW-03",
+            "walk-NW-04",
+            "walk-NW-05",
+            "walk-NW-06",
+            "walk-NW-07",
+            "walk-NW-08",
+            "walk-NW-09",
+            "walk-NW-10",
+            "walk-NW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-N": {
+          "frames": [
+            "walk-N-00",
+            "walk-N-01",
+            "walk-N-02",
+            "walk-N-03",
+            "walk-N-04",
+            "walk-N-05",
+            "walk-N-06",
+            "walk-N-07",
+            "walk-N-08",
+            "walk-N-09",
+            "walk-N-10",
+            "walk-N-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NE": {
+          "frames": [
+            "walk-NE-00",
+            "walk-NE-01",
+            "walk-NE-02",
+            "walk-NE-03",
+            "walk-NE-04",
+            "walk-NE-05",
+            "walk-NE-06",
+            "walk-NE-07",
+            "walk-NE-08",
+            "walk-NE-09",
+            "walk-NE-10",
+            "walk-NE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-E": {
+          "frames": [
+            "walk-E-00",
+            "walk-E-01",
+            "walk-E-02",
+            "walk-E-03",
+            "walk-E-04",
+            "walk-E-05",
+            "walk-E-06",
+            "walk-E-07",
+            "walk-E-08",
+            "walk-E-09",
+            "walk-E-10",
+            "walk-E-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SE": {
+          "frames": [
+            "walk-SE-00",
+            "walk-SE-01",
+            "walk-SE-02",
+            "walk-SE-03",
+            "walk-SE-04",
+            "walk-SE-05",
+            "walk-SE-06",
+            "walk-SE-07",
+            "walk-SE-08",
+            "walk-SE-09",
+            "walk-SE-10",
+            "walk-SE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "attack-1-S": {
+          "frames": [
+            "attack-1-S-00",
+            "attack-1-S-01",
+            "attack-1-S-02",
+            "attack-1-S-03",
+            "attack-1-S-04",
+            "attack-1-S-05",
+            "attack-1-S-06",
+            "attack-1-S-07",
+            "attack-1-S-08",
+            "attack-1-S-09",
+            "attack-1-S-10",
+            "attack-1-S-11",
+            "attack-1-S-12",
+            "attack-1-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SW": {
+          "frames": [
+            "attack-1-SW-00",
+            "attack-1-SW-01",
+            "attack-1-SW-02",
+            "attack-1-SW-03",
+            "attack-1-SW-04",
+            "attack-1-SW-05",
+            "attack-1-SW-06",
+            "attack-1-SW-07",
+            "attack-1-SW-08",
+            "attack-1-SW-09",
+            "attack-1-SW-10",
+            "attack-1-SW-11",
+            "attack-1-SW-12",
+            "attack-1-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-W": {
+          "frames": [
+            "attack-1-W-00",
+            "attack-1-W-01",
+            "attack-1-W-02",
+            "attack-1-W-03",
+            "attack-1-W-04",
+            "attack-1-W-05",
+            "attack-1-W-06",
+            "attack-1-W-07",
+            "attack-1-W-08",
+            "attack-1-W-09",
+            "attack-1-W-10",
+            "attack-1-W-11",
+            "attack-1-W-12",
+            "attack-1-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NW": {
+          "frames": [
+            "attack-1-NW-00",
+            "attack-1-NW-01",
+            "attack-1-NW-02",
+            "attack-1-NW-03",
+            "attack-1-NW-04",
+            "attack-1-NW-05",
+            "attack-1-NW-06",
+            "attack-1-NW-07",
+            "attack-1-NW-08",
+            "attack-1-NW-09",
+            "attack-1-NW-10",
+            "attack-1-NW-11",
+            "attack-1-NW-12",
+            "attack-1-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-N": {
+          "frames": [
+            "attack-1-N-00",
+            "attack-1-N-01",
+            "attack-1-N-02",
+            "attack-1-N-03",
+            "attack-1-N-04",
+            "attack-1-N-05",
+            "attack-1-N-06",
+            "attack-1-N-07",
+            "attack-1-N-08",
+            "attack-1-N-09",
+            "attack-1-N-10",
+            "attack-1-N-11",
+            "attack-1-N-12",
+            "attack-1-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NE": {
+          "frames": [
+            "attack-1-NE-00",
+            "attack-1-NE-01",
+            "attack-1-NE-02",
+            "attack-1-NE-03",
+            "attack-1-NE-04",
+            "attack-1-NE-05",
+            "attack-1-NE-06",
+            "attack-1-NE-07",
+            "attack-1-NE-08",
+            "attack-1-NE-09",
+            "attack-1-NE-10",
+            "attack-1-NE-11",
+            "attack-1-NE-12",
+            "attack-1-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-E": {
+          "frames": [
+            "attack-1-E-00",
+            "attack-1-E-01",
+            "attack-1-E-02",
+            "attack-1-E-03",
+            "attack-1-E-04",
+            "attack-1-E-05",
+            "attack-1-E-06",
+            "attack-1-E-07",
+            "attack-1-E-08",
+            "attack-1-E-09",
+            "attack-1-E-10",
+            "attack-1-E-11",
+            "attack-1-E-12",
+            "attack-1-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SE": {
+          "frames": [
+            "attack-1-SE-00",
+            "attack-1-SE-01",
+            "attack-1-SE-02",
+            "attack-1-SE-03",
+            "attack-1-SE-04",
+            "attack-1-SE-05",
+            "attack-1-SE-06",
+            "attack-1-SE-07",
+            "attack-1-SE-08",
+            "attack-1-SE-09",
+            "attack-1-SE-10",
+            "attack-1-SE-11",
+            "attack-1-SE-12",
+            "attack-1-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-S": {
+          "frames": [
+            "attack-2-S-00",
+            "attack-2-S-01",
+            "attack-2-S-02",
+            "attack-2-S-03",
+            "attack-2-S-04",
+            "attack-2-S-05",
+            "attack-2-S-06",
+            "attack-2-S-07",
+            "attack-2-S-08",
+            "attack-2-S-09",
+            "attack-2-S-10",
+            "attack-2-S-11",
+            "attack-2-S-12",
+            "attack-2-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SW": {
+          "frames": [
+            "attack-2-SW-00",
+            "attack-2-SW-01",
+            "attack-2-SW-02",
+            "attack-2-SW-03",
+            "attack-2-SW-04",
+            "attack-2-SW-05",
+            "attack-2-SW-06",
+            "attack-2-SW-07",
+            "attack-2-SW-08",
+            "attack-2-SW-09",
+            "attack-2-SW-10",
+            "attack-2-SW-11",
+            "attack-2-SW-12",
+            "attack-2-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-W": {
+          "frames": [
+            "attack-2-W-00",
+            "attack-2-W-01",
+            "attack-2-W-02",
+            "attack-2-W-03",
+            "attack-2-W-04",
+            "attack-2-W-05",
+            "attack-2-W-06",
+            "attack-2-W-07",
+            "attack-2-W-08",
+            "attack-2-W-09",
+            "attack-2-W-10",
+            "attack-2-W-11",
+            "attack-2-W-12",
+            "attack-2-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NW": {
+          "frames": [
+            "attack-2-NW-00",
+            "attack-2-NW-01",
+            "attack-2-NW-02",
+            "attack-2-NW-03",
+            "attack-2-NW-04",
+            "attack-2-NW-05",
+            "attack-2-NW-06",
+            "attack-2-NW-07",
+            "attack-2-NW-08",
+            "attack-2-NW-09",
+            "attack-2-NW-10",
+            "attack-2-NW-11",
+            "attack-2-NW-12",
+            "attack-2-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-N": {
+          "frames": [
+            "attack-2-N-00",
+            "attack-2-N-01",
+            "attack-2-N-02",
+            "attack-2-N-03",
+            "attack-2-N-04",
+            "attack-2-N-05",
+            "attack-2-N-06",
+            "attack-2-N-07",
+            "attack-2-N-08",
+            "attack-2-N-09",
+            "attack-2-N-10",
+            "attack-2-N-11",
+            "attack-2-N-12",
+            "attack-2-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NE": {
+          "frames": [
+            "attack-2-NE-00",
+            "attack-2-NE-01",
+            "attack-2-NE-02",
+            "attack-2-NE-03",
+            "attack-2-NE-04",
+            "attack-2-NE-05",
+            "attack-2-NE-06",
+            "attack-2-NE-07",
+            "attack-2-NE-08",
+            "attack-2-NE-09",
+            "attack-2-NE-10",
+            "attack-2-NE-11",
+            "attack-2-NE-12",
+            "attack-2-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-E": {
+          "frames": [
+            "attack-2-E-00",
+            "attack-2-E-01",
+            "attack-2-E-02",
+            "attack-2-E-03",
+            "attack-2-E-04",
+            "attack-2-E-05",
+            "attack-2-E-06",
+            "attack-2-E-07",
+            "attack-2-E-08",
+            "attack-2-E-09",
+            "attack-2-E-10",
+            "attack-2-E-11",
+            "attack-2-E-12",
+            "attack-2-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SE": {
+          "frames": [
+            "attack-2-SE-00",
+            "attack-2-SE-01",
+            "attack-2-SE-02",
+            "attack-2-SE-03",
+            "attack-2-SE-04",
+            "attack-2-SE-05",
+            "attack-2-SE-06",
+            "attack-2-SE-07",
+            "attack-2-SE-08",
+            "attack-2-SE-09",
+            "attack-2-SE-10",
+            "attack-2-SE-11",
+            "attack-2-SE-12",
+            "attack-2-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-S": {
+          "frames": [
+            "attack-3-S-00",
+            "attack-3-S-01",
+            "attack-3-S-02",
+            "attack-3-S-03",
+            "attack-3-S-04",
+            "attack-3-S-05",
+            "attack-3-S-06",
+            "attack-3-S-07",
+            "attack-3-S-08",
+            "attack-3-S-09",
+            "attack-3-S-10",
+            "attack-3-S-11",
+            "attack-3-S-12",
+            "attack-3-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SW": {
+          "frames": [
+            "attack-3-SW-00",
+            "attack-3-SW-01",
+            "attack-3-SW-02",
+            "attack-3-SW-03",
+            "attack-3-SW-04",
+            "attack-3-SW-05",
+            "attack-3-SW-06",
+            "attack-3-SW-07",
+            "attack-3-SW-08",
+            "attack-3-SW-09",
+            "attack-3-SW-10",
+            "attack-3-SW-11",
+            "attack-3-SW-12",
+            "attack-3-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-W": {
+          "frames": [
+            "attack-3-W-00",
+            "attack-3-W-01",
+            "attack-3-W-02",
+            "attack-3-W-03",
+            "attack-3-W-04",
+            "attack-3-W-05",
+            "attack-3-W-06",
+            "attack-3-W-07",
+            "attack-3-W-08",
+            "attack-3-W-09",
+            "attack-3-W-10",
+            "attack-3-W-11",
+            "attack-3-W-12",
+            "attack-3-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NW": {
+          "frames": [
+            "attack-3-NW-00",
+            "attack-3-NW-01",
+            "attack-3-NW-02",
+            "attack-3-NW-03",
+            "attack-3-NW-04",
+            "attack-3-NW-05",
+            "attack-3-NW-06",
+            "attack-3-NW-07",
+            "attack-3-NW-08",
+            "attack-3-NW-09",
+            "attack-3-NW-10",
+            "attack-3-NW-11",
+            "attack-3-NW-12",
+            "attack-3-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-N": {
+          "frames": [
+            "attack-3-N-00",
+            "attack-3-N-01",
+            "attack-3-N-02",
+            "attack-3-N-03",
+            "attack-3-N-04",
+            "attack-3-N-05",
+            "attack-3-N-06",
+            "attack-3-N-07",
+            "attack-3-N-08",
+            "attack-3-N-09",
+            "attack-3-N-10",
+            "attack-3-N-11",
+            "attack-3-N-12",
+            "attack-3-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NE": {
+          "frames": [
+            "attack-3-NE-00",
+            "attack-3-NE-01",
+            "attack-3-NE-02",
+            "attack-3-NE-03",
+            "attack-3-NE-04",
+            "attack-3-NE-05",
+            "attack-3-NE-06",
+            "attack-3-NE-07",
+            "attack-3-NE-08",
+            "attack-3-NE-09",
+            "attack-3-NE-10",
+            "attack-3-NE-11",
+            "attack-3-NE-12",
+            "attack-3-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-E": {
+          "frames": [
+            "attack-3-E-00",
+            "attack-3-E-01",
+            "attack-3-E-02",
+            "attack-3-E-03",
+            "attack-3-E-04",
+            "attack-3-E-05",
+            "attack-3-E-06",
+            "attack-3-E-07",
+            "attack-3-E-08",
+            "attack-3-E-09",
+            "attack-3-E-10",
+            "attack-3-E-11",
+            "attack-3-E-12",
+            "attack-3-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SE": {
+          "frames": [
+            "attack-3-SE-00",
+            "attack-3-SE-01",
+            "attack-3-SE-02",
+            "attack-3-SE-03",
+            "attack-3-SE-04",
+            "attack-3-SE-05",
+            "attack-3-SE-06",
+            "attack-3-SE-07",
+            "attack-3-SE-08",
+            "attack-3-SE-09",
+            "attack-3-SE-10",
+            "attack-3-SE-11",
+            "attack-3-SE-12",
+            "attack-3-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "death-S": {
+          "frames": [
+            "death-S-00",
+            "death-S-01",
+            "death-S-02",
+            "death-S-03",
+            "death-S-04",
+            "death-S-05",
+            "death-S-06",
+            "death-S-07",
+            "death-S-08",
+            "death-S-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SW": {
+          "frames": [
+            "death-SW-00",
+            "death-SW-01",
+            "death-SW-02",
+            "death-SW-03",
+            "death-SW-04",
+            "death-SW-05",
+            "death-SW-06",
+            "death-SW-07",
+            "death-SW-08",
+            "death-SW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-W": {
+          "frames": [
+            "death-W-00",
+            "death-W-01",
+            "death-W-02",
+            "death-W-03",
+            "death-W-04",
+            "death-W-05",
+            "death-W-06",
+            "death-W-07",
+            "death-W-08",
+            "death-W-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NW": {
+          "frames": [
+            "death-NW-00",
+            "death-NW-01",
+            "death-NW-02",
+            "death-NW-03",
+            "death-NW-04",
+            "death-NW-05",
+            "death-NW-06",
+            "death-NW-07",
+            "death-NW-08",
+            "death-NW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-N": {
+          "frames": [
+            "death-N-00",
+            "death-N-01",
+            "death-N-02",
+            "death-N-03",
+            "death-N-04",
+            "death-N-05",
+            "death-N-06",
+            "death-N-07",
+            "death-N-08",
+            "death-N-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NE": {
+          "frames": [
+            "death-NE-00",
+            "death-NE-01",
+            "death-NE-02",
+            "death-NE-03",
+            "death-NE-04",
+            "death-NE-05",
+            "death-NE-06",
+            "death-NE-07",
+            "death-NE-08",
+            "death-NE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-E": {
+          "frames": [
+            "death-E-00",
+            "death-E-01",
+            "death-E-02",
+            "death-E-03",
+            "death-E-04",
+            "death-E-05",
+            "death-E-06",
+            "death-E-07",
+            "death-E-08",
+            "death-E-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SE": {
+          "frames": [
+            "death-SE-00",
+            "death-SE-01",
+            "death-SE-02",
+            "death-SE-03",
+            "death-SE-04",
+            "death-SE-05",
+            "death-SE-06",
+            "death-SE-07",
+            "death-SE-08",
+            "death-SE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        }
+      },
+      "attacks": [
+        {
+          "id": "attack-1",
+          "name": "Đấm/chém thuận",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-2",
+          "name": "Đấm/chém nghịch",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-3",
+          "name": "Móc quyền/quét kiếm",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        }
+      ],
+      "walk": {
+        "worldSpeed": 1.0416666666666667,
+        "cycleSeconds": 0.8,
+        "frames": 12
+      },
+      "camera": {
+        "orthoScale": 4.685714285714285
+      },
+      "frames": 544,
+      "source": "art/v3/models/duong-khai.blend",
+      "sourceRigSha256": "9d430c1f5ecac3e4afec333034f64d85eefefa6cb0f18060e9bed19bc756511f",
+      "workflow": "Mesh + trang phục 3D riêng trên skeleton v3, render camera isometric tám góc thật"
+    },
+    {
+      "id": "mi-yeu",
+      "name": "Mị Yêu",
+      "size": 128,
+      "origin": [
+        0.5000001043081284,
+        0.700390100479126
+      ],
+      "directions": [
+        "S",
+        "SW",
+        "W",
+        "NW",
+        "N",
+        "NE",
+        "E",
+        "SE"
+      ],
+      "atlas": "assets/v6/enemies/mi-yeu/atlas.png",
+      "atlasData": "assets/v6/enemies/mi-yeu/atlas.json",
+      "sha256": "beb6bcee6525c65ef6bac580031387c11d3f8611c57fca6736b13551cc515911",
+      "atlasDataSha256": "5fd037a86215fb4f07d5e9d8d80b4a4830e9dd00780fadc78ad3304d39728a17",
+      "animations": {
+        "idle-S": {
+          "frames": [
+            "idle-S-00",
+            "idle-S-01",
+            "idle-S-02",
+            "idle-S-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SW": {
+          "frames": [
+            "idle-SW-00",
+            "idle-SW-01",
+            "idle-SW-02",
+            "idle-SW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-W": {
+          "frames": [
+            "idle-W-00",
+            "idle-W-01",
+            "idle-W-02",
+            "idle-W-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NW": {
+          "frames": [
+            "idle-NW-00",
+            "idle-NW-01",
+            "idle-NW-02",
+            "idle-NW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-N": {
+          "frames": [
+            "idle-N-00",
+            "idle-N-01",
+            "idle-N-02",
+            "idle-N-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NE": {
+          "frames": [
+            "idle-NE-00",
+            "idle-NE-01",
+            "idle-NE-02",
+            "idle-NE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-E": {
+          "frames": [
+            "idle-E-00",
+            "idle-E-01",
+            "idle-E-02",
+            "idle-E-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SE": {
+          "frames": [
+            "idle-SE-00",
+            "idle-SE-01",
+            "idle-SE-02",
+            "idle-SE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "walk-S": {
+          "frames": [
+            "walk-S-00",
+            "walk-S-01",
+            "walk-S-02",
+            "walk-S-03",
+            "walk-S-04",
+            "walk-S-05",
+            "walk-S-06",
+            "walk-S-07",
+            "walk-S-08",
+            "walk-S-09",
+            "walk-S-10",
+            "walk-S-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SW": {
+          "frames": [
+            "walk-SW-00",
+            "walk-SW-01",
+            "walk-SW-02",
+            "walk-SW-03",
+            "walk-SW-04",
+            "walk-SW-05",
+            "walk-SW-06",
+            "walk-SW-07",
+            "walk-SW-08",
+            "walk-SW-09",
+            "walk-SW-10",
+            "walk-SW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-W": {
+          "frames": [
+            "walk-W-00",
+            "walk-W-01",
+            "walk-W-02",
+            "walk-W-03",
+            "walk-W-04",
+            "walk-W-05",
+            "walk-W-06",
+            "walk-W-07",
+            "walk-W-08",
+            "walk-W-09",
+            "walk-W-10",
+            "walk-W-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NW": {
+          "frames": [
+            "walk-NW-00",
+            "walk-NW-01",
+            "walk-NW-02",
+            "walk-NW-03",
+            "walk-NW-04",
+            "walk-NW-05",
+            "walk-NW-06",
+            "walk-NW-07",
+            "walk-NW-08",
+            "walk-NW-09",
+            "walk-NW-10",
+            "walk-NW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-N": {
+          "frames": [
+            "walk-N-00",
+            "walk-N-01",
+            "walk-N-02",
+            "walk-N-03",
+            "walk-N-04",
+            "walk-N-05",
+            "walk-N-06",
+            "walk-N-07",
+            "walk-N-08",
+            "walk-N-09",
+            "walk-N-10",
+            "walk-N-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NE": {
+          "frames": [
+            "walk-NE-00",
+            "walk-NE-01",
+            "walk-NE-02",
+            "walk-NE-03",
+            "walk-NE-04",
+            "walk-NE-05",
+            "walk-NE-06",
+            "walk-NE-07",
+            "walk-NE-08",
+            "walk-NE-09",
+            "walk-NE-10",
+            "walk-NE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-E": {
+          "frames": [
+            "walk-E-00",
+            "walk-E-01",
+            "walk-E-02",
+            "walk-E-03",
+            "walk-E-04",
+            "walk-E-05",
+            "walk-E-06",
+            "walk-E-07",
+            "walk-E-08",
+            "walk-E-09",
+            "walk-E-10",
+            "walk-E-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SE": {
+          "frames": [
+            "walk-SE-00",
+            "walk-SE-01",
+            "walk-SE-02",
+            "walk-SE-03",
+            "walk-SE-04",
+            "walk-SE-05",
+            "walk-SE-06",
+            "walk-SE-07",
+            "walk-SE-08",
+            "walk-SE-09",
+            "walk-SE-10",
+            "walk-SE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "attack-1-S": {
+          "frames": [
+            "attack-1-S-00",
+            "attack-1-S-01",
+            "attack-1-S-02",
+            "attack-1-S-03",
+            "attack-1-S-04",
+            "attack-1-S-05",
+            "attack-1-S-06",
+            "attack-1-S-07",
+            "attack-1-S-08",
+            "attack-1-S-09",
+            "attack-1-S-10",
+            "attack-1-S-11",
+            "attack-1-S-12",
+            "attack-1-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SW": {
+          "frames": [
+            "attack-1-SW-00",
+            "attack-1-SW-01",
+            "attack-1-SW-02",
+            "attack-1-SW-03",
+            "attack-1-SW-04",
+            "attack-1-SW-05",
+            "attack-1-SW-06",
+            "attack-1-SW-07",
+            "attack-1-SW-08",
+            "attack-1-SW-09",
+            "attack-1-SW-10",
+            "attack-1-SW-11",
+            "attack-1-SW-12",
+            "attack-1-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-W": {
+          "frames": [
+            "attack-1-W-00",
+            "attack-1-W-01",
+            "attack-1-W-02",
+            "attack-1-W-03",
+            "attack-1-W-04",
+            "attack-1-W-05",
+            "attack-1-W-06",
+            "attack-1-W-07",
+            "attack-1-W-08",
+            "attack-1-W-09",
+            "attack-1-W-10",
+            "attack-1-W-11",
+            "attack-1-W-12",
+            "attack-1-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NW": {
+          "frames": [
+            "attack-1-NW-00",
+            "attack-1-NW-01",
+            "attack-1-NW-02",
+            "attack-1-NW-03",
+            "attack-1-NW-04",
+            "attack-1-NW-05",
+            "attack-1-NW-06",
+            "attack-1-NW-07",
+            "attack-1-NW-08",
+            "attack-1-NW-09",
+            "attack-1-NW-10",
+            "attack-1-NW-11",
+            "attack-1-NW-12",
+            "attack-1-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-N": {
+          "frames": [
+            "attack-1-N-00",
+            "attack-1-N-01",
+            "attack-1-N-02",
+            "attack-1-N-03",
+            "attack-1-N-04",
+            "attack-1-N-05",
+            "attack-1-N-06",
+            "attack-1-N-07",
+            "attack-1-N-08",
+            "attack-1-N-09",
+            "attack-1-N-10",
+            "attack-1-N-11",
+            "attack-1-N-12",
+            "attack-1-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NE": {
+          "frames": [
+            "attack-1-NE-00",
+            "attack-1-NE-01",
+            "attack-1-NE-02",
+            "attack-1-NE-03",
+            "attack-1-NE-04",
+            "attack-1-NE-05",
+            "attack-1-NE-06",
+            "attack-1-NE-07",
+            "attack-1-NE-08",
+            "attack-1-NE-09",
+            "attack-1-NE-10",
+            "attack-1-NE-11",
+            "attack-1-NE-12",
+            "attack-1-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-E": {
+          "frames": [
+            "attack-1-E-00",
+            "attack-1-E-01",
+            "attack-1-E-02",
+            "attack-1-E-03",
+            "attack-1-E-04",
+            "attack-1-E-05",
+            "attack-1-E-06",
+            "attack-1-E-07",
+            "attack-1-E-08",
+            "attack-1-E-09",
+            "attack-1-E-10",
+            "attack-1-E-11",
+            "attack-1-E-12",
+            "attack-1-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SE": {
+          "frames": [
+            "attack-1-SE-00",
+            "attack-1-SE-01",
+            "attack-1-SE-02",
+            "attack-1-SE-03",
+            "attack-1-SE-04",
+            "attack-1-SE-05",
+            "attack-1-SE-06",
+            "attack-1-SE-07",
+            "attack-1-SE-08",
+            "attack-1-SE-09",
+            "attack-1-SE-10",
+            "attack-1-SE-11",
+            "attack-1-SE-12",
+            "attack-1-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-S": {
+          "frames": [
+            "attack-2-S-00",
+            "attack-2-S-01",
+            "attack-2-S-02",
+            "attack-2-S-03",
+            "attack-2-S-04",
+            "attack-2-S-05",
+            "attack-2-S-06",
+            "attack-2-S-07",
+            "attack-2-S-08",
+            "attack-2-S-09",
+            "attack-2-S-10",
+            "attack-2-S-11",
+            "attack-2-S-12",
+            "attack-2-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SW": {
+          "frames": [
+            "attack-2-SW-00",
+            "attack-2-SW-01",
+            "attack-2-SW-02",
+            "attack-2-SW-03",
+            "attack-2-SW-04",
+            "attack-2-SW-05",
+            "attack-2-SW-06",
+            "attack-2-SW-07",
+            "attack-2-SW-08",
+            "attack-2-SW-09",
+            "attack-2-SW-10",
+            "attack-2-SW-11",
+            "attack-2-SW-12",
+            "attack-2-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-W": {
+          "frames": [
+            "attack-2-W-00",
+            "attack-2-W-01",
+            "attack-2-W-02",
+            "attack-2-W-03",
+            "attack-2-W-04",
+            "attack-2-W-05",
+            "attack-2-W-06",
+            "attack-2-W-07",
+            "attack-2-W-08",
+            "attack-2-W-09",
+            "attack-2-W-10",
+            "attack-2-W-11",
+            "attack-2-W-12",
+            "attack-2-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NW": {
+          "frames": [
+            "attack-2-NW-00",
+            "attack-2-NW-01",
+            "attack-2-NW-02",
+            "attack-2-NW-03",
+            "attack-2-NW-04",
+            "attack-2-NW-05",
+            "attack-2-NW-06",
+            "attack-2-NW-07",
+            "attack-2-NW-08",
+            "attack-2-NW-09",
+            "attack-2-NW-10",
+            "attack-2-NW-11",
+            "attack-2-NW-12",
+            "attack-2-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-N": {
+          "frames": [
+            "attack-2-N-00",
+            "attack-2-N-01",
+            "attack-2-N-02",
+            "attack-2-N-03",
+            "attack-2-N-04",
+            "attack-2-N-05",
+            "attack-2-N-06",
+            "attack-2-N-07",
+            "attack-2-N-08",
+            "attack-2-N-09",
+            "attack-2-N-10",
+            "attack-2-N-11",
+            "attack-2-N-12",
+            "attack-2-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NE": {
+          "frames": [
+            "attack-2-NE-00",
+            "attack-2-NE-01",
+            "attack-2-NE-02",
+            "attack-2-NE-03",
+            "attack-2-NE-04",
+            "attack-2-NE-05",
+            "attack-2-NE-06",
+            "attack-2-NE-07",
+            "attack-2-NE-08",
+            "attack-2-NE-09",
+            "attack-2-NE-10",
+            "attack-2-NE-11",
+            "attack-2-NE-12",
+            "attack-2-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-E": {
+          "frames": [
+            "attack-2-E-00",
+            "attack-2-E-01",
+            "attack-2-E-02",
+            "attack-2-E-03",
+            "attack-2-E-04",
+            "attack-2-E-05",
+            "attack-2-E-06",
+            "attack-2-E-07",
+            "attack-2-E-08",
+            "attack-2-E-09",
+            "attack-2-E-10",
+            "attack-2-E-11",
+            "attack-2-E-12",
+            "attack-2-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SE": {
+          "frames": [
+            "attack-2-SE-00",
+            "attack-2-SE-01",
+            "attack-2-SE-02",
+            "attack-2-SE-03",
+            "attack-2-SE-04",
+            "attack-2-SE-05",
+            "attack-2-SE-06",
+            "attack-2-SE-07",
+            "attack-2-SE-08",
+            "attack-2-SE-09",
+            "attack-2-SE-10",
+            "attack-2-SE-11",
+            "attack-2-SE-12",
+            "attack-2-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-S": {
+          "frames": [
+            "attack-3-S-00",
+            "attack-3-S-01",
+            "attack-3-S-02",
+            "attack-3-S-03",
+            "attack-3-S-04",
+            "attack-3-S-05",
+            "attack-3-S-06",
+            "attack-3-S-07",
+            "attack-3-S-08",
+            "attack-3-S-09",
+            "attack-3-S-10",
+            "attack-3-S-11",
+            "attack-3-S-12",
+            "attack-3-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SW": {
+          "frames": [
+            "attack-3-SW-00",
+            "attack-3-SW-01",
+            "attack-3-SW-02",
+            "attack-3-SW-03",
+            "attack-3-SW-04",
+            "attack-3-SW-05",
+            "attack-3-SW-06",
+            "attack-3-SW-07",
+            "attack-3-SW-08",
+            "attack-3-SW-09",
+            "attack-3-SW-10",
+            "attack-3-SW-11",
+            "attack-3-SW-12",
+            "attack-3-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-W": {
+          "frames": [
+            "attack-3-W-00",
+            "attack-3-W-01",
+            "attack-3-W-02",
+            "attack-3-W-03",
+            "attack-3-W-04",
+            "attack-3-W-05",
+            "attack-3-W-06",
+            "attack-3-W-07",
+            "attack-3-W-08",
+            "attack-3-W-09",
+            "attack-3-W-10",
+            "attack-3-W-11",
+            "attack-3-W-12",
+            "attack-3-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NW": {
+          "frames": [
+            "attack-3-NW-00",
+            "attack-3-NW-01",
+            "attack-3-NW-02",
+            "attack-3-NW-03",
+            "attack-3-NW-04",
+            "attack-3-NW-05",
+            "attack-3-NW-06",
+            "attack-3-NW-07",
+            "attack-3-NW-08",
+            "attack-3-NW-09",
+            "attack-3-NW-10",
+            "attack-3-NW-11",
+            "attack-3-NW-12",
+            "attack-3-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-N": {
+          "frames": [
+            "attack-3-N-00",
+            "attack-3-N-01",
+            "attack-3-N-02",
+            "attack-3-N-03",
+            "attack-3-N-04",
+            "attack-3-N-05",
+            "attack-3-N-06",
+            "attack-3-N-07",
+            "attack-3-N-08",
+            "attack-3-N-09",
+            "attack-3-N-10",
+            "attack-3-N-11",
+            "attack-3-N-12",
+            "attack-3-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NE": {
+          "frames": [
+            "attack-3-NE-00",
+            "attack-3-NE-01",
+            "attack-3-NE-02",
+            "attack-3-NE-03",
+            "attack-3-NE-04",
+            "attack-3-NE-05",
+            "attack-3-NE-06",
+            "attack-3-NE-07",
+            "attack-3-NE-08",
+            "attack-3-NE-09",
+            "attack-3-NE-10",
+            "attack-3-NE-11",
+            "attack-3-NE-12",
+            "attack-3-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-E": {
+          "frames": [
+            "attack-3-E-00",
+            "attack-3-E-01",
+            "attack-3-E-02",
+            "attack-3-E-03",
+            "attack-3-E-04",
+            "attack-3-E-05",
+            "attack-3-E-06",
+            "attack-3-E-07",
+            "attack-3-E-08",
+            "attack-3-E-09",
+            "attack-3-E-10",
+            "attack-3-E-11",
+            "attack-3-E-12",
+            "attack-3-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SE": {
+          "frames": [
+            "attack-3-SE-00",
+            "attack-3-SE-01",
+            "attack-3-SE-02",
+            "attack-3-SE-03",
+            "attack-3-SE-04",
+            "attack-3-SE-05",
+            "attack-3-SE-06",
+            "attack-3-SE-07",
+            "attack-3-SE-08",
+            "attack-3-SE-09",
+            "attack-3-SE-10",
+            "attack-3-SE-11",
+            "attack-3-SE-12",
+            "attack-3-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "death-S": {
+          "frames": [
+            "death-S-00",
+            "death-S-01",
+            "death-S-02",
+            "death-S-03",
+            "death-S-04",
+            "death-S-05",
+            "death-S-06",
+            "death-S-07",
+            "death-S-08",
+            "death-S-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SW": {
+          "frames": [
+            "death-SW-00",
+            "death-SW-01",
+            "death-SW-02",
+            "death-SW-03",
+            "death-SW-04",
+            "death-SW-05",
+            "death-SW-06",
+            "death-SW-07",
+            "death-SW-08",
+            "death-SW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-W": {
+          "frames": [
+            "death-W-00",
+            "death-W-01",
+            "death-W-02",
+            "death-W-03",
+            "death-W-04",
+            "death-W-05",
+            "death-W-06",
+            "death-W-07",
+            "death-W-08",
+            "death-W-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NW": {
+          "frames": [
+            "death-NW-00",
+            "death-NW-01",
+            "death-NW-02",
+            "death-NW-03",
+            "death-NW-04",
+            "death-NW-05",
+            "death-NW-06",
+            "death-NW-07",
+            "death-NW-08",
+            "death-NW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-N": {
+          "frames": [
+            "death-N-00",
+            "death-N-01",
+            "death-N-02",
+            "death-N-03",
+            "death-N-04",
+            "death-N-05",
+            "death-N-06",
+            "death-N-07",
+            "death-N-08",
+            "death-N-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NE": {
+          "frames": [
+            "death-NE-00",
+            "death-NE-01",
+            "death-NE-02",
+            "death-NE-03",
+            "death-NE-04",
+            "death-NE-05",
+            "death-NE-06",
+            "death-NE-07",
+            "death-NE-08",
+            "death-NE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-E": {
+          "frames": [
+            "death-E-00",
+            "death-E-01",
+            "death-E-02",
+            "death-E-03",
+            "death-E-04",
+            "death-E-05",
+            "death-E-06",
+            "death-E-07",
+            "death-E-08",
+            "death-E-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SE": {
+          "frames": [
+            "death-SE-00",
+            "death-SE-01",
+            "death-SE-02",
+            "death-SE-03",
+            "death-SE-04",
+            "death-SE-05",
+            "death-SE-06",
+            "death-SE-07",
+            "death-SE-08",
+            "death-SE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        }
+      },
+      "attacks": [
+        {
+          "id": "attack-1",
+          "name": "Đấm/chém thuận",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-2",
+          "name": "Đấm/chém nghịch",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-3",
+          "name": "Móc quyền/quét kiếm",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        }
+      ],
+      "walk": {
+        "worldSpeed": 1.0416666666666667,
+        "cycleSeconds": 0.8,
+        "frames": 12
+      },
+      "camera": {
+        "orthoScale": 4.685714285714285
+      },
+      "frames": 544,
+      "source": "art/v3/models/duong-khai.blend",
+      "sourceRigSha256": "9d430c1f5ecac3e4afec333034f64d85eefefa6cb0f18060e9bed19bc756511f",
+      "workflow": "Mesh + trang phục 3D riêng trên skeleton v3, render camera isometric tám góc thật"
+    },
+    {
+      "id": "cot-toc-thu-linh",
+      "name": "Thủ lĩnh Cốt tộc",
+      "size": 128,
+      "origin": [
+        0.5000001043081284,
+        0.700390100479126
+      ],
+      "directions": [
+        "S",
+        "SW",
+        "W",
+        "NW",
+        "N",
+        "NE",
+        "E",
+        "SE"
+      ],
+      "atlas": "assets/v6/enemies/cot-toc-thu-linh/atlas.png",
+      "atlasData": "assets/v6/enemies/cot-toc-thu-linh/atlas.json",
+      "sha256": "972d9383dac1a09aebdfd0a212831c13b5497548156014e6ba466046ee86ddad",
+      "atlasDataSha256": "c16f4bf4ce678e8a850f27990e614e0a8f12ead635a525fa59d4c7a0a846c4b2",
+      "animations": {
+        "idle-S": {
+          "frames": [
+            "idle-S-00",
+            "idle-S-01",
+            "idle-S-02",
+            "idle-S-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SW": {
+          "frames": [
+            "idle-SW-00",
+            "idle-SW-01",
+            "idle-SW-02",
+            "idle-SW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-W": {
+          "frames": [
+            "idle-W-00",
+            "idle-W-01",
+            "idle-W-02",
+            "idle-W-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NW": {
+          "frames": [
+            "idle-NW-00",
+            "idle-NW-01",
+            "idle-NW-02",
+            "idle-NW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-N": {
+          "frames": [
+            "idle-N-00",
+            "idle-N-01",
+            "idle-N-02",
+            "idle-N-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NE": {
+          "frames": [
+            "idle-NE-00",
+            "idle-NE-01",
+            "idle-NE-02",
+            "idle-NE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-E": {
+          "frames": [
+            "idle-E-00",
+            "idle-E-01",
+            "idle-E-02",
+            "idle-E-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SE": {
+          "frames": [
+            "idle-SE-00",
+            "idle-SE-01",
+            "idle-SE-02",
+            "idle-SE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "walk-S": {
+          "frames": [
+            "walk-S-00",
+            "walk-S-01",
+            "walk-S-02",
+            "walk-S-03",
+            "walk-S-04",
+            "walk-S-05",
+            "walk-S-06",
+            "walk-S-07",
+            "walk-S-08",
+            "walk-S-09",
+            "walk-S-10",
+            "walk-S-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SW": {
+          "frames": [
+            "walk-SW-00",
+            "walk-SW-01",
+            "walk-SW-02",
+            "walk-SW-03",
+            "walk-SW-04",
+            "walk-SW-05",
+            "walk-SW-06",
+            "walk-SW-07",
+            "walk-SW-08",
+            "walk-SW-09",
+            "walk-SW-10",
+            "walk-SW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-W": {
+          "frames": [
+            "walk-W-00",
+            "walk-W-01",
+            "walk-W-02",
+            "walk-W-03",
+            "walk-W-04",
+            "walk-W-05",
+            "walk-W-06",
+            "walk-W-07",
+            "walk-W-08",
+            "walk-W-09",
+            "walk-W-10",
+            "walk-W-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NW": {
+          "frames": [
+            "walk-NW-00",
+            "walk-NW-01",
+            "walk-NW-02",
+            "walk-NW-03",
+            "walk-NW-04",
+            "walk-NW-05",
+            "walk-NW-06",
+            "walk-NW-07",
+            "walk-NW-08",
+            "walk-NW-09",
+            "walk-NW-10",
+            "walk-NW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-N": {
+          "frames": [
+            "walk-N-00",
+            "walk-N-01",
+            "walk-N-02",
+            "walk-N-03",
+            "walk-N-04",
+            "walk-N-05",
+            "walk-N-06",
+            "walk-N-07",
+            "walk-N-08",
+            "walk-N-09",
+            "walk-N-10",
+            "walk-N-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NE": {
+          "frames": [
+            "walk-NE-00",
+            "walk-NE-01",
+            "walk-NE-02",
+            "walk-NE-03",
+            "walk-NE-04",
+            "walk-NE-05",
+            "walk-NE-06",
+            "walk-NE-07",
+            "walk-NE-08",
+            "walk-NE-09",
+            "walk-NE-10",
+            "walk-NE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-E": {
+          "frames": [
+            "walk-E-00",
+            "walk-E-01",
+            "walk-E-02",
+            "walk-E-03",
+            "walk-E-04",
+            "walk-E-05",
+            "walk-E-06",
+            "walk-E-07",
+            "walk-E-08",
+            "walk-E-09",
+            "walk-E-10",
+            "walk-E-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SE": {
+          "frames": [
+            "walk-SE-00",
+            "walk-SE-01",
+            "walk-SE-02",
+            "walk-SE-03",
+            "walk-SE-04",
+            "walk-SE-05",
+            "walk-SE-06",
+            "walk-SE-07",
+            "walk-SE-08",
+            "walk-SE-09",
+            "walk-SE-10",
+            "walk-SE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "attack-1-S": {
+          "frames": [
+            "attack-1-S-00",
+            "attack-1-S-01",
+            "attack-1-S-02",
+            "attack-1-S-03",
+            "attack-1-S-04",
+            "attack-1-S-05",
+            "attack-1-S-06",
+            "attack-1-S-07",
+            "attack-1-S-08",
+            "attack-1-S-09",
+            "attack-1-S-10",
+            "attack-1-S-11",
+            "attack-1-S-12",
+            "attack-1-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SW": {
+          "frames": [
+            "attack-1-SW-00",
+            "attack-1-SW-01",
+            "attack-1-SW-02",
+            "attack-1-SW-03",
+            "attack-1-SW-04",
+            "attack-1-SW-05",
+            "attack-1-SW-06",
+            "attack-1-SW-07",
+            "attack-1-SW-08",
+            "attack-1-SW-09",
+            "attack-1-SW-10",
+            "attack-1-SW-11",
+            "attack-1-SW-12",
+            "attack-1-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-W": {
+          "frames": [
+            "attack-1-W-00",
+            "attack-1-W-01",
+            "attack-1-W-02",
+            "attack-1-W-03",
+            "attack-1-W-04",
+            "attack-1-W-05",
+            "attack-1-W-06",
+            "attack-1-W-07",
+            "attack-1-W-08",
+            "attack-1-W-09",
+            "attack-1-W-10",
+            "attack-1-W-11",
+            "attack-1-W-12",
+            "attack-1-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NW": {
+          "frames": [
+            "attack-1-NW-00",
+            "attack-1-NW-01",
+            "attack-1-NW-02",
+            "attack-1-NW-03",
+            "attack-1-NW-04",
+            "attack-1-NW-05",
+            "attack-1-NW-06",
+            "attack-1-NW-07",
+            "attack-1-NW-08",
+            "attack-1-NW-09",
+            "attack-1-NW-10",
+            "attack-1-NW-11",
+            "attack-1-NW-12",
+            "attack-1-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-N": {
+          "frames": [
+            "attack-1-N-00",
+            "attack-1-N-01",
+            "attack-1-N-02",
+            "attack-1-N-03",
+            "attack-1-N-04",
+            "attack-1-N-05",
+            "attack-1-N-06",
+            "attack-1-N-07",
+            "attack-1-N-08",
+            "attack-1-N-09",
+            "attack-1-N-10",
+            "attack-1-N-11",
+            "attack-1-N-12",
+            "attack-1-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NE": {
+          "frames": [
+            "attack-1-NE-00",
+            "attack-1-NE-01",
+            "attack-1-NE-02",
+            "attack-1-NE-03",
+            "attack-1-NE-04",
+            "attack-1-NE-05",
+            "attack-1-NE-06",
+            "attack-1-NE-07",
+            "attack-1-NE-08",
+            "attack-1-NE-09",
+            "attack-1-NE-10",
+            "attack-1-NE-11",
+            "attack-1-NE-12",
+            "attack-1-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-E": {
+          "frames": [
+            "attack-1-E-00",
+            "attack-1-E-01",
+            "attack-1-E-02",
+            "attack-1-E-03",
+            "attack-1-E-04",
+            "attack-1-E-05",
+            "attack-1-E-06",
+            "attack-1-E-07",
+            "attack-1-E-08",
+            "attack-1-E-09",
+            "attack-1-E-10",
+            "attack-1-E-11",
+            "attack-1-E-12",
+            "attack-1-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SE": {
+          "frames": [
+            "attack-1-SE-00",
+            "attack-1-SE-01",
+            "attack-1-SE-02",
+            "attack-1-SE-03",
+            "attack-1-SE-04",
+            "attack-1-SE-05",
+            "attack-1-SE-06",
+            "attack-1-SE-07",
+            "attack-1-SE-08",
+            "attack-1-SE-09",
+            "attack-1-SE-10",
+            "attack-1-SE-11",
+            "attack-1-SE-12",
+            "attack-1-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-S": {
+          "frames": [
+            "attack-2-S-00",
+            "attack-2-S-01",
+            "attack-2-S-02",
+            "attack-2-S-03",
+            "attack-2-S-04",
+            "attack-2-S-05",
+            "attack-2-S-06",
+            "attack-2-S-07",
+            "attack-2-S-08",
+            "attack-2-S-09",
+            "attack-2-S-10",
+            "attack-2-S-11",
+            "attack-2-S-12",
+            "attack-2-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SW": {
+          "frames": [
+            "attack-2-SW-00",
+            "attack-2-SW-01",
+            "attack-2-SW-02",
+            "attack-2-SW-03",
+            "attack-2-SW-04",
+            "attack-2-SW-05",
+            "attack-2-SW-06",
+            "attack-2-SW-07",
+            "attack-2-SW-08",
+            "attack-2-SW-09",
+            "attack-2-SW-10",
+            "attack-2-SW-11",
+            "attack-2-SW-12",
+            "attack-2-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-W": {
+          "frames": [
+            "attack-2-W-00",
+            "attack-2-W-01",
+            "attack-2-W-02",
+            "attack-2-W-03",
+            "attack-2-W-04",
+            "attack-2-W-05",
+            "attack-2-W-06",
+            "attack-2-W-07",
+            "attack-2-W-08",
+            "attack-2-W-09",
+            "attack-2-W-10",
+            "attack-2-W-11",
+            "attack-2-W-12",
+            "attack-2-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NW": {
+          "frames": [
+            "attack-2-NW-00",
+            "attack-2-NW-01",
+            "attack-2-NW-02",
+            "attack-2-NW-03",
+            "attack-2-NW-04",
+            "attack-2-NW-05",
+            "attack-2-NW-06",
+            "attack-2-NW-07",
+            "attack-2-NW-08",
+            "attack-2-NW-09",
+            "attack-2-NW-10",
+            "attack-2-NW-11",
+            "attack-2-NW-12",
+            "attack-2-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-N": {
+          "frames": [
+            "attack-2-N-00",
+            "attack-2-N-01",
+            "attack-2-N-02",
+            "attack-2-N-03",
+            "attack-2-N-04",
+            "attack-2-N-05",
+            "attack-2-N-06",
+            "attack-2-N-07",
+            "attack-2-N-08",
+            "attack-2-N-09",
+            "attack-2-N-10",
+            "attack-2-N-11",
+            "attack-2-N-12",
+            "attack-2-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NE": {
+          "frames": [
+            "attack-2-NE-00",
+            "attack-2-NE-01",
+            "attack-2-NE-02",
+            "attack-2-NE-03",
+            "attack-2-NE-04",
+            "attack-2-NE-05",
+            "attack-2-NE-06",
+            "attack-2-NE-07",
+            "attack-2-NE-08",
+            "attack-2-NE-09",
+            "attack-2-NE-10",
+            "attack-2-NE-11",
+            "attack-2-NE-12",
+            "attack-2-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-E": {
+          "frames": [
+            "attack-2-E-00",
+            "attack-2-E-01",
+            "attack-2-E-02",
+            "attack-2-E-03",
+            "attack-2-E-04",
+            "attack-2-E-05",
+            "attack-2-E-06",
+            "attack-2-E-07",
+            "attack-2-E-08",
+            "attack-2-E-09",
+            "attack-2-E-10",
+            "attack-2-E-11",
+            "attack-2-E-12",
+            "attack-2-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SE": {
+          "frames": [
+            "attack-2-SE-00",
+            "attack-2-SE-01",
+            "attack-2-SE-02",
+            "attack-2-SE-03",
+            "attack-2-SE-04",
+            "attack-2-SE-05",
+            "attack-2-SE-06",
+            "attack-2-SE-07",
+            "attack-2-SE-08",
+            "attack-2-SE-09",
+            "attack-2-SE-10",
+            "attack-2-SE-11",
+            "attack-2-SE-12",
+            "attack-2-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-S": {
+          "frames": [
+            "attack-3-S-00",
+            "attack-3-S-01",
+            "attack-3-S-02",
+            "attack-3-S-03",
+            "attack-3-S-04",
+            "attack-3-S-05",
+            "attack-3-S-06",
+            "attack-3-S-07",
+            "attack-3-S-08",
+            "attack-3-S-09",
+            "attack-3-S-10",
+            "attack-3-S-11",
+            "attack-3-S-12",
+            "attack-3-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SW": {
+          "frames": [
+            "attack-3-SW-00",
+            "attack-3-SW-01",
+            "attack-3-SW-02",
+            "attack-3-SW-03",
+            "attack-3-SW-04",
+            "attack-3-SW-05",
+            "attack-3-SW-06",
+            "attack-3-SW-07",
+            "attack-3-SW-08",
+            "attack-3-SW-09",
+            "attack-3-SW-10",
+            "attack-3-SW-11",
+            "attack-3-SW-12",
+            "attack-3-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-W": {
+          "frames": [
+            "attack-3-W-00",
+            "attack-3-W-01",
+            "attack-3-W-02",
+            "attack-3-W-03",
+            "attack-3-W-04",
+            "attack-3-W-05",
+            "attack-3-W-06",
+            "attack-3-W-07",
+            "attack-3-W-08",
+            "attack-3-W-09",
+            "attack-3-W-10",
+            "attack-3-W-11",
+            "attack-3-W-12",
+            "attack-3-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NW": {
+          "frames": [
+            "attack-3-NW-00",
+            "attack-3-NW-01",
+            "attack-3-NW-02",
+            "attack-3-NW-03",
+            "attack-3-NW-04",
+            "attack-3-NW-05",
+            "attack-3-NW-06",
+            "attack-3-NW-07",
+            "attack-3-NW-08",
+            "attack-3-NW-09",
+            "attack-3-NW-10",
+            "attack-3-NW-11",
+            "attack-3-NW-12",
+            "attack-3-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-N": {
+          "frames": [
+            "attack-3-N-00",
+            "attack-3-N-01",
+            "attack-3-N-02",
+            "attack-3-N-03",
+            "attack-3-N-04",
+            "attack-3-N-05",
+            "attack-3-N-06",
+            "attack-3-N-07",
+            "attack-3-N-08",
+            "attack-3-N-09",
+            "attack-3-N-10",
+            "attack-3-N-11",
+            "attack-3-N-12",
+            "attack-3-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NE": {
+          "frames": [
+            "attack-3-NE-00",
+            "attack-3-NE-01",
+            "attack-3-NE-02",
+            "attack-3-NE-03",
+            "attack-3-NE-04",
+            "attack-3-NE-05",
+            "attack-3-NE-06",
+            "attack-3-NE-07",
+            "attack-3-NE-08",
+            "attack-3-NE-09",
+            "attack-3-NE-10",
+            "attack-3-NE-11",
+            "attack-3-NE-12",
+            "attack-3-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-E": {
+          "frames": [
+            "attack-3-E-00",
+            "attack-3-E-01",
+            "attack-3-E-02",
+            "attack-3-E-03",
+            "attack-3-E-04",
+            "attack-3-E-05",
+            "attack-3-E-06",
+            "attack-3-E-07",
+            "attack-3-E-08",
+            "attack-3-E-09",
+            "attack-3-E-10",
+            "attack-3-E-11",
+            "attack-3-E-12",
+            "attack-3-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SE": {
+          "frames": [
+            "attack-3-SE-00",
+            "attack-3-SE-01",
+            "attack-3-SE-02",
+            "attack-3-SE-03",
+            "attack-3-SE-04",
+            "attack-3-SE-05",
+            "attack-3-SE-06",
+            "attack-3-SE-07",
+            "attack-3-SE-08",
+            "attack-3-SE-09",
+            "attack-3-SE-10",
+            "attack-3-SE-11",
+            "attack-3-SE-12",
+            "attack-3-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "death-S": {
+          "frames": [
+            "death-S-00",
+            "death-S-01",
+            "death-S-02",
+            "death-S-03",
+            "death-S-04",
+            "death-S-05",
+            "death-S-06",
+            "death-S-07",
+            "death-S-08",
+            "death-S-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SW": {
+          "frames": [
+            "death-SW-00",
+            "death-SW-01",
+            "death-SW-02",
+            "death-SW-03",
+            "death-SW-04",
+            "death-SW-05",
+            "death-SW-06",
+            "death-SW-07",
+            "death-SW-08",
+            "death-SW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-W": {
+          "frames": [
+            "death-W-00",
+            "death-W-01",
+            "death-W-02",
+            "death-W-03",
+            "death-W-04",
+            "death-W-05",
+            "death-W-06",
+            "death-W-07",
+            "death-W-08",
+            "death-W-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NW": {
+          "frames": [
+            "death-NW-00",
+            "death-NW-01",
+            "death-NW-02",
+            "death-NW-03",
+            "death-NW-04",
+            "death-NW-05",
+            "death-NW-06",
+            "death-NW-07",
+            "death-NW-08",
+            "death-NW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-N": {
+          "frames": [
+            "death-N-00",
+            "death-N-01",
+            "death-N-02",
+            "death-N-03",
+            "death-N-04",
+            "death-N-05",
+            "death-N-06",
+            "death-N-07",
+            "death-N-08",
+            "death-N-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NE": {
+          "frames": [
+            "death-NE-00",
+            "death-NE-01",
+            "death-NE-02",
+            "death-NE-03",
+            "death-NE-04",
+            "death-NE-05",
+            "death-NE-06",
+            "death-NE-07",
+            "death-NE-08",
+            "death-NE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-E": {
+          "frames": [
+            "death-E-00",
+            "death-E-01",
+            "death-E-02",
+            "death-E-03",
+            "death-E-04",
+            "death-E-05",
+            "death-E-06",
+            "death-E-07",
+            "death-E-08",
+            "death-E-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SE": {
+          "frames": [
+            "death-SE-00",
+            "death-SE-01",
+            "death-SE-02",
+            "death-SE-03",
+            "death-SE-04",
+            "death-SE-05",
+            "death-SE-06",
+            "death-SE-07",
+            "death-SE-08",
+            "death-SE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        }
+      },
+      "attacks": [
+        {
+          "id": "attack-1",
+          "name": "Đấm/chém thuận",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-2",
+          "name": "Đấm/chém nghịch",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-3",
+          "name": "Móc quyền/quét kiếm",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        }
+      ],
+      "walk": {
+        "worldSpeed": 1.0416666666666667,
+        "cycleSeconds": 0.8,
+        "frames": 12
+      },
+      "camera": {
+        "orthoScale": 4.685714285714285
+      },
+      "frames": 544,
+      "source": "art/v3/models/duong-khai.blend",
+      "sourceRigSha256": "9d430c1f5ecac3e4afec333034f64d85eefefa6cb0f18060e9bed19bc756511f",
+      "workflow": "Mesh + trang phục 3D riêng trên skeleton v3, render camera isometric tám góc thật"
+    },
+    {
+      "id": "phe-hon-trung",
+      "name": "Phệ Hồn Trùng",
+      "size": 128,
+      "origin": [
+        0.5000001043081284,
+        0.700390100479126
+      ],
+      "directions": [
+        "S",
+        "SW",
+        "W",
+        "NW",
+        "N",
+        "NE",
+        "E",
+        "SE"
+      ],
+      "atlas": "assets/v6/enemies/phe-hon-trung/atlas.png",
+      "atlasData": "assets/v6/enemies/phe-hon-trung/atlas.json",
+      "sha256": "15e5cc9d102188eb21f568c786ac62e06e4c8eab0d42434f7ef7a4afbf6e30be",
+      "atlasDataSha256": "b10bc00bf1371277d758bc2c59a894f2b741be2081c5b4e4ea73f4fe726a2baa",
+      "animations": {
+        "idle-S": {
+          "frames": [
+            "idle-S-00",
+            "idle-S-01",
+            "idle-S-02",
+            "idle-S-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SW": {
+          "frames": [
+            "idle-SW-00",
+            "idle-SW-01",
+            "idle-SW-02",
+            "idle-SW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-W": {
+          "frames": [
+            "idle-W-00",
+            "idle-W-01",
+            "idle-W-02",
+            "idle-W-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NW": {
+          "frames": [
+            "idle-NW-00",
+            "idle-NW-01",
+            "idle-NW-02",
+            "idle-NW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-N": {
+          "frames": [
+            "idle-N-00",
+            "idle-N-01",
+            "idle-N-02",
+            "idle-N-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NE": {
+          "frames": [
+            "idle-NE-00",
+            "idle-NE-01",
+            "idle-NE-02",
+            "idle-NE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-E": {
+          "frames": [
+            "idle-E-00",
+            "idle-E-01",
+            "idle-E-02",
+            "idle-E-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SE": {
+          "frames": [
+            "idle-SE-00",
+            "idle-SE-01",
+            "idle-SE-02",
+            "idle-SE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "walk-S": {
+          "frames": [
+            "walk-S-00",
+            "walk-S-01",
+            "walk-S-02",
+            "walk-S-03",
+            "walk-S-04",
+            "walk-S-05",
+            "walk-S-06",
+            "walk-S-07",
+            "walk-S-08",
+            "walk-S-09",
+            "walk-S-10",
+            "walk-S-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SW": {
+          "frames": [
+            "walk-SW-00",
+            "walk-SW-01",
+            "walk-SW-02",
+            "walk-SW-03",
+            "walk-SW-04",
+            "walk-SW-05",
+            "walk-SW-06",
+            "walk-SW-07",
+            "walk-SW-08",
+            "walk-SW-09",
+            "walk-SW-10",
+            "walk-SW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-W": {
+          "frames": [
+            "walk-W-00",
+            "walk-W-01",
+            "walk-W-02",
+            "walk-W-03",
+            "walk-W-04",
+            "walk-W-05",
+            "walk-W-06",
+            "walk-W-07",
+            "walk-W-08",
+            "walk-W-09",
+            "walk-W-10",
+            "walk-W-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NW": {
+          "frames": [
+            "walk-NW-00",
+            "walk-NW-01",
+            "walk-NW-02",
+            "walk-NW-03",
+            "walk-NW-04",
+            "walk-NW-05",
+            "walk-NW-06",
+            "walk-NW-07",
+            "walk-NW-08",
+            "walk-NW-09",
+            "walk-NW-10",
+            "walk-NW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-N": {
+          "frames": [
+            "walk-N-00",
+            "walk-N-01",
+            "walk-N-02",
+            "walk-N-03",
+            "walk-N-04",
+            "walk-N-05",
+            "walk-N-06",
+            "walk-N-07",
+            "walk-N-08",
+            "walk-N-09",
+            "walk-N-10",
+            "walk-N-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NE": {
+          "frames": [
+            "walk-NE-00",
+            "walk-NE-01",
+            "walk-NE-02",
+            "walk-NE-03",
+            "walk-NE-04",
+            "walk-NE-05",
+            "walk-NE-06",
+            "walk-NE-07",
+            "walk-NE-08",
+            "walk-NE-09",
+            "walk-NE-10",
+            "walk-NE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-E": {
+          "frames": [
+            "walk-E-00",
+            "walk-E-01",
+            "walk-E-02",
+            "walk-E-03",
+            "walk-E-04",
+            "walk-E-05",
+            "walk-E-06",
+            "walk-E-07",
+            "walk-E-08",
+            "walk-E-09",
+            "walk-E-10",
+            "walk-E-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SE": {
+          "frames": [
+            "walk-SE-00",
+            "walk-SE-01",
+            "walk-SE-02",
+            "walk-SE-03",
+            "walk-SE-04",
+            "walk-SE-05",
+            "walk-SE-06",
+            "walk-SE-07",
+            "walk-SE-08",
+            "walk-SE-09",
+            "walk-SE-10",
+            "walk-SE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "attack-1-S": {
+          "frames": [
+            "attack-1-S-00",
+            "attack-1-S-01",
+            "attack-1-S-02",
+            "attack-1-S-03",
+            "attack-1-S-04",
+            "attack-1-S-05",
+            "attack-1-S-06",
+            "attack-1-S-07",
+            "attack-1-S-08",
+            "attack-1-S-09",
+            "attack-1-S-10",
+            "attack-1-S-11",
+            "attack-1-S-12",
+            "attack-1-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SW": {
+          "frames": [
+            "attack-1-SW-00",
+            "attack-1-SW-01",
+            "attack-1-SW-02",
+            "attack-1-SW-03",
+            "attack-1-SW-04",
+            "attack-1-SW-05",
+            "attack-1-SW-06",
+            "attack-1-SW-07",
+            "attack-1-SW-08",
+            "attack-1-SW-09",
+            "attack-1-SW-10",
+            "attack-1-SW-11",
+            "attack-1-SW-12",
+            "attack-1-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-W": {
+          "frames": [
+            "attack-1-W-00",
+            "attack-1-W-01",
+            "attack-1-W-02",
+            "attack-1-W-03",
+            "attack-1-W-04",
+            "attack-1-W-05",
+            "attack-1-W-06",
+            "attack-1-W-07",
+            "attack-1-W-08",
+            "attack-1-W-09",
+            "attack-1-W-10",
+            "attack-1-W-11",
+            "attack-1-W-12",
+            "attack-1-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NW": {
+          "frames": [
+            "attack-1-NW-00",
+            "attack-1-NW-01",
+            "attack-1-NW-02",
+            "attack-1-NW-03",
+            "attack-1-NW-04",
+            "attack-1-NW-05",
+            "attack-1-NW-06",
+            "attack-1-NW-07",
+            "attack-1-NW-08",
+            "attack-1-NW-09",
+            "attack-1-NW-10",
+            "attack-1-NW-11",
+            "attack-1-NW-12",
+            "attack-1-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-N": {
+          "frames": [
+            "attack-1-N-00",
+            "attack-1-N-01",
+            "attack-1-N-02",
+            "attack-1-N-03",
+            "attack-1-N-04",
+            "attack-1-N-05",
+            "attack-1-N-06",
+            "attack-1-N-07",
+            "attack-1-N-08",
+            "attack-1-N-09",
+            "attack-1-N-10",
+            "attack-1-N-11",
+            "attack-1-N-12",
+            "attack-1-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NE": {
+          "frames": [
+            "attack-1-NE-00",
+            "attack-1-NE-01",
+            "attack-1-NE-02",
+            "attack-1-NE-03",
+            "attack-1-NE-04",
+            "attack-1-NE-05",
+            "attack-1-NE-06",
+            "attack-1-NE-07",
+            "attack-1-NE-08",
+            "attack-1-NE-09",
+            "attack-1-NE-10",
+            "attack-1-NE-11",
+            "attack-1-NE-12",
+            "attack-1-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-E": {
+          "frames": [
+            "attack-1-E-00",
+            "attack-1-E-01",
+            "attack-1-E-02",
+            "attack-1-E-03",
+            "attack-1-E-04",
+            "attack-1-E-05",
+            "attack-1-E-06",
+            "attack-1-E-07",
+            "attack-1-E-08",
+            "attack-1-E-09",
+            "attack-1-E-10",
+            "attack-1-E-11",
+            "attack-1-E-12",
+            "attack-1-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SE": {
+          "frames": [
+            "attack-1-SE-00",
+            "attack-1-SE-01",
+            "attack-1-SE-02",
+            "attack-1-SE-03",
+            "attack-1-SE-04",
+            "attack-1-SE-05",
+            "attack-1-SE-06",
+            "attack-1-SE-07",
+            "attack-1-SE-08",
+            "attack-1-SE-09",
+            "attack-1-SE-10",
+            "attack-1-SE-11",
+            "attack-1-SE-12",
+            "attack-1-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-S": {
+          "frames": [
+            "attack-2-S-00",
+            "attack-2-S-01",
+            "attack-2-S-02",
+            "attack-2-S-03",
+            "attack-2-S-04",
+            "attack-2-S-05",
+            "attack-2-S-06",
+            "attack-2-S-07",
+            "attack-2-S-08",
+            "attack-2-S-09",
+            "attack-2-S-10",
+            "attack-2-S-11",
+            "attack-2-S-12",
+            "attack-2-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SW": {
+          "frames": [
+            "attack-2-SW-00",
+            "attack-2-SW-01",
+            "attack-2-SW-02",
+            "attack-2-SW-03",
+            "attack-2-SW-04",
+            "attack-2-SW-05",
+            "attack-2-SW-06",
+            "attack-2-SW-07",
+            "attack-2-SW-08",
+            "attack-2-SW-09",
+            "attack-2-SW-10",
+            "attack-2-SW-11",
+            "attack-2-SW-12",
+            "attack-2-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-W": {
+          "frames": [
+            "attack-2-W-00",
+            "attack-2-W-01",
+            "attack-2-W-02",
+            "attack-2-W-03",
+            "attack-2-W-04",
+            "attack-2-W-05",
+            "attack-2-W-06",
+            "attack-2-W-07",
+            "attack-2-W-08",
+            "attack-2-W-09",
+            "attack-2-W-10",
+            "attack-2-W-11",
+            "attack-2-W-12",
+            "attack-2-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NW": {
+          "frames": [
+            "attack-2-NW-00",
+            "attack-2-NW-01",
+            "attack-2-NW-02",
+            "attack-2-NW-03",
+            "attack-2-NW-04",
+            "attack-2-NW-05",
+            "attack-2-NW-06",
+            "attack-2-NW-07",
+            "attack-2-NW-08",
+            "attack-2-NW-09",
+            "attack-2-NW-10",
+            "attack-2-NW-11",
+            "attack-2-NW-12",
+            "attack-2-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-N": {
+          "frames": [
+            "attack-2-N-00",
+            "attack-2-N-01",
+            "attack-2-N-02",
+            "attack-2-N-03",
+            "attack-2-N-04",
+            "attack-2-N-05",
+            "attack-2-N-06",
+            "attack-2-N-07",
+            "attack-2-N-08",
+            "attack-2-N-09",
+            "attack-2-N-10",
+            "attack-2-N-11",
+            "attack-2-N-12",
+            "attack-2-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NE": {
+          "frames": [
+            "attack-2-NE-00",
+            "attack-2-NE-01",
+            "attack-2-NE-02",
+            "attack-2-NE-03",
+            "attack-2-NE-04",
+            "attack-2-NE-05",
+            "attack-2-NE-06",
+            "attack-2-NE-07",
+            "attack-2-NE-08",
+            "attack-2-NE-09",
+            "attack-2-NE-10",
+            "attack-2-NE-11",
+            "attack-2-NE-12",
+            "attack-2-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-E": {
+          "frames": [
+            "attack-2-E-00",
+            "attack-2-E-01",
+            "attack-2-E-02",
+            "attack-2-E-03",
+            "attack-2-E-04",
+            "attack-2-E-05",
+            "attack-2-E-06",
+            "attack-2-E-07",
+            "attack-2-E-08",
+            "attack-2-E-09",
+            "attack-2-E-10",
+            "attack-2-E-11",
+            "attack-2-E-12",
+            "attack-2-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SE": {
+          "frames": [
+            "attack-2-SE-00",
+            "attack-2-SE-01",
+            "attack-2-SE-02",
+            "attack-2-SE-03",
+            "attack-2-SE-04",
+            "attack-2-SE-05",
+            "attack-2-SE-06",
+            "attack-2-SE-07",
+            "attack-2-SE-08",
+            "attack-2-SE-09",
+            "attack-2-SE-10",
+            "attack-2-SE-11",
+            "attack-2-SE-12",
+            "attack-2-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-S": {
+          "frames": [
+            "attack-3-S-00",
+            "attack-3-S-01",
+            "attack-3-S-02",
+            "attack-3-S-03",
+            "attack-3-S-04",
+            "attack-3-S-05",
+            "attack-3-S-06",
+            "attack-3-S-07",
+            "attack-3-S-08",
+            "attack-3-S-09",
+            "attack-3-S-10",
+            "attack-3-S-11",
+            "attack-3-S-12",
+            "attack-3-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SW": {
+          "frames": [
+            "attack-3-SW-00",
+            "attack-3-SW-01",
+            "attack-3-SW-02",
+            "attack-3-SW-03",
+            "attack-3-SW-04",
+            "attack-3-SW-05",
+            "attack-3-SW-06",
+            "attack-3-SW-07",
+            "attack-3-SW-08",
+            "attack-3-SW-09",
+            "attack-3-SW-10",
+            "attack-3-SW-11",
+            "attack-3-SW-12",
+            "attack-3-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-W": {
+          "frames": [
+            "attack-3-W-00",
+            "attack-3-W-01",
+            "attack-3-W-02",
+            "attack-3-W-03",
+            "attack-3-W-04",
+            "attack-3-W-05",
+            "attack-3-W-06",
+            "attack-3-W-07",
+            "attack-3-W-08",
+            "attack-3-W-09",
+            "attack-3-W-10",
+            "attack-3-W-11",
+            "attack-3-W-12",
+            "attack-3-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NW": {
+          "frames": [
+            "attack-3-NW-00",
+            "attack-3-NW-01",
+            "attack-3-NW-02",
+            "attack-3-NW-03",
+            "attack-3-NW-04",
+            "attack-3-NW-05",
+            "attack-3-NW-06",
+            "attack-3-NW-07",
+            "attack-3-NW-08",
+            "attack-3-NW-09",
+            "attack-3-NW-10",
+            "attack-3-NW-11",
+            "attack-3-NW-12",
+            "attack-3-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-N": {
+          "frames": [
+            "attack-3-N-00",
+            "attack-3-N-01",
+            "attack-3-N-02",
+            "attack-3-N-03",
+            "attack-3-N-04",
+            "attack-3-N-05",
+            "attack-3-N-06",
+            "attack-3-N-07",
+            "attack-3-N-08",
+            "attack-3-N-09",
+            "attack-3-N-10",
+            "attack-3-N-11",
+            "attack-3-N-12",
+            "attack-3-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NE": {
+          "frames": [
+            "attack-3-NE-00",
+            "attack-3-NE-01",
+            "attack-3-NE-02",
+            "attack-3-NE-03",
+            "attack-3-NE-04",
+            "attack-3-NE-05",
+            "attack-3-NE-06",
+            "attack-3-NE-07",
+            "attack-3-NE-08",
+            "attack-3-NE-09",
+            "attack-3-NE-10",
+            "attack-3-NE-11",
+            "attack-3-NE-12",
+            "attack-3-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-E": {
+          "frames": [
+            "attack-3-E-00",
+            "attack-3-E-01",
+            "attack-3-E-02",
+            "attack-3-E-03",
+            "attack-3-E-04",
+            "attack-3-E-05",
+            "attack-3-E-06",
+            "attack-3-E-07",
+            "attack-3-E-08",
+            "attack-3-E-09",
+            "attack-3-E-10",
+            "attack-3-E-11",
+            "attack-3-E-12",
+            "attack-3-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SE": {
+          "frames": [
+            "attack-3-SE-00",
+            "attack-3-SE-01",
+            "attack-3-SE-02",
+            "attack-3-SE-03",
+            "attack-3-SE-04",
+            "attack-3-SE-05",
+            "attack-3-SE-06",
+            "attack-3-SE-07",
+            "attack-3-SE-08",
+            "attack-3-SE-09",
+            "attack-3-SE-10",
+            "attack-3-SE-11",
+            "attack-3-SE-12",
+            "attack-3-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "death-S": {
+          "frames": [
+            "death-S-00",
+            "death-S-01",
+            "death-S-02",
+            "death-S-03",
+            "death-S-04",
+            "death-S-05",
+            "death-S-06",
+            "death-S-07",
+            "death-S-08",
+            "death-S-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SW": {
+          "frames": [
+            "death-SW-00",
+            "death-SW-01",
+            "death-SW-02",
+            "death-SW-03",
+            "death-SW-04",
+            "death-SW-05",
+            "death-SW-06",
+            "death-SW-07",
+            "death-SW-08",
+            "death-SW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-W": {
+          "frames": [
+            "death-W-00",
+            "death-W-01",
+            "death-W-02",
+            "death-W-03",
+            "death-W-04",
+            "death-W-05",
+            "death-W-06",
+            "death-W-07",
+            "death-W-08",
+            "death-W-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NW": {
+          "frames": [
+            "death-NW-00",
+            "death-NW-01",
+            "death-NW-02",
+            "death-NW-03",
+            "death-NW-04",
+            "death-NW-05",
+            "death-NW-06",
+            "death-NW-07",
+            "death-NW-08",
+            "death-NW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-N": {
+          "frames": [
+            "death-N-00",
+            "death-N-01",
+            "death-N-02",
+            "death-N-03",
+            "death-N-04",
+            "death-N-05",
+            "death-N-06",
+            "death-N-07",
+            "death-N-08",
+            "death-N-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NE": {
+          "frames": [
+            "death-NE-00",
+            "death-NE-01",
+            "death-NE-02",
+            "death-NE-03",
+            "death-NE-04",
+            "death-NE-05",
+            "death-NE-06",
+            "death-NE-07",
+            "death-NE-08",
+            "death-NE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-E": {
+          "frames": [
+            "death-E-00",
+            "death-E-01",
+            "death-E-02",
+            "death-E-03",
+            "death-E-04",
+            "death-E-05",
+            "death-E-06",
+            "death-E-07",
+            "death-E-08",
+            "death-E-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SE": {
+          "frames": [
+            "death-SE-00",
+            "death-SE-01",
+            "death-SE-02",
+            "death-SE-03",
+            "death-SE-04",
+            "death-SE-05",
+            "death-SE-06",
+            "death-SE-07",
+            "death-SE-08",
+            "death-SE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        }
+      },
+      "attacks": [
+        {
+          "id": "attack-1",
+          "name": "Đấm/chém thuận",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-2",
+          "name": "Đấm/chém nghịch",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-3",
+          "name": "Móc quyền/quét kiếm",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        }
+      ],
+      "walk": {
+        "worldSpeed": 1.0416666666666667,
+        "cycleSeconds": 0.8,
+        "frames": 12
+      },
+      "camera": {
+        "orthoScale": 4.685714285714285
+      },
+      "frames": 544,
+      "source": "art/v3/models/duong-khai.blend",
+      "sourceRigSha256": "9d430c1f5ecac3e4afec333034f64d85eefefa6cb0f18060e9bed19bc756511f",
+      "workflow": "Mesh + trang phục 3D riêng trên skeleton v3, render camera isometric tám góc thật"
+    },
+    {
+      "id": "thong-huyen-tru",
+      "name": "Thông Huyền Trụ",
+      "size": 128,
+      "origin": [
+        0.5000001043081284,
+        0.700390100479126
+      ],
+      "directions": [
+        "S",
+        "SW",
+        "W",
+        "NW",
+        "N",
+        "NE",
+        "E",
+        "SE"
+      ],
+      "atlas": "assets/v6/enemies/thong-huyen-tru/atlas.png",
+      "atlasData": "assets/v6/enemies/thong-huyen-tru/atlas.json",
+      "sha256": "5a40b2a84eb19e51adfa3799c81c44aebeccec4e2f605d8fef5a6aa6fbde2b27",
+      "atlasDataSha256": "7eb792fcb41a3bc8d0e57dbeda5ea73410f69cd6be2e69850d2ea4970e226a1a",
+      "animations": {
+        "idle-S": {
+          "frames": [
+            "idle-S-00",
+            "idle-S-01",
+            "idle-S-02",
+            "idle-S-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SW": {
+          "frames": [
+            "idle-SW-00",
+            "idle-SW-01",
+            "idle-SW-02",
+            "idle-SW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-W": {
+          "frames": [
+            "idle-W-00",
+            "idle-W-01",
+            "idle-W-02",
+            "idle-W-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NW": {
+          "frames": [
+            "idle-NW-00",
+            "idle-NW-01",
+            "idle-NW-02",
+            "idle-NW-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-N": {
+          "frames": [
+            "idle-N-00",
+            "idle-N-01",
+            "idle-N-02",
+            "idle-N-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-NE": {
+          "frames": [
+            "idle-NE-00",
+            "idle-NE-01",
+            "idle-NE-02",
+            "idle-NE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-E": {
+          "frames": [
+            "idle-E-00",
+            "idle-E-01",
+            "idle-E-02",
+            "idle-E-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "idle-SE": {
+          "frames": [
+            "idle-SE-00",
+            "idle-SE-01",
+            "idle-SE-02",
+            "idle-SE-03"
+          ],
+          "frameRate": 5,
+          "repeat": -1
+        },
+        "walk-S": {
+          "frames": [
+            "walk-S-00",
+            "walk-S-01",
+            "walk-S-02",
+            "walk-S-03",
+            "walk-S-04",
+            "walk-S-05",
+            "walk-S-06",
+            "walk-S-07",
+            "walk-S-08",
+            "walk-S-09",
+            "walk-S-10",
+            "walk-S-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SW": {
+          "frames": [
+            "walk-SW-00",
+            "walk-SW-01",
+            "walk-SW-02",
+            "walk-SW-03",
+            "walk-SW-04",
+            "walk-SW-05",
+            "walk-SW-06",
+            "walk-SW-07",
+            "walk-SW-08",
+            "walk-SW-09",
+            "walk-SW-10",
+            "walk-SW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-W": {
+          "frames": [
+            "walk-W-00",
+            "walk-W-01",
+            "walk-W-02",
+            "walk-W-03",
+            "walk-W-04",
+            "walk-W-05",
+            "walk-W-06",
+            "walk-W-07",
+            "walk-W-08",
+            "walk-W-09",
+            "walk-W-10",
+            "walk-W-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NW": {
+          "frames": [
+            "walk-NW-00",
+            "walk-NW-01",
+            "walk-NW-02",
+            "walk-NW-03",
+            "walk-NW-04",
+            "walk-NW-05",
+            "walk-NW-06",
+            "walk-NW-07",
+            "walk-NW-08",
+            "walk-NW-09",
+            "walk-NW-10",
+            "walk-NW-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-N": {
+          "frames": [
+            "walk-N-00",
+            "walk-N-01",
+            "walk-N-02",
+            "walk-N-03",
+            "walk-N-04",
+            "walk-N-05",
+            "walk-N-06",
+            "walk-N-07",
+            "walk-N-08",
+            "walk-N-09",
+            "walk-N-10",
+            "walk-N-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-NE": {
+          "frames": [
+            "walk-NE-00",
+            "walk-NE-01",
+            "walk-NE-02",
+            "walk-NE-03",
+            "walk-NE-04",
+            "walk-NE-05",
+            "walk-NE-06",
+            "walk-NE-07",
+            "walk-NE-08",
+            "walk-NE-09",
+            "walk-NE-10",
+            "walk-NE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-E": {
+          "frames": [
+            "walk-E-00",
+            "walk-E-01",
+            "walk-E-02",
+            "walk-E-03",
+            "walk-E-04",
+            "walk-E-05",
+            "walk-E-06",
+            "walk-E-07",
+            "walk-E-08",
+            "walk-E-09",
+            "walk-E-10",
+            "walk-E-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "walk-SE": {
+          "frames": [
+            "walk-SE-00",
+            "walk-SE-01",
+            "walk-SE-02",
+            "walk-SE-03",
+            "walk-SE-04",
+            "walk-SE-05",
+            "walk-SE-06",
+            "walk-SE-07",
+            "walk-SE-08",
+            "walk-SE-09",
+            "walk-SE-10",
+            "walk-SE-11"
+          ],
+          "frameRate": 15,
+          "repeat": -1
+        },
+        "attack-1-S": {
+          "frames": [
+            "attack-1-S-00",
+            "attack-1-S-01",
+            "attack-1-S-02",
+            "attack-1-S-03",
+            "attack-1-S-04",
+            "attack-1-S-05",
+            "attack-1-S-06",
+            "attack-1-S-07",
+            "attack-1-S-08",
+            "attack-1-S-09",
+            "attack-1-S-10",
+            "attack-1-S-11",
+            "attack-1-S-12",
+            "attack-1-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SW": {
+          "frames": [
+            "attack-1-SW-00",
+            "attack-1-SW-01",
+            "attack-1-SW-02",
+            "attack-1-SW-03",
+            "attack-1-SW-04",
+            "attack-1-SW-05",
+            "attack-1-SW-06",
+            "attack-1-SW-07",
+            "attack-1-SW-08",
+            "attack-1-SW-09",
+            "attack-1-SW-10",
+            "attack-1-SW-11",
+            "attack-1-SW-12",
+            "attack-1-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-W": {
+          "frames": [
+            "attack-1-W-00",
+            "attack-1-W-01",
+            "attack-1-W-02",
+            "attack-1-W-03",
+            "attack-1-W-04",
+            "attack-1-W-05",
+            "attack-1-W-06",
+            "attack-1-W-07",
+            "attack-1-W-08",
+            "attack-1-W-09",
+            "attack-1-W-10",
+            "attack-1-W-11",
+            "attack-1-W-12",
+            "attack-1-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NW": {
+          "frames": [
+            "attack-1-NW-00",
+            "attack-1-NW-01",
+            "attack-1-NW-02",
+            "attack-1-NW-03",
+            "attack-1-NW-04",
+            "attack-1-NW-05",
+            "attack-1-NW-06",
+            "attack-1-NW-07",
+            "attack-1-NW-08",
+            "attack-1-NW-09",
+            "attack-1-NW-10",
+            "attack-1-NW-11",
+            "attack-1-NW-12",
+            "attack-1-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-N": {
+          "frames": [
+            "attack-1-N-00",
+            "attack-1-N-01",
+            "attack-1-N-02",
+            "attack-1-N-03",
+            "attack-1-N-04",
+            "attack-1-N-05",
+            "attack-1-N-06",
+            "attack-1-N-07",
+            "attack-1-N-08",
+            "attack-1-N-09",
+            "attack-1-N-10",
+            "attack-1-N-11",
+            "attack-1-N-12",
+            "attack-1-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-NE": {
+          "frames": [
+            "attack-1-NE-00",
+            "attack-1-NE-01",
+            "attack-1-NE-02",
+            "attack-1-NE-03",
+            "attack-1-NE-04",
+            "attack-1-NE-05",
+            "attack-1-NE-06",
+            "attack-1-NE-07",
+            "attack-1-NE-08",
+            "attack-1-NE-09",
+            "attack-1-NE-10",
+            "attack-1-NE-11",
+            "attack-1-NE-12",
+            "attack-1-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-E": {
+          "frames": [
+            "attack-1-E-00",
+            "attack-1-E-01",
+            "attack-1-E-02",
+            "attack-1-E-03",
+            "attack-1-E-04",
+            "attack-1-E-05",
+            "attack-1-E-06",
+            "attack-1-E-07",
+            "attack-1-E-08",
+            "attack-1-E-09",
+            "attack-1-E-10",
+            "attack-1-E-11",
+            "attack-1-E-12",
+            "attack-1-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-1-SE": {
+          "frames": [
+            "attack-1-SE-00",
+            "attack-1-SE-01",
+            "attack-1-SE-02",
+            "attack-1-SE-03",
+            "attack-1-SE-04",
+            "attack-1-SE-05",
+            "attack-1-SE-06",
+            "attack-1-SE-07",
+            "attack-1-SE-08",
+            "attack-1-SE-09",
+            "attack-1-SE-10",
+            "attack-1-SE-11",
+            "attack-1-SE-12",
+            "attack-1-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-S": {
+          "frames": [
+            "attack-2-S-00",
+            "attack-2-S-01",
+            "attack-2-S-02",
+            "attack-2-S-03",
+            "attack-2-S-04",
+            "attack-2-S-05",
+            "attack-2-S-06",
+            "attack-2-S-07",
+            "attack-2-S-08",
+            "attack-2-S-09",
+            "attack-2-S-10",
+            "attack-2-S-11",
+            "attack-2-S-12",
+            "attack-2-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SW": {
+          "frames": [
+            "attack-2-SW-00",
+            "attack-2-SW-01",
+            "attack-2-SW-02",
+            "attack-2-SW-03",
+            "attack-2-SW-04",
+            "attack-2-SW-05",
+            "attack-2-SW-06",
+            "attack-2-SW-07",
+            "attack-2-SW-08",
+            "attack-2-SW-09",
+            "attack-2-SW-10",
+            "attack-2-SW-11",
+            "attack-2-SW-12",
+            "attack-2-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-W": {
+          "frames": [
+            "attack-2-W-00",
+            "attack-2-W-01",
+            "attack-2-W-02",
+            "attack-2-W-03",
+            "attack-2-W-04",
+            "attack-2-W-05",
+            "attack-2-W-06",
+            "attack-2-W-07",
+            "attack-2-W-08",
+            "attack-2-W-09",
+            "attack-2-W-10",
+            "attack-2-W-11",
+            "attack-2-W-12",
+            "attack-2-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NW": {
+          "frames": [
+            "attack-2-NW-00",
+            "attack-2-NW-01",
+            "attack-2-NW-02",
+            "attack-2-NW-03",
+            "attack-2-NW-04",
+            "attack-2-NW-05",
+            "attack-2-NW-06",
+            "attack-2-NW-07",
+            "attack-2-NW-08",
+            "attack-2-NW-09",
+            "attack-2-NW-10",
+            "attack-2-NW-11",
+            "attack-2-NW-12",
+            "attack-2-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-N": {
+          "frames": [
+            "attack-2-N-00",
+            "attack-2-N-01",
+            "attack-2-N-02",
+            "attack-2-N-03",
+            "attack-2-N-04",
+            "attack-2-N-05",
+            "attack-2-N-06",
+            "attack-2-N-07",
+            "attack-2-N-08",
+            "attack-2-N-09",
+            "attack-2-N-10",
+            "attack-2-N-11",
+            "attack-2-N-12",
+            "attack-2-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-NE": {
+          "frames": [
+            "attack-2-NE-00",
+            "attack-2-NE-01",
+            "attack-2-NE-02",
+            "attack-2-NE-03",
+            "attack-2-NE-04",
+            "attack-2-NE-05",
+            "attack-2-NE-06",
+            "attack-2-NE-07",
+            "attack-2-NE-08",
+            "attack-2-NE-09",
+            "attack-2-NE-10",
+            "attack-2-NE-11",
+            "attack-2-NE-12",
+            "attack-2-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-E": {
+          "frames": [
+            "attack-2-E-00",
+            "attack-2-E-01",
+            "attack-2-E-02",
+            "attack-2-E-03",
+            "attack-2-E-04",
+            "attack-2-E-05",
+            "attack-2-E-06",
+            "attack-2-E-07",
+            "attack-2-E-08",
+            "attack-2-E-09",
+            "attack-2-E-10",
+            "attack-2-E-11",
+            "attack-2-E-12",
+            "attack-2-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-2-SE": {
+          "frames": [
+            "attack-2-SE-00",
+            "attack-2-SE-01",
+            "attack-2-SE-02",
+            "attack-2-SE-03",
+            "attack-2-SE-04",
+            "attack-2-SE-05",
+            "attack-2-SE-06",
+            "attack-2-SE-07",
+            "attack-2-SE-08",
+            "attack-2-SE-09",
+            "attack-2-SE-10",
+            "attack-2-SE-11",
+            "attack-2-SE-12",
+            "attack-2-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-S": {
+          "frames": [
+            "attack-3-S-00",
+            "attack-3-S-01",
+            "attack-3-S-02",
+            "attack-3-S-03",
+            "attack-3-S-04",
+            "attack-3-S-05",
+            "attack-3-S-06",
+            "attack-3-S-07",
+            "attack-3-S-08",
+            "attack-3-S-09",
+            "attack-3-S-10",
+            "attack-3-S-11",
+            "attack-3-S-12",
+            "attack-3-S-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SW": {
+          "frames": [
+            "attack-3-SW-00",
+            "attack-3-SW-01",
+            "attack-3-SW-02",
+            "attack-3-SW-03",
+            "attack-3-SW-04",
+            "attack-3-SW-05",
+            "attack-3-SW-06",
+            "attack-3-SW-07",
+            "attack-3-SW-08",
+            "attack-3-SW-09",
+            "attack-3-SW-10",
+            "attack-3-SW-11",
+            "attack-3-SW-12",
+            "attack-3-SW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-W": {
+          "frames": [
+            "attack-3-W-00",
+            "attack-3-W-01",
+            "attack-3-W-02",
+            "attack-3-W-03",
+            "attack-3-W-04",
+            "attack-3-W-05",
+            "attack-3-W-06",
+            "attack-3-W-07",
+            "attack-3-W-08",
+            "attack-3-W-09",
+            "attack-3-W-10",
+            "attack-3-W-11",
+            "attack-3-W-12",
+            "attack-3-W-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NW": {
+          "frames": [
+            "attack-3-NW-00",
+            "attack-3-NW-01",
+            "attack-3-NW-02",
+            "attack-3-NW-03",
+            "attack-3-NW-04",
+            "attack-3-NW-05",
+            "attack-3-NW-06",
+            "attack-3-NW-07",
+            "attack-3-NW-08",
+            "attack-3-NW-09",
+            "attack-3-NW-10",
+            "attack-3-NW-11",
+            "attack-3-NW-12",
+            "attack-3-NW-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-N": {
+          "frames": [
+            "attack-3-N-00",
+            "attack-3-N-01",
+            "attack-3-N-02",
+            "attack-3-N-03",
+            "attack-3-N-04",
+            "attack-3-N-05",
+            "attack-3-N-06",
+            "attack-3-N-07",
+            "attack-3-N-08",
+            "attack-3-N-09",
+            "attack-3-N-10",
+            "attack-3-N-11",
+            "attack-3-N-12",
+            "attack-3-N-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-NE": {
+          "frames": [
+            "attack-3-NE-00",
+            "attack-3-NE-01",
+            "attack-3-NE-02",
+            "attack-3-NE-03",
+            "attack-3-NE-04",
+            "attack-3-NE-05",
+            "attack-3-NE-06",
+            "attack-3-NE-07",
+            "attack-3-NE-08",
+            "attack-3-NE-09",
+            "attack-3-NE-10",
+            "attack-3-NE-11",
+            "attack-3-NE-12",
+            "attack-3-NE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-E": {
+          "frames": [
+            "attack-3-E-00",
+            "attack-3-E-01",
+            "attack-3-E-02",
+            "attack-3-E-03",
+            "attack-3-E-04",
+            "attack-3-E-05",
+            "attack-3-E-06",
+            "attack-3-E-07",
+            "attack-3-E-08",
+            "attack-3-E-09",
+            "attack-3-E-10",
+            "attack-3-E-11",
+            "attack-3-E-12",
+            "attack-3-E-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "attack-3-SE": {
+          "frames": [
+            "attack-3-SE-00",
+            "attack-3-SE-01",
+            "attack-3-SE-02",
+            "attack-3-SE-03",
+            "attack-3-SE-04",
+            "attack-3-SE-05",
+            "attack-3-SE-06",
+            "attack-3-SE-07",
+            "attack-3-SE-08",
+            "attack-3-SE-09",
+            "attack-3-SE-10",
+            "attack-3-SE-11",
+            "attack-3-SE-12",
+            "attack-3-SE-13"
+          ],
+          "frameRate": 24,
+          "repeat": 0
+        },
+        "death-S": {
+          "frames": [
+            "death-S-00",
+            "death-S-01",
+            "death-S-02",
+            "death-S-03",
+            "death-S-04",
+            "death-S-05",
+            "death-S-06",
+            "death-S-07",
+            "death-S-08",
+            "death-S-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SW": {
+          "frames": [
+            "death-SW-00",
+            "death-SW-01",
+            "death-SW-02",
+            "death-SW-03",
+            "death-SW-04",
+            "death-SW-05",
+            "death-SW-06",
+            "death-SW-07",
+            "death-SW-08",
+            "death-SW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-W": {
+          "frames": [
+            "death-W-00",
+            "death-W-01",
+            "death-W-02",
+            "death-W-03",
+            "death-W-04",
+            "death-W-05",
+            "death-W-06",
+            "death-W-07",
+            "death-W-08",
+            "death-W-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NW": {
+          "frames": [
+            "death-NW-00",
+            "death-NW-01",
+            "death-NW-02",
+            "death-NW-03",
+            "death-NW-04",
+            "death-NW-05",
+            "death-NW-06",
+            "death-NW-07",
+            "death-NW-08",
+            "death-NW-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-N": {
+          "frames": [
+            "death-N-00",
+            "death-N-01",
+            "death-N-02",
+            "death-N-03",
+            "death-N-04",
+            "death-N-05",
+            "death-N-06",
+            "death-N-07",
+            "death-N-08",
+            "death-N-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-NE": {
+          "frames": [
+            "death-NE-00",
+            "death-NE-01",
+            "death-NE-02",
+            "death-NE-03",
+            "death-NE-04",
+            "death-NE-05",
+            "death-NE-06",
+            "death-NE-07",
+            "death-NE-08",
+            "death-NE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-E": {
+          "frames": [
+            "death-E-00",
+            "death-E-01",
+            "death-E-02",
+            "death-E-03",
+            "death-E-04",
+            "death-E-05",
+            "death-E-06",
+            "death-E-07",
+            "death-E-08",
+            "death-E-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        },
+        "death-SE": {
+          "frames": [
+            "death-SE-00",
+            "death-SE-01",
+            "death-SE-02",
+            "death-SE-03",
+            "death-SE-04",
+            "death-SE-05",
+            "death-SE-06",
+            "death-SE-07",
+            "death-SE-08",
+            "death-SE-09"
+          ],
+          "frameRate": 12,
+          "repeat": 0
+        }
+      },
+      "attacks": [
+        {
+          "id": "attack-1",
+          "name": "Đấm/chém thuận",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-2",
+          "name": "Đấm/chém nghịch",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        },
+        {
+          "id": "attack-3",
+          "name": "Móc quyền/quét kiếm",
+          "impactFrame": 7,
+          "frameRate": 24,
+          "frames": 14
+        }
+      ],
+      "walk": {
+        "worldSpeed": 1.0416666666666667,
+        "cycleSeconds": 0.8,
+        "frames": 12
+      },
+      "camera": {
+        "orthoScale": 4.685714285714285
+      },
+      "frames": 544,
+      "source": "art/v3/models/duong-khai.blend",
+      "sourceRigSha256": "9d430c1f5ecac3e4afec333034f64d85eefefa6cb0f18060e9bed19bc756511f",
+      "workflow": "Mesh + trang phục 3D riêng trên skeleton v3, render camera isometric tám góc thật"
+    }
+  ],
+  "review": "art/enemies-thong-huyen/VISUAL_REVIEW.json"
+}

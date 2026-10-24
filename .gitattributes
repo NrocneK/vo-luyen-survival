@@ -1,0 +1,2 @@
+# Atlas/manifest được kiểm SHA-256 theo byte; checkout không được đổi xuống dòng.
+/public/assets/** -text whitespace=cr-at-eol

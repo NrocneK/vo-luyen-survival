@@ -1,5 +1,29 @@
 import type { LobbyArea } from '../shared/types';
 
+/** Bố cục thuần hiển thị, dùng chung cho nhân vật Phaser và lớp React. */
+export function lobbyComposition(
+  width: number,
+  height: number,
+  station = 'home',
+  panelOpen = true,
+) {
+  const mobile = width <= 760;
+  const home = station === 'home';
+  const x = mobile ? 0.5 : !panelOpen ? 0.5 : home ? (width < 1000 ? 0.32 : 0.48) : 0.24;
+  const scale = mobile
+    ? Math.min(0.86, (height * 0.22) / 190)
+    : Math.min(home ? 1.42 : 1.3, (height * 0.29) / 190);
+  const y = mobile && panelOpen ? (110 + 190 * scale) / height : height < 700 ? 0.66 : 0.7;
+  return {
+    x,
+    y,
+    scale,
+    panelY: y * height + 26,
+    identityY: y * height - 190 * scale - 92,
+    gearY: y * height - 190 * scale + 5,
+  };
+}
+
 /** Các khu thật của lobby; kho đồ và chuẩn bị lịch luyện dùng tại sân trung tâm. */
 export const lobbyAreas: Record<
   LobbyArea,

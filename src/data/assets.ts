@@ -1,7 +1,7 @@
 import source from './assets.generated.json';
 import type { ActorAsset, AssetCatalogue } from '../shared/types';
 
-// Danh mục được sinh từ manifest v3 đã kiểm tra bằng scripts/sync-assets.mjs.
+// Địch/thú v3/v5/v6, nền v4, icon v7; nhân vật Thông Huyền v9 đọc riêng từ hero.ts.
 export const assets = source as unknown as AssetCatalogue;
 export function assetUrl(path: string): string {
   return `${import.meta.env.BASE_URL}${path}`;

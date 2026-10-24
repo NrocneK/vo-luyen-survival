@@ -1,3 +1,5 @@
-import { forestLayout } from './stages.ts';
+import { stage, layoutForStage } from './stages.ts';
+import type { StageDef } from './stages.ts';
 import { buildMapObstacles } from '../game/math/mapGeometry.ts';
-export const mapObstacles = () => buildMapObstacles(forestLayout);
+export const mapObstacles = (selected: StageDef = stage) =>
+  buildMapObstacles(layoutForStage(selected));

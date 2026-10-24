@@ -5,6 +5,7 @@ export interface Point {
 export type Direction = 'S' | 'SW' | 'W' | 'NW' | 'N' | 'NE' | 'E' | 'SE';
 export type WeaponId = 'fists' | 'sword';
 import type { Profile, RunView, Card, RunResult } from './models';
+import type { TestSettings } from '../data/testing';
 export type GameMode = 'menu' | 'playing' | 'paused' | 'levelup' | 'result';
 export type LobbyArea = 'courtyard' | 'alchemy' | 'forge' | 'cultivate' | 'pets';
 export interface WorldBounds {
@@ -62,7 +63,9 @@ export interface AssetCatalogue {
 }
 
 export interface GameSnapshot {
+  test: TestSettings;
   mode: GameMode;
+  stageId: string;
   lobbyArea: LobbyArea;
   status: 'loading' | 'ready' | 'error';
   progress: number;
@@ -80,15 +83,26 @@ export interface GameSnapshot {
   toast: string;
   idleGained: number;
   saveOk: boolean;
+  chapterEndingOpen: boolean;
+  chapterEndingWorld?: 1 | 2;
+  storyOpen?: boolean;
+  lobbyStation?: string;
+  lobbyFacing?: Direction;
+  lobbyPanelOpen?: boolean;
 }
 export type GameCommand =
+  | { type: 'chapter-ending'; open: boolean; world?: 1 | 2 }
+  | { type: 'story'; open: boolean }
   | { type: 'travel'; area: LobbyArea }
+  | { type: 'stage'; id: string }
   | { type: 'start' }
   | { type: 'pause' }
   | { type: 'resume' }
   | { type: 'leave' }
   | { type: 'weapon'; weapon: WeaponId }
   | { type: 'card'; id: string }
+  | { type: 'reroll' }
+  | { type: 'interact' }
   | { type: 'potion' }
   | { type: 'dash' }
   | { type: 'zoom'; zoom: number };

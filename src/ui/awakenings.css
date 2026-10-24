@@ -1,0 +1,76 @@
+.awakening-guide {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #b5ae7650;
+  text-align: left;
+  color: #c6d8c1;
+  font-size: 11px;
+}
+.awakening-guide summary {
+  cursor: pointer;
+  padding: 5px 0;
+  color: #e4ce99;
+}
+.awakening-guide > p {
+  color: #a6bca5;
+  font-size: 10px;
+  line-height: 1.8;
+  margin: 7px 0 10px;
+}
+.awakening-guide ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.awakening-guide li {
+  background: #142e24;
+  border: 1px solid #8d9b743d;
+  padding: 9px 11px;
+}
+.awakening-guide li strong,
+.awakening-guide li span,
+.awakening-guide li small {
+  display: block;
+}
+.awakening-guide li strong {
+  color: #dccba0;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.awakening-guide li span {
+  font-size: 10px;
+  line-height: 1.6;
+}
+.awakening-guide li small {
+  font-size: 9px;
+  color: #a3b89a;
+  margin-top: 5px;
+}
+.awakening-guide li.ready {
+  border-color: #c4b46c;
+}
+.awakening-guide li.ready small {
+  color: #e4d085;
+}
+.awakening-guide li.awakened {
+  border-color: #d5a95f;
+  background: #39402b;
+}
+.upgrade-card.awaken .card-skill-name {
+  color: #edce8e;
+}
+.skill-slot.awakened::after {
+  content: 'VI';
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  padding: 1px 3px;
+  background: #594725;
+  color: #ffe7a4;
+  font-size: 8px;
+}
+.skill-slot.awakened {
+  position: relative;
+}

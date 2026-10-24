@@ -12,6 +12,8 @@ export class ActorView {
   private walkPhase = 0;
   private idlePhase = 0;
   private last: Point | null = null;
+  private visualScale = 1;
+  private facing: Direction = 'S';
   constructor(
     scene: Phaser.Scene,
     id: string,
@@ -33,10 +35,23 @@ export class ActorView {
     this.resize();
     this.last = null;
   }
+  setProjection(projection: Projection): void {
+    this.projection = projection;
+    this.resize();
+    this.last = null;
+  }
   private resize(): void {
     this.sprite
       .setOrigin(...this.actor.origin)
-      .setScale(this.projection.pixelsPerUnit / (this.actor.size / this.actor.camera.orthoScale));
+      .setScale(
+        (this.visualScale * this.projection.pixelsPerUnit) /
+          (this.actor.size / this.actor.camera.orthoScale),
+      );
+  }
+  setVisualScale(scale: number): this {
+    this.visualScale = scale;
+    this.resize();
+    return this;
   }
   render(
     point: Point,
@@ -51,13 +66,25 @@ export class ActorView {
     elite = false,
     hit = false,
   ): void {
+    this.facing = facing;
     const travel = this.last ? Math.hypot(point.x - this.last.x, point.y - this.last.y) : 0;
     this.last = { ...point };
     this.idlePhase += dt;
     // Pha chân tiến theo quãng đường thật; đứng trước vật cản thì không chạy chân tại chỗ.
     this.walkPhase += travel / (this.actor.walk.worldSpeed * this.actor.walk.cycleSeconds);
+    // Boss biến thể có thể dùng bốn cơ chế với actor ba clip; chọn clip có thật.
+    const visualAttack =
+      attack && !this.actor.animations[`attack-${attack}-${facing}`]
+        ? ((attack - 1) % this.actor.attacks.length) + 1
+        : attack;
     const state =
-      deathTime >= 0 ? 'death' : attack ? `attack-${attack}` : travel > 0.00005 ? 'walk' : 'idle';
+      deathTime >= 0
+        ? 'death'
+        : visualAttack
+          ? `attack-${visualAttack}`
+          : travel > 0.00005
+            ? 'walk'
+            : 'idle';
     const animation = this.actor.animations[`${state}-${facing}`];
     const phase =
       deathTime >= 0
@@ -87,6 +114,29 @@ export class ActorView {
         .fillStyle(elite ? 0xd4ac63 : 0xb87763)
         .fillRect(screen.x - width / 2, y, width * Math.max(0, hp / maxHp), 3);
     }
+  }
+  /** Điểm gắn theo khung gốc chưa trim: bả vai ở y≈49/128, không lấy tọa độ chân. */
+  get renderedFacing(): Direction {
+    return this.facing;
+  }
+  attachment(kind: 'back' | 'chest' | 'head'): Point {
+    const lateral: Record<Direction, number> = {
+      S: 0,
+      N: 0,
+      E: -0.025,
+      W: 0.025,
+      SE: -0.018,
+      SW: 0.018,
+      NE: -0.018,
+      NW: 0.018,
+    };
+    const y = kind === 'head' ? 0.29 : kind === 'back' ? 0.39 : 0.43;
+    return {
+      x:
+        this.sprite.x +
+        (0.5 + lateral[this.facing] - this.sprite.originX) * this.actor.size * this.sprite.scaleX,
+      y: this.sprite.y + (y - this.sprite.originY) * this.actor.size * this.sprite.scaleY,
+    };
   }
   lobby(x: number, y: number, dt: number): void {
     this.idlePhase += dt;

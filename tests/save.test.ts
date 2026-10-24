@@ -51,3 +51,27 @@ test('Nhập file giữ cấu trúc, từ chối game sai, số liệu sai và f
   );
   await assert.rejects(importSave(new File(['x'.repeat(128001)], 'large.json')));
 });
+test('Bản v1 trên khóa cũ được nâng cấp an toàn; lưu v2 vẫn giữ bản v1 dự phòng', async () => {
+  const { values } = storage();
+  const current = newProfile(1234);
+  const { stageProgress: _progress, selectedStageId: _stage, ...legacy } = current;
+  const v1 = { ...legacy, version: 1, wins: 2, runs: 4, realm: 10, cultivation: 999.75 };
+  values.set('vo-luyen.profile.v1', JSON.stringify(v1));
+  const loaded = loadProfile();
+  assert.equal(loaded.warning, '');
+  assert.equal(loaded.profile.version, 3);
+  assert.equal(loaded.profile.stageProgress['hac-phong-son'].wins, 2);
+  assert.equal(loaded.profile.cultivation, 999.75);
+  assert.equal(saveProfile(loaded.profile), true);
+  assert.equal(JSON.parse(values.get('vo-luyen.profile.v1')!).version, 3);
+  assert.equal(JSON.parse(values.get('vo-luyen.profile.backup.v1')!).version, 1);
+  const imported = await importSave(
+    new File([JSON.stringify({ game: 'vo-luyen', profile: v1 })], 'v1.json'),
+  );
+  assert.deepEqual(imported, loaded.profile);
+  values.set('vo-luyen.profile.v1', '{broken v2');
+  const recovered = loadProfile();
+  assert.equal(recovered.profile.version, 3);
+  assert.equal(recovered.profile.stageProgress['hac-phong-son'].wins, 2);
+  assert.match(recovered.warning, /dự phòng/);
+});

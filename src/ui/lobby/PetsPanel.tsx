@@ -2,91 +2,110 @@ import type { GameSnapshot } from '../../shared/types';
 import { GameBridge } from '../../app/GameBridge';
 import { pets } from '../../data/pets';
 import { canPay } from '../../domain/profile';
-import { Icon, CostLabel } from '../AssetIcon';
+import { petRealmCap, petFeedCost, worldTwoPetPassive } from '../../data/worldTwoEconomy';
+import { ActorPortrait, MaterialCost, StatBadges } from './SurvivalUI';
+const evolutionCost = { stone: 180, resources: { 'tinh-thach-tien-hoa': 2, 'yeu-dan': 4 } };
 export function PetsPanel({ state, bridge }: { state: GameSnapshot; bridge: GameBridge }) {
   const profile = state.profile;
-
   return (
     <>
-      <p>Mọi linh thú đã mở đều cộng nội tại. Chỉ một con được chọn đồng hành chiến đấu.</p>
-      {Object.values(pets).map((definition) => {
-        const pet = profile.pets[definition.id];
-        return (
-          <article className="craft-card pet-card" key={definition.id}>
-            <div className="item-row">
-              <Icon id={definition.egg} size={55} />
-              <div>
-                <h3>{pet?.evolved ? definition.evolvedName : definition.name}</h3>
-                <small>
-                  {pet
-                    ? `Bậc ${pet.level}/5 ${pet.evolved ? '· Đã tiến hóa' : ''}`
-                    : 'Chưa mở · trứng nhận từ tinh anh/boss'}
-                </small>
+      <p className="compact-help">
+        Nội tại của mọi linh thú đã mở đều có hiệu lực. Chọn một linh thú đồng hành chiến đấu.
+      </p>
+      <div className="pet-grid">
+        {Object.values(pets).map((definition) => {
+          const pet = profile.pets[definition.id],
+            active = profile.activePet === definition.id;
+          const passive = pet
+            ? pet.level > 5
+              ? worldTwoPetPassive(definition.id, pet.level)
+              : Object.fromEntries(
+                  Object.entries(definition.passive).map(([key, value]) => [
+                    key,
+                    value * pet.level,
+                  ]),
+                )
+            : {};
+          const name = pet?.evolved ? definition.evolvedName : definition.name;
+          return (
+            <article
+              className={`survival-pet ${active ? 'active' : ''}`}
+              key={definition.id}
+              data-pet-id={definition.id}
+            >
+              <div className="companion-art">
+                <ActorPortrait
+                  id={pet?.evolved ? definition.evolvedActor : definition.actor}
+                  label={name}
+                />
+                {active && <span>✓ Đồng hành</span>}
+                {!pet && <span>Chưa ấp</span>}
               </div>
-            </div>
-            <p>{definition.description}</p>
-            {!pet ? (
-              <>
-                <CostLabel cost={definition.cost} />
-                <button
-                  disabled={!canPay(profile, definition.cost)}
-                  onClick={() => bridge.act('unlockPet', definition.id)}
-                >
-                  Ấp trứng
-                </button>
-              </>
-            ) : (
-              <>
-                <div className="card-actions">
+              <h3>{name}</h3>
+              <small>
+                {pet
+                  ? `Bậc ${pet.level}/${petRealmCap(profile.realm)}${pet.evolved ? ' · Đã tiến hóa' : ''}`
+                  : 'Trứng nhận từ tinh anh / boss'}
+              </small>
+              <progress
+                value={pet?.level ?? 0}
+                max={petRealmCap(profile.realm)}
+                aria-label={`Bậc ${name}`}
+              />
+              {pet ? (
+                <>
+                  <StatBadges stats={passive} multiplier={pet.evolved ? 2 : 1} />
                   <button
-                    onClick={() =>
-                      bridge.act(
-                        'activePet',
-                        profile.activePet === definition.id ? '' : definition.id,
-                      )
-                    }
+                    className={active ? 'active-companion' : 'primary-button'}
+                    onClick={() => bridge.act('activePet', active ? '' : definition.id)}
                   >
-                    {profile.activePet === definition.id
-                      ? 'Đang đồng hành · Cho nghỉ'
-                      : 'Chọn đồng hành'}
+                    {active ? 'Cho nghỉ' : 'Chọn đồng hành'}
                   </button>
+                  <MaterialCost cost={petFeedCost(pet.level)} profile={profile} />
                   <button
                     disabled={
-                      pet.level >= 5 ||
-                      !canPay(profile, {
-                        stone: 20 * pet.level,
-                        resources: { 'thuc-an-sung-vat': pet.level + 1 },
-                      })
+                      pet.level >= petRealmCap(profile.realm) ||
+                      !canPay(profile, petFeedCost(pet.level))
                     }
                     onClick={() => bridge.act('feedPet', definition.id)}
                   >
-                    Nuôi dưỡng
+                    {pet.level >= petRealmCap(profile.realm)
+                      ? 'Đạt trần nuôi hiện tại'
+                      : 'Nuôi dưỡng'}
                   </button>
-                </div>
-                <small>
-                  Nuôi: {pet.level * 20} linh thạch · {pet.level + 1} thức ăn
-                </small>
-                <button
-                  disabled={
-                    pet.evolved ||
-                    pet.level < 3 ||
-                    !canPay(profile, {
-                      stone: 180,
-                      resources: { 'tinh-thach-tien-hoa': 2, 'yeu-dan': 4 },
-                    })
-                  }
-                  onClick={() => bridge.act('evolvePet', definition.id)}
-                >
-                  {pet.evolved ? 'Đã tiến hóa' : 'Tiến hóa · cần bậc 3'}
-                </button>
-                <CostLabel
-                  cost={{ stone: 180, resources: { 'tinh-thach-tien-hoa': 2, 'yeu-dan': 4 } }}
-                />
-              </>
-            )}
-          </article>
-        );
-      })}
+                  {!pet.evolved && (
+                    <>
+                      <MaterialCost cost={evolutionCost} profile={profile} />
+                      <button
+                        disabled={pet.level < 3 || !canPay(profile, evolutionCost)}
+                        onClick={() => bridge.act('evolvePet', definition.id)}
+                      >
+                        Tiến hóa · bậc 3
+                      </button>
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  <MaterialCost cost={definition.cost} profile={profile} />
+                  <button
+                    className="primary-button"
+                    disabled={!canPay(profile, definition.cost)}
+                    onClick={() => bridge.act('unlockPet', definition.id)}
+                  >
+                    Ấp trứng
+                  </button>
+                </>
+              )}
+              <details>
+                <summary>Đặc tính</summary>
+                <p>{definition.description}</p>
+                <p>Trần nuôi tăng theo cảnh giới, tối đa bậc 10.</p>
+              </details>
+            </article>
+          );
+        })}
+      </div>
     </>
   );
 }
